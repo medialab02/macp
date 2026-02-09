@@ -19,7 +19,7 @@ import { track } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 
 interface LeadFormProps {
-  variant?: "default" | "compact" | "inline";
+  variant?: "default" | "compact" | "inline" | "bant";
   source?: string;
   productId?: string;
   className?: string;
@@ -36,6 +36,13 @@ interface FormData {
   role: string;
   interest: string;
   message: string;
+  // BANT fields
+  fullName?: string;
+  solution?: string;
+  timeline?: string;
+  hasBudget?: string;
+  howHeard?: string;
+  howHeardOther?: string;
 }
 
 const companySizes = [
@@ -60,6 +67,33 @@ const interests = [
   { value: "despliegue", label: "Despliegue y configuración" },
   { value: "soporte", label: "Soporte y mantenimiento" },
   { value: "asesoria", label: "Asesoría general" },
+];
+
+const solutions = [
+  { value: "venta-apple", label: "Venta y/o renta de Equipos Apple" },
+  { value: "venta-multimarca", label: "Venta y/o renta de Equipos Multimarca" },
+  { value: "perifericos", label: "Periféricos" },
+  { value: "accesorios", label: "Accesorios" },
+  { value: "servicio-apple", label: "Centro de Servicio Autorizado / Servicio Técnico Apple" },
+  { value: "valor-it", label: "Servicios de Valor IT (IaaS, SOC, Ciberseguridad, Backup empresarial, Consultoría, Servicios Gestionados)" },
+  { value: "licenciamiento", label: "Licenciamiento" },
+];
+
+const timelines = [
+  { value: "q1", label: "Q1 (Ene – Mar)" },
+  { value: "q2", label: "Q2 (Abr – Jun)" },
+  { value: "q3", label: "Q3 (Jul – Sep)" },
+  { value: "q4", label: "Q4 (Oct – Dic)" },
+];
+
+const howHeardOptions = [
+  { value: "instagram", label: "Instagram" },
+  { value: "facebook", label: "Facebook" },
+  { value: "linkedin", label: "LinkedIn" },
+  { value: "web", label: "Web" },
+  { value: "referidos", label: "Familiares y/o amigos" },
+  { value: "evento", label: "Evento" },
+  { value: "otro", label: "Otro" },
 ];
 
 export function LeadForm({
@@ -162,6 +196,119 @@ export function LeadForm({
           24 horas hábiles.
         </p>
       </div>
+    );
+  }
+
+  if (variant === "bant") {
+    return (
+      <form onSubmit={handleSubmit} className={cn("space-y-4", className)}>
+        <Input
+          placeholder="Nombre completo *"
+          value={formData.fullName}
+          onChange={(e) => handleChange("fullName", e.target.value)}
+        />
+        <Input
+          placeholder="Email *"
+          type="email"
+          value={formData.email}
+          onChange={(e) => handleChange("email", e.target.value)}
+          className={cn(errors.email && "border-destructive")}
+        />
+        <Input
+          placeholder="Teléfono *"
+          type="tel"
+          value={formData.phone}
+          onChange={(e) => handleChange("phone", e.target.value)}
+        />
+        <Input
+          placeholder="Empresa (si aplica)"
+          value={formData.company}
+          onChange={(e) => handleChange("company", e.target.value)}
+        />
+        <Input
+          placeholder="Cargo / Rol *"
+          value={formData.role}
+          onChange={(e) => handleChange("role", e.target.value)}
+        />
+        <Select
+          value={formData.solution}
+          onValueChange={(v) => handleChange("solution", v)}
+        >
+          <SelectTrigger>
+            <SelectValue placeholder="¿Qué solución estás buscando? *" />
+          </SelectTrigger>
+          <SelectContent>
+            {solutions.map((sol) => (
+              <SelectItem key={sol.value} value={sol.value}>
+                {sol.label}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+        <Select
+          value={formData.timeline}
+          onValueChange={(v) => handleChange("timeline", v)}
+        >
+          <SelectTrigger>
+            <SelectValue placeholder="¿En qué periodo deseas implementar la solución? *" />
+          </SelectTrigger>
+          <SelectContent>
+            {timelines.map((time) => (
+              <SelectItem key={time.value} value={time.value}>
+                {time.label}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+        <Select
+          value={formData.hasBudget}
+          onValueChange={(v) => handleChange("hasBudget", v)}
+        >
+          <SelectTrigger>
+            <SelectValue placeholder="¿Cuenta con un presupuesto? *" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="si">Sí</SelectItem>
+            <SelectItem value="no">No</SelectItem>
+          </SelectContent>
+        </Select>
+        <Select
+          value={formData.howHeard}
+          onValueChange={(v) => handleChange("howHeard", v)}
+        >
+          <SelectTrigger>
+            <SelectValue placeholder="¿Cómo supiste de nosotros? *" />
+          </SelectTrigger>
+          <SelectContent>
+            {howHeardOptions.map((option) => (
+              <SelectItem key={option.value} value={option.value}>
+                {option.label}
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+        {formData.howHeard === "otro" && (
+          <Input
+            placeholder="Especifica cómo nos conociste"
+            value={formData.howHeardOther}
+            onChange={(e) => handleChange("howHeardOther", e.target.value)}
+          />
+        )}
+        <Button 
+          type="submit" 
+          className="w-full bg-gradient-to-r from-[#00ffe3] to-[#00a6d6] hover:from-[#00e6cc] hover:to-[#0090bb] text-black font-bold border-0 transition-all duration-300" 
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? (
+            <>
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+              Enviando...
+            </>
+          ) : (
+            "Enviar solicitud"
+          )}
+        </Button>
+      </form>
     );
   }
 

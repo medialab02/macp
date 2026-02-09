@@ -30,21 +30,21 @@ const navigation = [
   { name: "Inicio", href: "/" },
   { name: "Nosotros", href: "/nosotros" },
   {
-    name: "Portafolio",
-    href: "#",
-    children: [
-      { name: "Soluciones IT", href: "/portafolio/valor-it", icon: ShieldCheck },
-      { name: "Soluciones DaaS", href: "/portafolio/daas", icon: Cloud },
-      { name: "LabPower", href: "/labpower", icon: FlaskConical },
-    ],
-  },
-  {
     name: "Apple",
     href: "/apple",
     children: [
       { name: "Apple para empresas", href: "/mac-para-empresas", icon: Laptop },
       { name: "Apple para educación", href: "/apple-educacion", icon: GraduationCap },
       { name: "Catálogo Apple", href: "/mac", icon: Monitor },
+    ],
+  },
+  {
+    name: "Portafolio",
+    href: "#",
+    children: [
+      { name: "Soluciones IT", href: "/portafolio/valor-it", icon: ShieldCheck },
+      { name: "Soluciones DaaS", href: "/portafolio/daas", icon: Cloud },
+      { name: "LabPower", href: "/labpower", icon: FlaskConical },
     ],
   },
 ];
@@ -75,24 +75,38 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 lg:px-6">
         {/* Logo - color on light, white on dark */}
-        <Link href="/" className="flex items-center">
-          <Image
-            src="/images/macpower-logo-color.svg"
-            alt="MacPower IT Solutions - Apple Business Partner"
-            width={320}
-            height={60}
-            className="h-10 w-auto dark:hidden"
-            priority
-          />
-          <Image
-            src="/images/macpower-logo-white.svg"
-            alt="MacPower IT Solutions - Apple Business Partner"
-            width={320}
-            height={60}
-            className="hidden h-10 w-auto dark:block"
-            priority
-          />
-        </Link>
+        <div className="flex items-center gap-4">
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/images/macpower-logo-color.svg"
+              alt="MacPower IT Solutions - Apple Business Partner"
+              width={320}
+              height={60}
+              className="h-10 w-auto dark:hidden"
+              priority
+            />
+            <Image
+              src="/images/macpower-logo-white.svg"
+              alt="MacPower IT Solutions - Apple Business Partner"
+              width={320}
+              height={60}
+              className="hidden h-10 w-auto dark:block"
+              priority
+            />
+          </Link>
+          
+          {/* Apple Badges - transparent background, visible on desktop */}
+          <div className="hidden lg:flex items-center">
+            <Image
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lwifANTisLt6mzrcmFyXNJMfOphYm1.png"
+              alt="Apple Business Partner & Authorized Service Provider"
+              width={240}
+              height={40}
+              className="h-8 w-auto"
+              priority
+            />
+          </div>
+        </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-1 lg:flex">

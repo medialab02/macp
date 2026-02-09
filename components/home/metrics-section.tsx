@@ -1,13 +1,12 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import { metrics } from "@/lib/data";
 
 const metricsDisplay = [
-  { value: metrics.yearsExperience, suffix: "+", label: "Años de experiencia empresarial" },
-  { value: metrics.countriesPresence, suffix: "", label: "Países con presencia activa" },
-  { value: metrics.enterpriseClients, suffix: "+", label: "Clientes empresariales" },
-  { value: metrics.certifiedTechnicians, suffix: "+", label: "Técnicos certificados Apple" },
+  { value: 15, suffix: "M+", label: "USD ventas anuales" },
+  { value: 25, suffix: "+", label: "Años de experiencia" },
+  { value: 1000, suffix: "+", label: "Proyectos ejecutados" },
+  { value: 8, suffix: "", label: "Países +20 ciudades en la región" },
 ];
 
 function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
@@ -43,7 +42,7 @@ function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
   }, [value]);
 
   return (
-    <div ref={ref} className="text-4xl font-bold text-foreground md:text-5xl">
+    <div ref={ref} className="text-5xl font-bold text-foreground md:text-6xl">
       {count.toLocaleString()}{suffix}
     </div>
   );

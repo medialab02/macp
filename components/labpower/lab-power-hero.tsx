@@ -20,6 +20,9 @@ export function LabPowerHero() {
           <p className="text-xl sm:text-2xl leading-relaxed text-muted-foreground text-pretty max-w-2xl">
             Diagnóstico, reparación y seguimiento de tu equipo con respaldo experto
           </p>
+          <p className="text-base sm:text-lg leading-relaxed text-muted-foreground/80 text-pretty max-w-3xl">
+            Centro Técnico Certificado Apple que protege, repara y extiende la vida útil de tu tecnología con procesos oficiales, repuestos originales y técnicos certificados.
+          </p>
           <div className="pt-4">
             <Button
               onClick={scrollToEstimator}

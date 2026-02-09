@@ -58,13 +58,13 @@ export function CTASection() {
           <div className="rounded-2xl border border-border bg-card p-6 md:p-8">
             <div className="mb-6">
               <h3 className="text-xl font-semibold text-foreground">
-                Suscríbete a nuestro newsletter
+                Contáctanos
               </h3>
-              <p className="mt-1 text-sm text-muted-foreground">
-                Recibe las últimas noticias, novedades y lanzamientos
+              <p className="mt-1 text-sm text-muted-foreground leading-relaxed">
+                Agenda una consultoría sin costo con nuestros especialistas y recibe una propuesta tecnológica alineada a tus objetivos de negocio.
               </p>
             </div>
-            <LeadForm source="home-cta" variant="compact" />
+            <LeadForm source="home-cta-bant" variant="bant" />
           </div>
         </div>
       </div>

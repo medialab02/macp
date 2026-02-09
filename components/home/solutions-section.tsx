@@ -7,38 +7,38 @@ const solutions = [
   {
     id: "daas",
     title: "Soluciones DaaS",
-    description: "Libérate de la gestión de activos. Mac como servicio con mantenimiento, soporte y renovación incluidos.",
+    description: "Liberamos a las empresas de la compra y gestión directa de equipos, ofreciendo Device as a Service con flexibilidad, seguridad y ahorro de costos, asegurando productividad continua y control total de la operación.",
     icon: Cloud,
     href: "#",
-    benefits: ["Sin inversión inicial", "Actualización continua", "Soporte incluido"],
-    accentColor: "#00D3C7",
+    benefits: ["Mantenimiento, soporte y renovación incluidos", "Gestión integral del ciclo de vida", "Costos predecibles y operación sin interrupciones"],
+    accentColor: "#00ffe3",
   },
   {
     id: "valor-it",
-    title: "Soluciones Valor IT",
-    description: "Infraestructura de TI completa. Computación, networking, almacenamiento y servicios profesionales.",
+    title: "Soluciones de Valor IT",
+    description: "Soluciones integrales en infraestructura IT, ciberprotección y ciberrecuperación, con monitoreo SOC 24/7 y servicios profesionales especializados que garantizan la continuidad y resiliencia de tu negocio.",
     icon: Shield,
     href: "#",
-    benefits: ["Consultoría especializada", "Implementación llave en mano", "Monitoreo 24/7"],
-    accentColor: "#60A5FA",
+    benefits: ["SOC 24/7 y respuesta en tiempo real", "Recuperación ante desastres y protección avanzada", "Escalabilidad, bajas latencias y nube accesible"],
+    accentColor: "#00a6d6",
   },
   {
-    id: "mac-empresas",
-    title: "Mac para Empresas",
-    description: "El ecosistema Apple completo para tu organización. Despliegue, gestión MDM y soporte empresarial.",
+    id: "apple",
+    title: "Apple",
+    description: "Diseñamos, implementamos e integramos el ecosistema Apple para que funcione de forma segura, escalable y alineada a cada entorno operativo.",
     icon: Laptop,
     href: "/mac-para-empresas",
-    benefits: ["Zero-touch deployment", "Gestión centralizada", "Seguridad nativa"],
+    benefits: ["Despliegue automatizado (Zero-Touch)", "Gestión centralizada con MDM", "Seguridad nativa y administración eficiente", "Soporte especializado Apple"],
     featured: true,
-    accentColor: "#00E676",
+    accentColor: "#00ffe3",
   },
   {
     id: "labpower",
     title: "LabPower",
-    description: "Servicio técnico certificado Apple. Reparación, mantenimiento y soporte para tu flota de equipos.",
+    description: "Centro Técnico Certificado Apple que ofrece diagnóstico, reparación autorizada, borrado seguro y gestión de garantías de marca y extendidas, asegurando la máxima disponibilidad de tus equipos.",
     icon: Wrench,
     href: "#",
-    benefits: ["Técnicos certificados", "Piezas originales", "SLA empresarial"],
+    benefits: ["Técnicos certificados y repuestos originales", "Garantías extendidas y daño accidental", "Procesos seguros y trazables"],
     accentColor: "#FF8A00",
   },
 ];
@@ -50,10 +50,10 @@ export function SolutionsSection() {
         {/* Header */}
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">
-            Soluciones de valor
+            Soluciones de alto impacto
           </h2>
-          <p className="mx-auto max-w-2xl text-muted-foreground">
-            Soluciones tecnológicas diseñadas para impulsar la operación y continuidad de tu negocio
+          <p className="mx-auto max-w-2xl text-muted-foreground leading-relaxed">
+            Soluciones tecnológicas diseñadas para garantizar continuidad, seguridad y crecimiento en tu operación.
           </p>
         </div>
 
