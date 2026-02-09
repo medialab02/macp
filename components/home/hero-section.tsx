@@ -92,14 +92,14 @@ export function HeroSection() {
         <div className="relative z-10 grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
           {/* Content */}
           <div className="order-2 lg:order-1 relative z-10">
-            <div className="relative">
+            <div className="relative min-h-[280px] md:min-h-[240px]">
               {slides.map((slide, index) => (
                 <div
                   key={slide.id}
                   className={cn(
                     "transition-all duration-500",
                     index === currentSlide
-                      ? "opacity-100"
+                      ? "opacity-100 relative"
                       : "pointer-events-none absolute inset-0 opacity-0"
                   )}
                 >
@@ -119,8 +119,8 @@ export function HeroSection() {
               ))}
             </div>
 
-            {/* CTAs */}
-            <div className="flex flex-wrap gap-4">
+            {/* CTAs - Outside the transition container for proper interactivity */}
+            <div className="flex flex-wrap gap-4 relative z-20">
               <Button 
                 size="lg" 
                 className="bg-gradient-to-r from-[#00ffe3] to-[#00a6d6] hover:from-[#00e6cc] hover:to-[#0090bb] text-black font-bold border-0 transition-all duration-300"
