@@ -13,7 +13,7 @@ const slides = [
     image: "/images/ipad-devices.png",
     title: "Tecnología que impulsa tu negocio al siguiente nivel",
     subtitle: "Diseñamos y operamos soluciones IT que garantizan continuidad, seguridad y rendimiento para organizaciones que no pueden detenerse.",
-    cta: { primary: "Solicitar cotización", primaryHref: "#contacto", secondary: null, secondaryHref: null },
+    cta: { primary: "Solicitar cotización", secondary: null },
   },
   {
     id: 2,
@@ -21,14 +21,14 @@ const slides = [
     title: "Apple integrado, gestionado y optimizado para cada entorno",
     subtitle: "Diseñamos, implementamos y gestionamos el ecosistema Apple para organizaciones e individuos que buscan tecnología confiable, segura y fácil de administrar.",
     description: "Despliegue automatizado, gestión centralizada, seguridad avanzada y soporte certificado en cada etapa.",
-    cta: { primary: "Explora Soluciones Apple", primaryHref: "/mac-para-empresas", secondary: "Conocer Apple con MacPower", secondaryHref: "/mac" },
+    cta: { primary: "Explora Soluciones Apple", secondary: "Conocer Apple con MacPower" },
   },
   {
     id: 3,
     image: "/images/ipad-devices.png",
     title: "Servicio certificado que protege y extiende la vida de tu tecnología Apple",
     subtitle: "Garantías extendidas, servicios profesionales y soporte técnico certificado bajo los estándares oficiales de Apple, con repuestos originales y técnicos especializados.",
-    cta: { primary: "Explorar LabPower", primaryHref: "/labpower", secondary: "Agenda tu servicio", secondaryHref: "#contacto" },
+    cta: { primary: "Explorar LabPower", secondary: "Agenda tu servicio" },
   },
   {
     id: 4,
@@ -36,14 +36,14 @@ const slides = [
     title: "Device as a Service que pone tu tecnología bajo control",
     subtitle: "Gestionamos tu parque tecnológico de forma integral para garantizar productividad continua, costos predecibles y cero interrupciones en la operación.",
     description: "Más que renting: monitoreo, soporte, mantenimiento y gestión proactiva de cada dispositivo durante todo su ciclo de vida.",
-    cta: { primary: "Explorar DaaS", primaryHref: "/portafolio/daas", secondary: "Conoce nuestra propuesta DaaS", secondaryHref: "#contacto" },
+    cta: { primary: "Explorar DaaS", secondary: "Conoce nuestra propuesta DaaS" },
   },
   {
     id: 5,
     image: "/images/ipad-devices.png",
     title: "Infraestructura y ciberseguridad que garantizan la continuidad de tu negocio",
     subtitle: "Diseñamos y operamos infraestructura IT robusta, servicios de ciberseguridad y ciberrecuperación con monitoreo 24/7 para proteger tu operación frente a fallos, ataques y escenarios críticos.",
-    cta: { primary: "Explorar Valor IT", primaryHref: "/portafolio/valor-it", secondary: "Solicitar asesoría", secondaryHref: "#contacto" },
+    cta: { primary: "Explorar Valor IT", secondary: "Solicitar asesoría" },
   },
 ];
 
@@ -126,52 +126,46 @@ export function HeroSection() {
                 className="bg-gradient-to-r from-[#00ffe3] to-[#00a6d6] hover:from-[#00e6cc] hover:to-[#0090bb] text-black font-bold border-0 transition-all duration-300"
                 asChild
               >
-                <Link href={slides[currentSlide].cta.primaryHref}>
+                <Link href="/mac-para-empresas">
                   {slides[currentSlide].cta.primary}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              {slides[currentSlide].cta.secondary && slides[currentSlide].cta.secondaryHref && (
+              {slides[currentSlide].cta.secondary && (
                 <Button size="lg" variant="outline" asChild>
-                  <Link href={slides[currentSlide].cta.secondaryHref}>{slides[currentSlide].cta.secondary}</Link>
+                  <Link href="/mac">{slides[currentSlide].cta.secondary}</Link>
                 </Button>
               )}
             </div>
 
             {/* Slide indicators */}
             <div className="mt-8 flex items-center gap-4">
-              <div className="relative flex items-center">
-                {/* Use the new indicator image */}
-                <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-QcLeJkY0cvXLMsy9NxC3gOscV3TD4O.png"
-                  alt="Slide indicators"
-                  width={120}
-                  height={24}
-                  className="h-6 w-auto"
-                />
-                {/* Clickable overlay for each indicator */}
-                <div className="absolute inset-0 flex">
-                  {slides.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() => goToSlide(index)}
-                      className="flex-1"
-                      aria-label={`Ir a slide ${index + 1}`}
-                    />
-                  ))}
-                </div>
+              <div className="flex gap-2">
+                {slides.map((_, index) => (
+                  <button
+                    key={index}
+                    onClick={() => goToSlide(index)}
+                    className={cn(
+                      "h-2 rounded-full transition-all",
+                      index === currentSlide
+                        ? "w-8 bg-gradient-to-r from-[#00ffe3] to-[#00a6d6]"
+                        : "w-2 bg-white/30 hover:bg-white/50"
+                    )}
+                    aria-label={`Ir a slide ${index + 1}`}
+                  />
+                ))}
               </div>
               <div className="flex gap-1">
                 <button
                   onClick={prevSlide}
-                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-gray-900/40 text-white backdrop-blur-sm transition-all hover:border-[#00ffe3]/60 hover:bg-[#00ffe3]/20"
+                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-gray-900/40 text-white backdrop-blur-sm transition-all hover:border-green-400/40 hover:bg-green-500/20"
                   aria-label="Slide anterior"
                 >
                   <ChevronLeft className="h-4 w-4" />
                 </button>
                 <button
                   onClick={nextSlide}
-                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-gray-900/40 text-white backdrop-blur-sm transition-all hover:border-[#00ffe3]/60 hover:bg-[#00ffe3]/20"
+                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-gray-900/40 text-white backdrop-blur-sm transition-all hover:border-green-400/40 hover:bg-green-500/20"
                   aria-label="Siguiente slide"
                 >
                   <ChevronRight className="h-4 w-4" />

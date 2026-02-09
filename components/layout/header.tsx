@@ -95,14 +95,14 @@ export function Header() {
             />
           </Link>
           
-          {/* Apple Badges - transparent background, always visible */}
-          <div className="hidden lg:flex items-center">
+          {/* Apple Badges - only in dark mode */}
+          <div className="hidden dark:flex items-center">
             <Image
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Of7qneDdSg7dAonYrsaIAY7iWpY4DF.png"
               alt="Apple Business Partner & Authorized Service Provider"
               width={240}
               height={40}
-              className="h-8 w-auto"
+              className="h-8 w-auto opacity-90"
               priority
             />
           </div>
