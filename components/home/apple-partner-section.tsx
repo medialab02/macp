@@ -50,10 +50,10 @@ export function ApplePartnerSection() {
               </div>
               
               <h2 className="mb-4 text-2xl font-bold text-foreground md:text-3xl">
-                Business Partner Apple
+                Apple Business Partner
               </h2>
-              <p className="mb-6 text-muted-foreground">
-                Accede al ecosistema completo de Apple con garantía oficial y soporte especializado para empresas.
+              <p className="mb-6 text-muted-foreground leading-relaxed">
+                Integramos el ecosistema Apple en tu organización con garantía oficial, despliegue ágil y soporte especializado para empresas e individuos.
               </p>
 
               {/* Category tabs */}
@@ -79,12 +79,22 @@ export function ApplePartnerSection() {
                 ))}
               </div>
 
-              <Button asChild>
-                <Link href="/mac">
-                  Conoce el catálogo
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
+              <div className="flex flex-col gap-3 sm:flex-row">
+                <Button 
+                  className="bg-gradient-to-r from-[#00ffe3] to-[#00a6d6] hover:from-[#00e6cc] hover:to-[#0090bb] text-black font-bold border-0 transition-all duration-300"
+                  asChild
+                >
+                  <Link href="/mac">
+                    Conoce el catálogo
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+                <Button variant="outline" asChild>
+                  <Link href="/mac#accesorios">
+                    Accesorios
+                  </Link>
+                </Button>
+              </div>
             </div>
           </div>
 

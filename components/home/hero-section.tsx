@@ -11,20 +11,39 @@ const slides = [
   {
     id: 1,
     image: "/images/ipad-devices.png",
-    title: "Tecnología que impulsa empresas sin límites",
-    subtitle: "En MacPower IT Solutions transformamos la forma en que las organizaciones operan, conectan y se protegen.",
+    title: "Tecnología que impulsa tu negocio al siguiente nivel",
+    subtitle: "Diseñamos y operamos soluciones IT que garantizan continuidad, seguridad y rendimiento para organizaciones que no pueden detenerse.",
+    cta: { primary: "Solicitar cotización", secondary: null },
   },
   {
     id: 2,
     image: "/images/ipad-devices.png",
-    title: "Mac para empresas, listo para TI",
-    subtitle: "Despliegue zero-touch, gestión centralizada y seguridad de nivel empresarial desde el primer día.",
+    title: "Apple integrado, gestionado y optimizado para cada entorno",
+    subtitle: "Diseñamos, implementamos y gestionamos el ecosistema Apple para organizaciones e individuos que buscan tecnología confiable, segura y fácil de administrar.",
+    description: "Despliegue automatizado, gestión centralizada, seguridad avanzada y soporte certificado en cada etapa.",
+    cta: { primary: "Explora Soluciones Apple", secondary: "Conocer Apple con MacPower" },
   },
   {
     id: 3,
     image: "/images/ipad-devices.png",
-    title: "Soluciones IT que aceleran tu negocio",
-    subtitle: "Más de 15 años especializados en ecosistema Apple corporativo con presencia en 5 países.",
+    title: "Servicio certificado que protege y extiende la vida de tu tecnología Apple",
+    subtitle: "Garantías extendidas, servicios profesionales y soporte técnico certificado bajo los estándares oficiales de Apple, con repuestos originales y técnicos especializados.",
+    cta: { primary: "Explorar LabPower", secondary: "Agenda tu servicio" },
+  },
+  {
+    id: 4,
+    image: "/images/ipad-devices.png",
+    title: "Device as a Service que pone tu tecnología bajo control",
+    subtitle: "Gestionamos tu parque tecnológico de forma integral para garantizar productividad continua, costos predecibles y cero interrupciones en la operación.",
+    description: "Más que renting: monitoreo, soporte, mantenimiento y gestión proactiva de cada dispositivo durante todo su ciclo de vida.",
+    cta: { primary: "Explorar DaaS", secondary: "Conoce nuestra propuesta DaaS" },
+  },
+  {
+    id: 5,
+    image: "/images/ipad-devices.png",
+    title: "Infraestructura y ciberseguridad que garantizan la continuidad de tu negocio",
+    subtitle: "Diseñamos y operamos infraestructura IT robusta, servicios de ciberseguridad y ciberrecuperación con monitoreo 24/7 para proteger tu operación frente a fallos, ataques y escenarios críticos.",
+    cta: { primary: "Explorar Valor IT", secondary: "Solicitar asesoría" },
   },
 ];
 
@@ -87,24 +106,36 @@ export function HeroSection() {
                   <h1 className="mb-4 text-3xl font-bold leading-tight text-white drop-shadow-2xl md:text-4xl lg:text-5xl text-balance">
                     {slide.title}
                   </h1>
-                  <p className="mb-8 text-lg text-gray-200 text-pretty">
+                  <p className="mb-4 text-lg text-gray-200 text-pretty leading-relaxed">
                     {slide.subtitle}
                   </p>
+                  {slide.description && (
+                    <p className="mb-8 text-base text-gray-300 text-pretty leading-relaxed">
+                      {slide.description}
+                    </p>
+                  )}
+                  {!slide.description && <div className="mb-8" />}
                 </div>
               ))}
             </div>
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" asChild>
+              <Button 
+                size="lg" 
+                className="bg-gradient-to-r from-[#00ffe3] to-[#00a6d6] hover:from-[#00e6cc] hover:to-[#0090bb] text-black font-bold border-0 transition-all duration-300"
+                asChild
+              >
                 <Link href="/mac-para-empresas">
-                  Solicitar cotización
+                  {slides[currentSlide].cta.primary}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/mac">Explorar Macs</Link>
-              </Button>
+              {slides[currentSlide].cta.secondary && (
+                <Button size="lg" variant="outline" asChild>
+                  <Link href="/mac">{slides[currentSlide].cta.secondary}</Link>
+                </Button>
+              )}
             </div>
 
             {/* Slide indicators */}
@@ -117,7 +148,7 @@ export function HeroSection() {
                     className={cn(
                       "h-2 rounded-full transition-all",
                       index === currentSlide
-                        ? "w-8 bg-green-400 shadow-lg shadow-green-500/50"
+                        ? "w-8 bg-gradient-to-r from-[#00ffe3] to-[#00a6d6]"
                         : "w-2 bg-white/30 hover:bg-white/50"
                     )}
                     aria-label={`Ir a slide ${index + 1}`}

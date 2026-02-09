@@ -40,19 +40,16 @@ const footerLinks = {
   contacto: {
     title: "Contacto",
     links: [
-      { name: "Colombia: +57 1 234 5678", href: "tel:+5712345678" },
-      { name: "Chile: +56 2 345 6789", href: "tel:+5623456789" },
-      { name: "info@macpower.com", href: "mailto:info@macpower.com" },
-      { name: "Agendar CITA", href: "#" },
+      { name: "Formulario de contacto", href: "#contacto" },
+      { name: "WhatsApp", href: "https://wa.me/573001234567" },
     ],
   },
 };
 
 const socialLinks = [
-  { name: "Facebook", icon: Facebook, href: "#" },
-  { name: "Twitter", icon: Twitter, href: "#" },
-  { name: "LinkedIn", icon: Linkedin, href: "#" },
-  { name: "Instagram", icon: Instagram, href: "#" },
+  { name: "Instagram", icon: Instagram, href: "https://instagram.com/macpower_itsolutions" },
+  { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/company/macpower-it-solutions" },
+  { name: "Facebook", icon: Facebook, href: "https://facebook.com/macpoweritsolutions" },
 ];
 
 export function Footer() {
@@ -96,6 +93,8 @@ export function Footer() {
                 <Link
                   key={social.name}
                   href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="rounded-full bg-secondary p-2 text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
                   aria-label={social.name}
                 >

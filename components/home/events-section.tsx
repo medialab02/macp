@@ -37,25 +37,9 @@ export function EventsSection() {
           <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">
             Eventos
           </h2>
-          <p className="mx-auto max-w-2xl text-muted-foreground">
-            Explora nuestros eventos exclusivos, webinars y lanzamientos de productos. Conéctate con las últimas tendencias tecnológicas e impulsa tu conocimiento con expertos del sector.
+          <p className="mx-auto max-w-2xl text-muted-foreground leading-relaxed">
+            Espacios diseñados para líderes y equipos de TI donde compartimos tendencias, casos reales y soluciones tecnológicas aplicables al negocio.
           </p>
-        </div>
-
-        {/* Resource buttons */}
-        <div className="mb-8 flex flex-wrap justify-center gap-3">
-          <Button variant="outline" size="sm" asChild>
-            <Link href="#">
-              <Video className="mr-2 h-4 w-4" />
-              Webinars grabados
-            </Link>
-          </Button>
-          <Button variant="outline" size="sm" asChild>
-            <Link href="#">
-              <Users className="mr-2 h-4 w-4" />
-              Guías B2B
-            </Link>
-          </Button>
         </div>
 
         {/* Events carousel */}
