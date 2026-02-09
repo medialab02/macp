@@ -28,25 +28,30 @@ export function ApplePartnerSection() {
           {/* Left column - Partner info */}
           <div className="lg:col-span-2">
             <div className="sticky top-24">
-              <div className="mb-4 flex items-center gap-3">
-                <Image
-                  src="/images/macpower-logo-color.svg"
-                  alt="MacPower"
-                  width={150}
-                  height={30}
-                  className="h-10 w-auto dark:hidden"
-                />
-                <Image
-                  src="/images/macpower-logo-white.svg"
-                  alt="MacPower"
-                  width={150}
-                  height={30}
-                  className="hidden h-10 w-auto dark:block"
-                />
-                <div className="flex items-center gap-1.5 rounded-full bg-secondary px-3 py-1 text-xs">
-                  <Apple className="h-3 w-3" />
-                  Business Partner
+              <div className="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center">
+                <div className="flex items-center gap-3">
+                  <Image
+                    src="/images/macpower-logo-color.svg"
+                    alt="MacPower"
+                    width={150}
+                    height={30}
+                    className="h-10 w-auto dark:hidden"
+                  />
+                  <Image
+                    src="/images/macpower-logo-white.svg"
+                    alt="MacPower"
+                    width={150}
+                    height={30}
+                    className="hidden h-10 w-auto dark:block"
+                  />
                 </div>
+                <Image
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lwifANTisLt6mzrcmFyXNJMfOphYm1.png"
+                  alt="Apple Business Partner & Authorized Service Provider"
+                  width={240}
+                  height={40}
+                  className="h-8 w-auto"
+                />
               </div>
               
               <h2 className="mb-4 text-2xl font-bold text-foreground md:text-3xl">
