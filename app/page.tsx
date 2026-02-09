@@ -10,7 +10,6 @@ import { EventsSection } from "@/components/home/events-section";
 import { BlogSection } from "@/components/home/blog-section";
 import { CTASection } from "@/components/home/cta-section";
 import { StickyCTA } from "@/components/shared/sticky-cta";
-import { OffersSection } from "@/components/shared/offers-section";
 
 export default function HomePage() {
   return (
@@ -19,7 +18,6 @@ export default function HomePage() {
       <main>
         <HeroSection />
         <MetricsSection />
-        <OffersSection />
         <SolutionsSection />
         <ApplePartnerSection />
         <PartnersSection />
