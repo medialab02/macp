@@ -143,14 +143,14 @@ export function HeroSection() {
             </div>
 
             {/* Slide indicators */}
-            <div className="mt-8 flex items-center gap-4">
+            <div className="mt-8 flex items-center gap-4 relative z-40">
               <div className="flex gap-2">
                 {slides.map((_, index) => (
                   <button
                     key={index}
                     onClick={() => goToSlide(index)}
                     className={cn(
-                      "h-2 rounded-full transition-all",
+                      "h-2 rounded-full transition-all relative z-40 cursor-pointer",
                       index === currentSlide
                         ? "w-8 bg-gradient-to-r from-[#00ffe3] to-[#00a6d6]"
                         : "w-2 bg-white/30 hover:bg-white/50"
@@ -159,17 +159,17 @@ export function HeroSection() {
                   />
                 ))}
               </div>
-              <div className="flex gap-1">
+              <div className="flex gap-1 relative z-40">
                 <button
                   onClick={prevSlide}
-                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-gray-900/40 text-white backdrop-blur-sm transition-all hover:border-green-400/40 hover:bg-green-500/20"
+                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-gray-900/40 text-white backdrop-blur-sm transition-all hover:border-green-400/40 hover:bg-green-500/20 cursor-pointer relative z-40"
                   aria-label="Slide anterior"
                 >
                   <ChevronLeft className="h-4 w-4" />
                 </button>
                 <button
                   onClick={nextSlide}
-                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-gray-900/40 text-white backdrop-blur-sm transition-all hover:border-green-400/40 hover:bg-green-500/20"
+                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-gray-900/40 text-white backdrop-blur-sm transition-all hover:border-green-400/40 hover:bg-green-500/20 cursor-pointer relative z-40"
                   aria-label="Siguiente slide"
                 >
                   <ChevronRight className="h-4 w-4" />
