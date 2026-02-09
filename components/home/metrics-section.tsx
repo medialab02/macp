@@ -43,7 +43,7 @@ function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
   }, [value]);
 
   return (
-    <div ref={ref} className="text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[rgb(0,255,227)] to-[rgb(0,166,214)] md:text-6xl tracking-tight">
+    <div ref={ref} className="text-4xl font-bold text-foreground md:text-5xl">
       {count.toLocaleString()}{suffix}
     </div>
   );
@@ -52,13 +52,13 @@ function AnimatedCounter({ value, suffix }: { value: number; suffix: string }) {
 export function MetricsSection() {
   return (
     <section className="relative -mt-6 z-10 mx-auto max-w-6xl px-4 lg:px-6">
-      <div className="rounded-2xl bg-gradient-to-r from-[rgb(0,255,227)]/10 via-card to-[rgb(0,166,214)]/10 p-1 shadow-2xl">
-        <div className="rounded-xl bg-card/95 backdrop-blur-sm px-6 py-10 md:px-12 md:py-12 border border-white/5">
-          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="rounded-2xl bg-gradient-to-r from-primary/10 via-card to-primary/10 p-1">
+        <div className="rounded-xl bg-card px-6 py-8 md:px-12 md:py-10">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
             {metricsDisplay.map((metric) => (
-              <div key={metric.label} className="text-center group">
+              <div key={metric.label} className="text-center">
                 <AnimatedCounter value={metric.value} suffix={metric.suffix} />
-                <p className="mt-3 text-sm font-medium text-muted-foreground leading-relaxed">{metric.label}</p>
+                <p className="mt-2 text-sm text-muted-foreground">{metric.label}</p>
               </div>
             ))}
           </div>

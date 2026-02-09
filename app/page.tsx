@@ -19,7 +19,7 @@ export default function HomePage() {
       <main>
         <HeroSection />
         <MetricsSection />
-        {/* <OffersSection /> - Hidden per requirements */}
+        <OffersSection />
         <SolutionsSection />
         <ApplePartnerSection />
         <PartnersSection />

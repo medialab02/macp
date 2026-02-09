@@ -37,21 +37,22 @@ const footerLinks = {
       { name: "Contacto", href: "#" },
     ],
   },
-  recursos: {
-    title: "Recursos",
+  contacto: {
+    title: "Contacto",
     links: [
-      { name: "Blog", href: "#" },
-      { name: "Casos de éxito", href: "#" },
-      { name: "Eventos", href: "#" },
-      { name: "Soporte", href: "#" },
+      { name: "Colombia: +57 1 234 5678", href: "tel:+5712345678" },
+      { name: "Chile: +56 2 345 6789", href: "tel:+5623456789" },
+      { name: "info@macpower.com", href: "mailto:info@macpower.com" },
+      { name: "Agendar CITA", href: "#" },
     ],
   },
 };
 
 const socialLinks = [
-  { name: "Instagram", icon: Instagram, href: "https://instagram.com/macpower_itsolutions" },
-  { name: "LinkedIn", icon: Linkedin, href: "https://linkedin.com/company/macpower-it-solutions" },
-  { name: "Facebook", icon: Facebook, href: "https://facebook.com/macpoweritsolutions" },
+  { name: "Facebook", icon: Facebook, href: "#" },
+  { name: "Twitter", icon: Twitter, href: "#" },
+  { name: "LinkedIn", icon: Linkedin, href: "#" },
+  { name: "Instagram", icon: Instagram, href: "#" },
 ];
 
 export function Footer() {
@@ -83,21 +84,19 @@ export function Footer() {
                 className="hidden h-8 w-auto dark:block"
               />
             </Link>
-            <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
-              Partner estratégico en soluciones IT empresariales. Continuidad, seguridad y soporte especializado.
+            <p className="mt-4 text-sm text-muted-foreground">
+              Somos tu aliado para facilitar la inversión de soluciones IT que optimicen los procesos de tu empresa.
             </p>
-            <div className="mt-4 flex items-center gap-2 text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[rgb(0,255,227)] to-[rgb(0,166,214)]">
-              <Apple className="h-4 w-4 text-[rgb(0,255,227)]" />
-              <span>Apple Business Partner</span>
+            <div className="mt-4 flex items-center gap-2 text-sm text-muted-foreground">
+              <Apple className="h-4 w-4" />
+              <span>Apple Authorized Reseller</span>
             </div>
             <div className="mt-6 flex gap-3">
               {socialLinks.map((social) => (
                 <Link
                   key={social.name}
                   href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-full bg-secondary p-2 text-muted-foreground transition-all duration-300 hover:bg-gradient-to-r hover:from-[rgb(0,255,227)] hover:to-[rgb(0,166,214)] hover:text-black hover:scale-110"
+                  className="rounded-full bg-secondary p-2 text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
                   aria-label={social.name}
                 >
                   <social.icon className="h-4 w-4" />

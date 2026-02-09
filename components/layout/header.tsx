@@ -103,8 +103,8 @@ export function Header() {
                   <Button
                     variant="ghost"
                     className={cn(
-                      "flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground relative transition-all duration-300 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-[rgb(0,255,227)] after:to-[rgb(0,166,214)] after:transition-all after:duration-300 hover:after:w-3/4",
-                      isParentActive(item) && "text-[rgb(0,255,227)] font-semibold after:w-3/4"
+                      "flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground",
+                      isParentActive(item) && "text-[#2dd4bf] font-medium"
                     )}
                   >
                     {item.name}
@@ -120,8 +120,8 @@ export function Header() {
                       <Link
                         href={child.href}
                         className={cn(
-                          "flex items-center gap-2 cursor-pointer w-full rounded-full px-4 py-2 text-sm text-gray-300 transition-all duration-300 hover:bg-gradient-to-r hover:from-[rgb(0,255,227)] hover:to-[rgb(0,166,214)] hover:text-black focus:bg-gradient-to-r focus:from-[rgb(0,255,227)] focus:to-[rgb(0,166,214)] focus:text-black hover:scale-105 hover:shadow-md",
-                          mounted && pathname === child.href && "bg-gradient-to-r from-[rgb(0,255,227)] to-[rgb(0,166,214)] text-black font-semibold"
+                          "flex items-center gap-2 cursor-pointer w-full rounded-full px-4 py-2 text-sm text-gray-300 transition-all hover:bg-[#2dd4bf] hover:text-black focus:bg-[#2dd4bf] focus:text-black",
+                          mounted && pathname === child.href && "bg-[#2dd4bf] text-black"
                         )}
                       >
                         {child.icon && (
@@ -139,8 +139,8 @@ export function Header() {
                 variant="ghost"
                 asChild
                 className={cn(
-                  "text-sm text-muted-foreground hover:text-foreground relative transition-all duration-300 after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:h-0.5 after:w-0 after:bg-gradient-to-r after:from-[rgb(0,255,227)] after:to-[rgb(0,166,214)] after:transition-all after:duration-300 hover:after:w-3/4",
-                  isItemActive(item.href) && "text-[rgb(0,255,227)] font-semibold after:w-3/4"
+                  "text-sm text-muted-foreground hover:text-foreground",
+                  isItemActive(item.href) && "text-[#2dd4bf] font-medium"
                 )}
               >
                 <Link href={item.href}>{item.name}</Link>
@@ -160,7 +160,7 @@ export function Header() {
           <Button
             asChild
             size="sm"
-            className="hidden lg:flex bg-gradient-to-r from-[rgb(0,255,227)] to-[rgb(0,166,214)] hover:from-[rgb(0,235,207)] hover:to-[rgb(0,146,194)] text-black font-semibold border-0 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50"
+            className="hidden lg:flex bg-gradient-to-r from-green-600 to-cyan-600 hover:from-green-700 hover:to-cyan-700 text-white border-0"
           >
             <Link href="#contacto">Contáctanos</Link>
           </Button>

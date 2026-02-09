@@ -1,12 +1,9 @@
 import React from "react"
 import type { Metadata, Viewport } from 'next'
-import { Lato } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 
-const lato = Lato({ 
-  subsets: ["latin"],
-  weight: ["300", "400", "700", "900"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'MacPower | Mac para Empresas - Apple Business Partner',
@@ -28,7 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className="dark" suppressHydrationWarning>
-      <body className={`${lato.className} antialiased bg-black text-white`}>
+      <body className={`${inter.className} antialiased bg-black text-white`}>
         {children}
       </body>
     </html>

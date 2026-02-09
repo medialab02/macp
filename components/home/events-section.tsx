@@ -34,25 +34,26 @@ export function EventsSection() {
       <div className="mx-auto max-w-7xl px-4 lg:px-6">
         {/* Header */}
         <div className="mb-10 text-center">
-          <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl tracking-tight">
+          <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">
             Eventos
           </h2>
-          <p className="mx-auto max-w-2xl text-lg text-muted-foreground leading-relaxed">
-            Liderazgo tecnológico, seguridad empresarial y tendencias IT. Conecta con expertos que impulsan la transformación digital corporativa.
+          <p className="mx-auto max-w-2xl text-muted-foreground">
+            Explora nuestros eventos exclusivos, webinars y lanzamientos de productos. Conéctate con las últimas tendencias tecnológicas e impulsa tu conocimiento con expertos del sector.
           </p>
         </div>
 
         {/* Resource buttons */}
         <div className="mb-8 flex flex-wrap justify-center gap-3">
-          <Button 
-            variant="outline" 
-            size="sm" 
-            className="border-2 hover:border-[rgb(0,255,227)] hover:bg-[rgb(0,255,227)]/10 transition-all duration-300"
-            asChild
-          >
+          <Button variant="outline" size="sm" asChild>
+            <Link href="#">
+              <Video className="mr-2 h-4 w-4" />
+              Webinars grabados
+            </Link>
+          </Button>
+          <Button variant="outline" size="sm" asChild>
             <Link href="#">
               <Users className="mr-2 h-4 w-4" />
-              Recursos empresariales
+              Guías B2B
             </Link>
           </Button>
         </div>
@@ -69,16 +70,16 @@ export function EventsSection() {
                 return (
                   <Card
                     key={event.id}
-                    className="w-full flex-shrink-0 overflow-hidden border-border/50 bg-secondary/30 md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] group hover:border-[rgb(0,255,227)]/50 transition-all duration-300"
+                    className="w-full flex-shrink-0 overflow-hidden border-border/50 bg-secondary/30 md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
                   >
                     <div className="relative aspect-[16/10] overflow-hidden">
                       <Image
                         src={event.image || "/placeholder.svg"}
                         alt={event.title}
                         fill
-                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                        className="object-cover"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-background/90 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
                       
                       {/* Date badge */}
                       <div className="absolute left-4 top-4 rounded-lg bg-background/90 px-3 py-2 text-center backdrop-blur">

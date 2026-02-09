@@ -11,20 +11,20 @@ const slides = [
   {
     id: 1,
     image: "/images/ipad-devices.png",
-    title: "Continuidad empresarial con tecnología Apple",
-    subtitle: "Implementamos soluciones IT seguras y confiables que mantienen tu operación activa sin interrupciones.",
+    title: "Tecnología que impulsa empresas sin límites",
+    subtitle: "En MacPower IT Solutions transformamos la forma en que las organizaciones operan, conectan y se protegen.",
   },
   {
     id: 2,
     image: "/images/ipad-devices.png",
-    title: "Mac para empresas. Listo desde el día uno.",
-    subtitle: "Despliegue automatizado, gestión MDM centralizada y seguridad empresarial integrada.",
+    title: "Mac para empresas, listo para TI",
+    subtitle: "Despliegue zero-touch, gestión centralizada y seguridad de nivel empresarial desde el primer día.",
   },
   {
     id: 3,
     image: "/images/ipad-devices.png",
-    title: "Tu aliado estratégico en soluciones IT",
-    subtitle: "15+ años respaldando la operación de empresas líderes en Colombia, Chile, Perú, Ecuador y Bolivia.",
+    title: "Soluciones IT que aceleran tu negocio",
+    subtitle: "Más de 15 años especializados en ecosistema Apple corporativo con presencia en 5 países.",
   },
 ];
 
@@ -84,10 +84,10 @@ export function HeroSection() {
                       : "pointer-events-none absolute inset-0 opacity-0"
                   )}
                 >
-                  <h1 className="mb-4 text-3xl font-black leading-[1.2] text-white drop-shadow-2xl md:text-4xl lg:text-5xl text-balance tracking-tight">
+                  <h1 className="mb-4 text-3xl font-bold leading-tight text-white drop-shadow-2xl md:text-4xl lg:text-5xl text-balance">
                     {slide.title}
                   </h1>
-                  <p className="mb-8 text-lg leading-relaxed text-gray-200 text-pretty md:text-xl">
+                  <p className="mb-8 text-lg text-gray-200 text-pretty">
                     {slide.subtitle}
                   </p>
                 </div>
@@ -96,22 +96,13 @@ export function HeroSection() {
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-[rgb(0,255,227)] to-[rgb(0,166,214)] hover:from-[rgb(0,235,207)] hover:to-[rgb(0,146,194)] text-black font-bold border-0 transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50 group"
-                asChild
-              >
+              <Button size="lg" asChild>
                 <Link href="/mac-para-empresas">
                   Solicitar cotización
-                  <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                  <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="border-2 border-white/20 hover:border-[rgb(0,255,227)] hover:bg-[rgb(0,255,227)]/10 transition-all duration-300"
-                asChild
-              >
+              <Button size="lg" variant="outline" asChild>
                 <Link href="/mac">Explorar Macs</Link>
               </Button>
             </div>
@@ -124,9 +115,9 @@ export function HeroSection() {
                     key={index}
                     onClick={() => goToSlide(index)}
                     className={cn(
-                      "h-2 rounded-full transition-all duration-300",
+                      "h-2 rounded-full transition-all",
                       index === currentSlide
-                        ? "w-8 bg-gradient-to-r from-[rgb(0,255,227)] to-[rgb(0,166,214)] shadow-lg shadow-cyan-500/50"
+                        ? "w-8 bg-green-400 shadow-lg shadow-green-500/50"
                         : "w-2 bg-white/30 hover:bg-white/50"
                     )}
                     aria-label={`Ir a slide ${index + 1}`}
@@ -136,14 +127,14 @@ export function HeroSection() {
               <div className="flex gap-1">
                 <button
                   onClick={prevSlide}
-                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-gray-900/40 text-white backdrop-blur-sm transition-all duration-300 hover:border-[rgb(0,255,227)]/60 hover:bg-[rgb(0,255,227)]/20 hover:scale-110"
+                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-gray-900/40 text-white backdrop-blur-sm transition-all hover:border-green-400/40 hover:bg-green-500/20"
                   aria-label="Slide anterior"
                 >
                   <ChevronLeft className="h-4 w-4" />
                 </button>
                 <button
                   onClick={nextSlide}
-                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-gray-900/40 text-white backdrop-blur-sm transition-all duration-300 hover:border-[rgb(0,255,227)]/60 hover:bg-[rgb(0,255,227)]/20 hover:scale-110"
+                  className="flex h-8 w-8 items-center justify-center rounded-full border border-white/20 bg-gray-900/40 text-white backdrop-blur-sm transition-all hover:border-green-400/40 hover:bg-green-500/20"
                   aria-label="Siguiente slide"
                 >
                   <ChevronRight className="h-4 w-4" />
