@@ -120,19 +120,26 @@ export function HeroSection() {
             </div>
 
             {/* CTAs - Outside the transition container for proper interactivity */}
-            <div className="flex flex-wrap gap-4 relative z-20">
+            <div className="flex flex-wrap gap-4 relative z-20 pointer-events-auto">
               <Button 
+                key={`primary-${currentSlide}`}
                 size="lg" 
-                className="bg-gradient-to-r from-[#00ffe3] to-[#00a6d6] hover:from-[#00e6cc] hover:to-[#0090bb] text-black font-bold border-0 transition-all duration-300"
+                className="bg-gradient-to-r from-[#00ffe3] to-[#00a6d6] hover:from-[#00e6cc] hover:to-[#0090bb] text-black font-bold border-0 transition-all duration-300 pointer-events-auto"
                 asChild
               >
-                <Link href={slides[currentSlide].cta.primaryHref}>
+                <Link href={slides[currentSlide].cta.primaryHref || "#"}>
                   {slides[currentSlide].cta.primary}
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
               {slides[currentSlide].cta.secondary && slides[currentSlide].cta.secondaryHref && (
-                <Button size="lg" variant="outline" asChild>
+                <Button 
+                  key={`secondary-${currentSlide}`}
+                  size="lg" 
+                  variant="outline" 
+                  className="pointer-events-auto"
+                  asChild
+                >
                   <Link href={slides[currentSlide].cta.secondaryHref}>{slides[currentSlide].cta.secondary}</Link>
                 </Button>
               )}
