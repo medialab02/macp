@@ -30,21 +30,21 @@ const navigation = [
   { name: "Inicio", href: "/" },
   { name: "Nosotros", href: "/nosotros" },
   {
-    name: "Portafolio",
-    href: "#",
-    children: [
-      { name: "Soluciones IT", href: "/portafolio/valor-it", icon: ShieldCheck },
-      { name: "Soluciones DaaS", href: "/portafolio/daas", icon: Cloud },
-      { name: "LabPower", href: "/labpower", icon: FlaskConical },
-    ],
-  },
-  {
     name: "Apple",
     href: "/apple",
     children: [
       { name: "Apple para empresas", href: "/mac-para-empresas", icon: Laptop },
       { name: "Apple para educación", href: "/apple-educacion", icon: GraduationCap },
       { name: "Catálogo Apple", href: "/mac", icon: Monitor },
+    ],
+  },
+  {
+    name: "Portafolio",
+    href: "#",
+    children: [
+      { name: "Soluciones IT", href: "/portafolio/valor-it", icon: ShieldCheck },
+      { name: "Soluciones DaaS", href: "/portafolio/daas", icon: Cloud },
+      { name: "LabPower", href: "/labpower", icon: FlaskConical },
     ],
   },
 ];
