@@ -91,7 +91,7 @@ export function HeroSection() {
         
         <div className="relative z-10 grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
           {/* Content */}
-          <div className="order-2 lg:order-1 relative z-10">
+          <div className="order-2 lg:order-1 relative z-20">
             <div className="relative min-h-[280px] md:min-h-[240px]">
               {slides.map((slide, index) => (
                 <div
@@ -179,8 +179,8 @@ export function HeroSection() {
           </div>
 
           {/* Image carousel */}
-          <div className="order-1 lg:order-2 relative z-10">
-            <div className="relative aspect-[4/3] overflow-visible">
+          <div className="order-1 lg:order-2 relative z-0">
+            <div className="relative aspect-[4/3] overflow-visible pointer-events-none">
               {slides.map((slide, index) => (
                 <div
                   key={slide.id}
