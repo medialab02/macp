@@ -6,41 +6,34 @@ import { useState, useEffect } from "react";
 import { Apple, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const footerLinks = {
-  productos: {
-    title: "Productos",
+  apple: {
+    title: "Apple",
     links: [
-      { name: "MacBook Air", href: "/mac" },
-      { name: "MacBook Pro", href: "/mac" },
-      { name: "iMac", href: "/mac" },
-      { name: "Mac mini", href: "/mac" },
-      { name: "Mac Studio", href: "/mac" },
-      { name: "iPad", href: "#" },
-      { name: "iPhone", href: "#" },
+      { name: "Apple para empresas", href: "/mac-para-empresas" },
+      { name: "Apple para educación", href: "/apple-educacion" },
+      { name: "Catálogo Apple", href: "/mac" },
     ],
   },
-  servicios: {
-    title: "Servicios",
+  portafolio: {
+    title: "Portafolio",
     links: [
-      { name: "Consultoría Movilidad", href: "#" },
-      { name: "Valor IT", href: "#" },
-      { name: "LabPower", href: "#" },
-      { name: "Soluciones de Software", href: "#" },
+      { name: "Soluciones IT", href: "/portafolio/valor-it" },
+      { name: "Soluciones DaaS", href: "/portafolio/daas" },
+      { name: "LabPower", href: "/labpower" },
     ],
   },
   empresa: {
     title: "Empresa",
     links: [
       { name: "Inicio", href: "/" },
-      { name: "Nosotros", href: "#" },
-      { name: "Blog", href: "#" },
-      { name: "Eventos", href: "#" },
-      { name: "Contacto", href: "#" },
+      { name: "Nosotros", href: "/nosotros" },
+      { name: "Eventos", href: "/#eventos" },
     ],
   },
   contacto: {
     title: "Contacto",
     links: [
-      { name: "Formulario de contacto", href: "#contacto" },
+      { name: "Formulario de contacto", href: "/#contacto" },
       { name: "WhatsApp", href: "https://wa.me/573001234567" },
     ],
   },
