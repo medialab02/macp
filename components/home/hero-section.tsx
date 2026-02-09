@@ -99,8 +99,8 @@ export function HeroSection() {
                   className={cn(
                     "transition-all duration-500",
                     index === currentSlide
-                      ? "opacity-100 relative"
-                      : "pointer-events-none absolute inset-0 opacity-0"
+                      ? "opacity-100 relative z-10"
+                      : "opacity-0 absolute inset-0 z-0 invisible"
                   )}
                 >
                   <h1 className="mb-4 text-3xl font-bold leading-tight text-white drop-shadow-2xl md:text-4xl lg:text-5xl text-balance">
@@ -120,11 +120,10 @@ export function HeroSection() {
             </div>
 
             {/* CTAs - Outside the transition container for proper interactivity */}
-            <div className="flex flex-wrap gap-4 relative z-20 pointer-events-auto">
+            <div className="flex flex-wrap gap-4 relative z-30">
               <Button 
-                key={`primary-${currentSlide}`}
                 size="lg" 
-                className="bg-gradient-to-r from-[#00ffe3] to-[#00a6d6] hover:from-[#00e6cc] hover:to-[#0090bb] text-black font-bold border-0 transition-all duration-300 pointer-events-auto"
+                className="bg-gradient-to-r from-[#00ffe3] to-[#00a6d6] hover:from-[#00e6cc] hover:to-[#0090bb] text-black font-bold border-0 transition-all duration-300"
                 asChild
               >
                 <Link href={slides[currentSlide].cta.primaryHref || "#"}>
@@ -134,10 +133,8 @@ export function HeroSection() {
               </Button>
               {slides[currentSlide].cta.secondary && slides[currentSlide].cta.secondaryHref && (
                 <Button 
-                  key={`secondary-${currentSlide}`}
                   size="lg" 
-                  variant="outline" 
-                  className="pointer-events-auto"
+                  variant="outline"
                   asChild
                 >
                   <Link href={slides[currentSlide].cta.secondaryHref}>{slides[currentSlide].cta.secondary}</Link>
