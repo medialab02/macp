@@ -67,14 +67,15 @@ export function PartnersSection() {
               {[...partners, ...partners].map((partner, index) => (
                 <div
                   key={`${partner.name}-${index}`}
-                  className="flex-shrink-0"
+                  className="flex-shrink-0 flex items-center justify-center"
                 >
-                  <div className="relative h-16 w-36 grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100 dark:brightness-0 dark:invert dark:hover:brightness-100 dark:hover:invert-0">
+                  <div className="grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100 hover:scale-105">
                     <Image
                       src={partner.logo}
                       alt={partner.name}
-                      fill
-                      className="object-contain"
+                      width={181}
+                      height={112}
+                      className="h-16 w-auto object-contain"
                     />
                   </div>
                 </div>
