@@ -4,13 +4,16 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 
 const partners = [
-  { name: "Targus", logo: "/images/partners/targus.png" },
-  { name: "Cross Identity", logo: "/images/partners/crossidentity.png" },
-  { name: "Canon", logo: "/images/partners/canon.png" },
-  { name: "Huawei", logo: "/images/partners/huawei.png" },
-  { name: "Aruba", logo: "/images/partners/aruba.png" },
-  { name: "Asus", logo: "/images/partners/asus.png" },
-  { name: "BeyondTrust", logo: "/images/partners/beyondtrust.png" },
+  { name: "Canon", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/181x112px%20banner%20aliado%20%2020%201-fUC4zuD6pmJgzV4UMq1CB4gKS60pv8.png" },
+  { name: "Cross Identity", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/181x112px%20banner%20aliad%2025o%20%201-yWyIbIqlWVPaNBtjoTPqjUkEV7ZXc4.png" },
+  { name: "Targus", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/181x112px%20banner%20aliado%20%2021%201-Pxf5hyWHgil9EhHfPbysmGuHhsRrbP.png" },
+  { name: "ASUS", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/181x112px%20banner%20aliado%20%2016_1%201-WgS1h8qBDU1fd6VH47A7gjMBv1b4zI.png" },
+  { name: "Aruba", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/181x112px%20banner%20aliado%20%2016%201-oAhtIUaQNQuUVmgK1PjQiGwWZYh4HX.png" },
+  { name: "Comforte", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/181x112px%20banner%20aliado%20%2024%201-YxbIYmNH66J9RPkLn0TwQzYbgYnsu3.png" },
+  { name: "Vertiv", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/181x112px%20banner%20aliado%20%2026%201-UBqa4ITvcRva2kJj7Y8MqmSSgsMkzh.png" },
+  { name: "Hewlett Packard Enterprise", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/181x112px%20banner%20aliado%20%2028%201-CkByi8T3zSrGLrwVwQ2rlYmVDb2Ebd.png" },
+  { name: "Huawei", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/181x112px%20banner%20aliado%2044%201-9AjgzgKyQSpM6KDWMQx7RQmT9xAzWL.png" },
+  { name: "BeyondTrust", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/181x112px%20banner%20aliado%20%2019%201-RiMvw7qMCUsNz5wazsjE4RlWByucWL.png" },
 ];
 
 export function PartnersSection() {
@@ -64,14 +67,15 @@ export function PartnersSection() {
               {[...partners, ...partners].map((partner, index) => (
                 <div
                   key={`${partner.name}-${index}`}
-                  className="flex-shrink-0"
+                  className="flex-shrink-0 flex items-center justify-center"
                 >
-                  <div className="relative h-16 w-36 grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100 dark:brightness-0 dark:invert dark:hover:brightness-100 dark:hover:invert-0">
+                  <div className="grayscale opacity-60 transition-all duration-300 hover:grayscale-0 hover:opacity-100 hover:scale-105">
                     <Image
                       src={partner.logo}
                       alt={partner.name}
-                      fill
-                      className="object-contain"
+                      width={181}
+                      height={112}
+                      className="h-16 w-auto object-contain"
                     />
                   </div>
                 </div>

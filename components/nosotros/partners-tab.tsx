@@ -2,12 +2,16 @@ import Image from "next/image";
 
 export function PartnersTab() {
   const partners = [
-    { name: "Partner 1", logo: "/images/partners/partner1.svg" },
-    { name: "Partner 2", logo: "/images/partners/partner2.svg" },
-    { name: "Partner 3", logo: "/images/partners/partner3.svg" },
-    { name: "Partner 4", logo: "/images/partners/partner4.svg" },
-    { name: "Partner 5", logo: "/images/partners/partner5.svg" },
-    { name: "Partner 6", logo: "/images/partners/partner6.svg" },
+    { name: "Canon", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/181x112px%20banner%20aliado%20%2020%201-fUC4zuD6pmJgzV4UMq1CB4gKS60pv8.png" },
+    { name: "Cross Identity", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/181x112px%20banner%20aliad%2025o%20%201-yWyIbIqlWVPaNBtjoTPqjUkEV7ZXc4.png" },
+    { name: "Targus", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/181x112px%20banner%20aliado%20%2021%201-Pxf5hyWHgil9EhHfPbysmGuHhsRrbP.png" },
+    { name: "ASUS", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/181x112px%20banner%20aliado%20%2016_1%201-WgS1h8qBDU1fd6VH47A7gjMBv1b4zI.png" },
+    { name: "Aruba", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/181x112px%20banner%20aliado%20%2016%201-oAhtIUaQNQuUVmgK1PjQiGwWZYh4HX.png" },
+    { name: "Comforte", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/181x112px%20banner%20aliado%20%2024%201-YxbIYmNH66J9RPkLn0TwQzYbgYnsu3.png" },
+    { name: "Vertiv", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/181x112px%20banner%20aliado%20%2026%201-UBqa4ITvcRva2kJj7Y8MqmSSgsMkzh.png" },
+    { name: "Hewlett Packard Enterprise", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/181x112px%20banner%20aliado%20%2028%201-CkByi8T3zSrGLrwVwQ2rlYmVDb2Ebd.png" },
+    { name: "Huawei", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/181x112px%20banner%20aliado%2044%201-9AjgzgKyQSpM6KDWMQx7RQmT9xAzWL.png" },
+    { name: "BeyondTrust", logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/181x112px%20banner%20aliado%20%2019%201-RiMvw7qMCUsNz5wazsjE4RlWByucWL.png" },
   ];
 
   return (
@@ -20,7 +24,7 @@ export function PartnersTab() {
         </div>
 
         <div className="bg-card/50 border border-border/50 rounded-2xl p-8 md:p-12">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 items-center">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
             {partners.map((partner, idx) => (
               <div
                 key={idx}
@@ -29,9 +33,9 @@ export function PartnersTab() {
                 <Image
                   src={partner.logo}
                   alt={partner.name}
-                  width={80}
-                  height={40}
-                  className="w-full h-auto max-w-[80px]"
+                  width={181}
+                  height={112}
+                  className="w-full h-auto max-w-[120px]"
                 />
               </div>
             ))}
