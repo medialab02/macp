@@ -3,24 +3,24 @@ import Image from "next/image";
 export function TeamSection() {
   const team = [
     {
-      name: "David Alejandro Daza Delgado",
-      role: "CEO (Chief Executive Officer)",
-      image: "/images/nosotros/team/david-daza.jpg"
+      name: "Luz Adriana Rojas Posada",
+      role: "Marketing Manager LATAM",
+      image: "/images/nosotros/team/luz-adriana.jpg"
     },
     {
-      name: "Juan Felipe Galindo Vargas",
-      role: "CSMO (Chief Sales and Marketing Officer)",
-      image: "/images/nosotros/team/juan-felipe-galindo.jpg"
+      name: "Lucas Riccio",
+      role: "Transactional Commercial Manager LATAM",
+      image: "/images/nosotros/team/lucas-riccio.jpg"
     },
     {
-      name: "Juan Camilo Galindo Vargas",
-      role: "CFO (Chief Financial Officer)",
-      image: "/images/nosotros/team/juan-camilo-galindo.jpg"
+      name: "Juana Perez Gonzalez",
+      role: "Value Unit Manager LATAM",
+      image: "/images/nosotros/team/juana-perez.jpg"
     },
     {
-      name: "Juan Carlos Carranza Martinez",
-      role: "Country Manager, Colombia",
-      image: "/images/nosotros/team/juan-carlos-carranza.jpg"
+      name: "Katterin Parra Robayo",
+      role: "Service Unit Manager",
+      image: "/images/nosotros/team/katterin-parra.jpg"
     },
   ];
 
