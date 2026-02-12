@@ -4,7 +4,7 @@ import { HeroAbout } from "@/components/nosotros/hero-about";
 import { HistoryTabs } from "@/components/nosotros/history-tabs";
 import { TeamSection } from "@/components/nosotros/team-section";
 import { PartnersTab } from "@/components/nosotros/partners-tab";
-import { NewsletterCTA } from "@/components/nosotros/newsletter-cta";
+import { ContactFormSection } from "@/components/nosotros/contact-form-section";
 import { StickyCTA } from "@/components/shared/sticky-cta";
 
 export default function NosotrosPage() {
@@ -16,7 +16,7 @@ export default function NosotrosPage() {
         <HistoryTabs />
         <TeamSection />
         <PartnersTab />
-        <NewsletterCTA />
+        <ContactFormSection />
       </main>
       <Footer />
       <StickyCTA />
