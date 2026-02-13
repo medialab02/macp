@@ -150,7 +150,7 @@ export default function DaaSPage() {
       />
 
       <ImageHighlight 
-        imageSrc="/images/portafolio/daas/banner.jpg"
+        imageSrc="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/banner-complemento-1500x600px-8aqmuqJ7n0EqBAiUMD5xJKkjWQjsRr.png"
         text="Menos interrupciones. Más control. Mejor previsibilidad."
       />
 
