@@ -111,10 +111,10 @@ export function HeroSection() {
       {/* Dark overlay for text readability */}
       <div className="absolute inset-0 z-[2] bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
       
-      <div className="relative mx-auto max-w-7xl px-4 py-12 lg:px-6 lg:py-20 z-10">
+      <div className="relative mx-auto max-w-7xl px-4 py-12 lg:px-6 lg:py-20 z-10 w-full">
         <div className="max-w-2xl">
           {/* Content */}
-          <div className="relative z-20">
+          <div className="relative z-20 flex flex-col items-start">
             <div className="relative min-h-[280px] md:min-h-[240px]">
               {slides.map((slide, index) => (
                 <div
