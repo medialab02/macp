@@ -126,14 +126,14 @@ export function HeroSection() {
                       : "opacity-0 absolute inset-0 z-0 invisible"
                   )}
                 >
-                  <h1 className="mb-4 text-3xl font-bold leading-tight text-white drop-shadow-2xl md:text-4xl lg:text-5xl text-balance">
+                  <h1 className="mb-4 text-3xl font-bold leading-tight text-white drop-shadow-2xl md:text-4xl lg:text-5xl text-balance text-left">
                     {slide.title}
                   </h1>
-                  <p className="mb-4 text-lg text-gray-200 text-pretty leading-relaxed">
+                  <p className="mb-4 text-lg text-gray-200 text-pretty leading-relaxed text-left">
                     {slide.subtitle}
                   </p>
                   {slide.description && (
-                    <p className="mb-8 text-base text-gray-300 text-pretty leading-relaxed">
+                    <p className="mb-8 text-base text-gray-300 text-pretty leading-relaxed text-left">
                       {slide.description}
                     </p>
                   )}
