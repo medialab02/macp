@@ -76,11 +76,11 @@ export function HeroSection() {
 
   return (
     <section className="relative overflow-hidden bg-black">
-      {/* Circuit Board Background Image */}
+      {/* Teal Gradient Background Image */}
       <div className="pointer-events-none absolute inset-0">
         <Image
-          src="/images/circuit-background.png"
-          alt="Circuit board background"
+          src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fondo-1500x600px-CUjw1RW29JDqAlwSRitWN5aY9szOMe.png"
+          alt="Background gradient"
           fill
           className="object-cover"
           priority
