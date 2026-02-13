@@ -32,9 +32,9 @@ export function FeatureGrid({ title, features, columns = 4 }: FeatureGridProps) 
         )}>
           {features.map((feature, index) => (
             <Card key={index} className="group relative bg-card border-border/50 transition-all duration-300 hover:scale-105 hover:border-accent/50 hover:shadow-xl hover:shadow-accent/10 overflow-hidden">
-              {/* Image section at top of card */}
+              {/* Image section at top of card - larger for image-focused cards */}
               {feature.imageSrc && (
-                <div className="relative h-32 w-full overflow-hidden">
+                <div className="relative h-48 w-full overflow-hidden">
                   <Image 
                     src={feature.imageSrc} 
                     alt={feature.title} 
@@ -49,11 +49,6 @@ export function FeatureGrid({ title, features, columns = 4 }: FeatureGridProps) 
               <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
               
               <CardHeader className="pb-3 relative z-10">
-                {feature.icon && (
-                  <div className="mb-4 inline-flex p-3 rounded-xl border border-accent/20 text-accent group-hover:border-accent/40 group-hover:scale-110 transition-all duration-300">
-                    {feature.icon}
-                  </div>
-                )}
                 <CardTitle className="text-xl lg:text-2xl text-balance text-foreground">{feature.title}</CardTitle>
               </CardHeader>
               {feature.description && (

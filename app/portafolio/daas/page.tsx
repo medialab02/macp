@@ -57,27 +57,23 @@ const daasExplanation = [
 const valueProps = [
   { 
     title: "Cobertura", 
-    icon: <Globe className="h-8 w-8" />, 
     description: "Servicio en +20 ciudades.",
-    imageSrc: "/images/portafolio/daas/coverage.jpg"
+    imageSrc: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/banner-cobertura-648x384px-5kkPkHhPwAsGrGToRhiaB4VLrTByR8.png"
   },
   { 
     title: "Precio", 
-    icon: <DollarSign className="h-8 w-8" />, 
     description: "Tarifas competitivas fijas.",
-    imageSrc: "/images/portafolio/daas/pricing.jpg"
+    imageSrc: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/banner-precio-648x384px-STvfPQzphuoDG1v6eZcWWwtZ7Kck9u.png"
   },
   { 
     title: "Soporte", 
-    icon: <Headphones className="h-8 w-8" />, 
     description: "Mesa de ayuda especializada.",
-    imageSrc: "/images/portafolio/daas/support.jpg"
+    imageSrc: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/banner-soporte-648x384px-c3yYTy1oXtbCvQuQg3OoYY57MaCBCc.png"
   },
   { 
     title: "Disponibilidad", 
-    icon: <Clock className="h-8 w-8" />, 
     description: "SLA garantizados.",
-    imageSrc: "/images/portafolio/daas/availability.jpg"
+    imageSrc: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/banner-disponibilidad-648x384px-GaIFyvFDgdess5RfATNkBblgWA4HrG.png"
   },
 ];
 
