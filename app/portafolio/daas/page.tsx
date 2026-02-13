@@ -154,6 +154,11 @@ export default function DaaSPage() {
         text="Menos interrupciones. Más control. Mejor previsibilidad."
       />
 
+      <ImageHighlight 
+        imageSrc="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/banner-complemento-1500x600px%20%281%29-JI3xYhm3H92cXaxauqOVrPFVySVN7E.png"
+        text="Seguridad y eficiencia sin compromisos."
+      />
+
       <AccordionSection 
         title="Términos y condiciones" 
         items={terms} 

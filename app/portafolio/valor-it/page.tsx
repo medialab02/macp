@@ -173,7 +173,7 @@ export default function ValorITPage() {
       />
 
       <ImageHighlight 
-        imageSrc="/images/portafolio/valor-it/banner.jpg"
+        imageSrc="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/banner-complemento-1500x600px%20%281%29-y3qiHaveyxXsXsxJEZkSiJK1kmYVV2.png"
         text="Seguridad y eficiencia sin compromisos."
       />
 
