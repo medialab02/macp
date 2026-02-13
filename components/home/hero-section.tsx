@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 const slides = [
   {
     id: 1,
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/inicio-general-1500x600px%20%281%29-3dopizqeKn8pOOWzMPyko8MvcsBijC.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/inicio-general-1500x600px%20%282%29-sGXLAjiZwqUp9U4RloopJ7oRzIIIwS.png",
     title: "Tecnología que impulsa tu negocio al siguiente nivel",
     subtitle: "Diseñamos y operamos soluciones IT que garantizan continuidad, seguridad y rendimiento para organizaciones que no pueden detenerse.",
     cta: { primary: "Solicitar cotización", primaryHref: "#contacto", secondary: null, secondaryHref: null },
