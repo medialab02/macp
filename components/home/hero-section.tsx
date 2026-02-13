@@ -101,7 +101,7 @@ export function HeroSection() {
               src={slide.image}
               alt={slide.title}
               fill
-              className="object-cover object-right"
+              className="object-cover object-center"
               priority={index === 0}
             />
           </div>
