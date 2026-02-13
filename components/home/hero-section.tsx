@@ -32,7 +32,7 @@ const slides = [
   },
   {
     id: 4,
-    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/inicio-general-1500x600px%20%281%29-3dopizqeKn8pOOWzMPyko8MvcsBijC.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/inicio-DaaS-1500x600px-kUkZeJAn90m2RJ3p2dPvmurSr5tM7N.png",
     title: "Device as a Service que pone tu tecnología bajo control",
     subtitle: "Gestionamos tu parque tecnológico de forma integral para garantizar productividad continua, costos predecibles y cero interrupciones en la operación.",
     description: "Más que renting: monitoreo, soporte, mantenimiento y gestión proactiva de cada dispositivo durante todo su ciclo de vida.",
