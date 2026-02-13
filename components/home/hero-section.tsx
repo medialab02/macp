@@ -75,9 +75,9 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-black">
+    <section className="relative overflow-hidden bg-black min-h-[600px] flex items-center">
       {/* Teal Gradient Background Image */}
-      <div className="pointer-events-none absolute inset-0">
+      <div className="pointer-events-none absolute inset-0 z-0">
         <Image
           src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/fondo-1500x600px-CUjw1RW29JDqAlwSRitWN5aY9szOMe.png"
           alt="Background gradient"
@@ -86,12 +86,35 @@ export function HeroSection() {
           priority
         />
       </div>
+
+      {/* Rotating Product Images - Full Hero Background */}
+      <div className="pointer-events-none absolute inset-0 z-[1]">
+        {slides.map((slide, index) => (
+          <div
+            key={slide.id}
+            className={cn(
+              "absolute inset-0 transition-opacity duration-700",
+              index === currentSlide ? "opacity-100" : "opacity-0"
+            )}
+          >
+            <Image
+              src={slide.image}
+              alt={slide.title}
+              fill
+              className="object-cover object-center"
+              priority={index === 0}
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 z-[2] bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
       
-      <div className="relative mx-auto max-w-7xl px-4 py-12 lg:px-6 lg:py-20">
-        
-        <div className="relative z-10 grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
+      <div className="relative mx-auto max-w-7xl px-4 py-12 lg:px-6 lg:py-20 z-10">
+        <div className="max-w-2xl">
           {/* Content */}
-          <div className="order-2 lg:order-1 relative z-20">
+          <div className="relative z-20">
             <div className="relative min-h-[280px] md:min-h-[240px]">
               {slides.map((slide, index) => (
                 <div
@@ -103,14 +126,14 @@ export function HeroSection() {
                       : "opacity-0 absolute inset-0 z-0 invisible"
                   )}
                 >
-                  <h1 className="mb-4 text-3xl font-bold leading-tight text-white drop-shadow-2xl md:text-4xl lg:text-5xl text-balance">
+                  <h1 className="mb-4 text-3xl font-bold leading-tight text-white drop-shadow-2xl md:text-4xl lg:text-5xl text-balance text-left">
                     {slide.title}
                   </h1>
-                  <p className="mb-4 text-lg text-gray-200 text-pretty leading-relaxed">
+                  <p className="mb-4 text-lg text-gray-200 text-pretty leading-relaxed text-left">
                     {slide.subtitle}
                   </p>
                   {slide.description && (
-                    <p className="mb-8 text-base text-gray-300 text-pretty leading-relaxed">
+                    <p className="mb-8 text-base text-gray-300 text-pretty leading-relaxed text-left">
                       {slide.description}
                     </p>
                   )}
@@ -175,35 +198,6 @@ export function HeroSection() {
                   <ChevronRight className="h-4 w-4" />
                 </button>
               </div>
-            </div>
-          </div>
-
-          {/* Image carousel */}
-          <div className="order-1 lg:order-2 relative z-0">
-            <div className="relative aspect-[4/3] overflow-visible pointer-events-none">
-              {slides.map((slide, index) => (
-                <div
-                  key={slide.id}
-                  className={cn(
-                    "absolute inset-0 transition-all duration-700",
-                    index === currentSlide
-                      ? "translate-x-0 opacity-100"
-                      : index < currentSlide
-                      ? "-translate-x-full opacity-0"
-                      : "translate-x-full opacity-0"
-                  )}
-                >
-                  <div className="relative h-full w-full scale-150 -translate-x-12">
-                    <Image
-                      src={slide.image || "/placeholder.svg"}
-                      alt={slide.title}
-                      fill
-                      className="object-contain"
-                      priority={index === 0}
-                    />
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </div>
