@@ -10,14 +10,14 @@ import { cn } from "@/lib/utils";
 const slides = [
   {
     id: 1,
-    image: "/images/ipad-devices.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/inicio-general-1500x600px%20%281%29-3dopizqeKn8pOOWzMPyko8MvcsBijC.png",
     title: "Tecnología que impulsa tu negocio al siguiente nivel",
     subtitle: "Diseñamos y operamos soluciones IT que garantizan continuidad, seguridad y rendimiento para organizaciones que no pueden detenerse.",
     cta: { primary: "Solicitar cotización", primaryHref: "#contacto", secondary: null, secondaryHref: null },
   },
   {
     id: 2,
-    image: "/images/ipad-devices.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Inicio-apple-1500x600px%20%282%29-P3fpHvJDA6xZ6IztoN3akKvuAXddDf.png",
     title: "Apple integrado, gestionado y optimizado para cada entorno",
     subtitle: "Diseñamos, implementamos y gestionamos el ecosistema Apple para organizaciones e individuos que buscan tecnología confiable, segura y fácil de administrar.",
     description: "Despliegue automatizado, gestión centralizada, seguridad avanzada y soporte certificado en cada etapa.",
@@ -25,14 +25,14 @@ const slides = [
   },
   {
     id: 3,
-    image: "/images/ipad-devices.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/inicio-labpower-1500x600px%20%281%29-hJE9GHaVuOmCbDp9ql4H1JmbVyvfwF.png",
     title: "Servicio certificado que protege y extiende la vida de tu tecnología Apple",
     subtitle: "Garantías extendidas, servicios profesionales y soporte técnico certificado bajo los estándares oficiales de Apple, con repuestos originales y técnicos especializados.",
     cta: { primary: "Explorar LabPower", primaryHref: "/labpower", secondary: "Agenda tu servicio", secondaryHref: "#contacto" },
   },
   {
     id: 4,
-    image: "/images/ipad-devices.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/inicio-general-1500x600px%20%281%29-3dopizqeKn8pOOWzMPyko8MvcsBijC.png",
     title: "Device as a Service que pone tu tecnología bajo control",
     subtitle: "Gestionamos tu parque tecnológico de forma integral para garantizar productividad continua, costos predecibles y cero interrupciones en la operación.",
     description: "Más que renting: monitoreo, soporte, mantenimiento y gestión proactiva de cada dispositivo durante todo su ciclo de vida.",
@@ -40,7 +40,7 @@ const slides = [
   },
   {
     id: 5,
-    image: "/images/ipad-devices.png",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Inicio-valor-TI-1500x600px%20%281%29-GQj8EjMvMRgihX2XwDvOZU5DMSuC9M.png",
     title: "Infraestructura y ciberseguridad que garantizan la continuidad de tu negocio",
     subtitle: "Diseñamos y operamos infraestructura IT robusta, servicios de ciberseguridad y ciberrecuperación con monitoreo 24/7 para proteger tu operación frente a fallos, ataques y escenarios críticos.",
     cta: { primary: "Explorar Valor IT", primaryHref: "/portafolio/valor-it", secondary: "Solicitar asesoría", secondaryHref: "#contacto" },
