@@ -5,22 +5,22 @@ export function TeamSection() {
     {
       name: "David Alejandro Daza Delgado",
       role: "CEO (Chief Executive Officer)",
-      image: "/images/nosotros/team/david-daza.jpg"
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/alejandro-daza-95x95px-ZNzo1ubtlsiTnB7oAYBzPdlAFMuZdt.png"
     },
     {
       name: "Juan Felipe Galindo Vargas",
       role: "CSMO (Chief Sales and Marketing Officer)",
-      image: "/images/nosotros/team/juan-felipe-galindo.jpg"
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Juan-Felipe-Galindo-96x96px-D0mxYOd9nc2GYmi5wcBf5XiyDYsr8O.png"
     },
     {
       name: "Juan Camilo Galindo Vargas",
       role: "CFO (Chief Financial Officer)",
-      image: "/images/nosotros/team/juan-camilo-galindo.jpg"
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Juan-Camilo-Galindo-96x96px-9BrSQd9Gj4TEcNRHTTAoyKF1tHUCLH.png"
     },
     {
       name: "Juan Carlos Carranza Martinez",
       role: "Country Manager, Colombia",
-      image: "/images/nosotros/team/juan-carlos-carranza.jpg"
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Juan-Carlos-Carranza-96x96px-kfCIYeP4Yu89zLu7F8Axh304rjd4JV.png"
     },
   ];
 
