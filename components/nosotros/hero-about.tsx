@@ -13,7 +13,7 @@ export function HeroAbout() {
     {
       title: "Pensamos diferente",
       description: "En MacPower IT Solutions transformamos la forma en que las organizaciones operan, crecen y se protegen. Más de 25 años liderando soluciones de Movilidad y cómputo, además DaaS y soluciones en la nube, infraestructura y ciberseguridad, con especialistas en la implementación de ecosistema Apple corporativo que acelera la productividad e innovación.",
-      image: "/images/nosotros/team-hero.jpg"
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Banner-principal-1500x600px-B5IEyaIUwUlI4Umh85lWg2sz6P7qBO.png"
     }
   ];
 
