@@ -1,5 +1,5 @@
 
-import { Hero } from "@/components/portafolio/shared/hero";
+import { DaaSHero } from "@/components/daas/daas-hero";
 import { KPIStrip } from "@/components/portafolio/shared/kpi-strip";
 import { FlipCardGrid } from "@/components/portafolio/shared/flip-card-grid";
 import { FeatureGrid } from "@/components/portafolio/shared/feature-grid";
@@ -120,14 +120,14 @@ const terms = [
 export default function DaaSPage() {
   return (
     <div className="daas-theme">
-      <Hero
+      <DaaSHero
         title="Soluciones DaaS"
         subtitle="Tecnología bajo control, continuidad sin interrupciones."
         primaryCtaText="Cotizar DaaS"
         primaryCtaHref="#contacto"
         secondaryCtaText="Hablar con un asesor"
         secondaryCtaHref="#contacto"
-        imageSrc="/images/portafolio/daas/hero.jpg"
+        backgroundImage="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/banner-principal-1500x600px%20%281%29-f2CCjowmxju73CkBC6hqROBDSMvEFQ.png"
       />
       
       <FlipCardGrid 
