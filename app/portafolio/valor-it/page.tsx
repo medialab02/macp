@@ -1,5 +1,5 @@
 
-import { Hero } from "@/components/portafolio/shared/hero";
+import { ValorITHero } from "@/components/portafolio/valor-it-hero";
 import { KPIStrip } from "@/components/portafolio/shared/kpi-strip";
 import { FlipCardGrid } from "@/components/portafolio/shared/flip-card-grid";
 import { Stepper } from "@/components/portafolio/shared/stepper";
@@ -134,14 +134,14 @@ const faqs = [
 export default function ValorITPage() {
   return (
     <div className="valor-it-theme">
-      <Hero
+      <ValorITHero
         title="Soluciones IT (Valor IT)"
         subtitle="Infraestructura robusta + ciberseguridad + continuidad."
         primaryCtaText="Hablar con un asesor"
         primaryCtaHref="#contacto"
         secondaryCtaText="Solicitar propuesta"
         secondaryCtaHref="#contacto"
-        imageSrc="/images/portafolio/valor-it/hero.jpg"
+        backgroundImage="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/banner-principal-1500x600px%20%282%29-PTNxcg0iJMDnyPpMaPDJiGoNmcMR1F.png"
       />
       
       <FlipCardGrid 
