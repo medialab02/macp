@@ -88,7 +88,7 @@ export function HeroSection() {
       </div>
 
       {/* Rotating Product Images - Full Hero Background */}
-      <div className="pointer-events-none absolute inset-0 z-[1]">
+      <div className="pointer-events-none absolute inset-0 z-[1]" suppressHydrationWarning>
         {slides.map((slide, index) => (
           <div
             key={slide.id}
