@@ -62,8 +62,14 @@ export function LandingHero() {
       <div className="mx-auto max-w-7xl px-4 py-16 lg:px-6 lg:py-24">
         <div className="grid items-center gap-12 lg:grid-cols-2">
           {/* Content */}
-          <div className="relative z-10">
-
+          <div className="relative z-30">
+            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-green-400/30 bg-green-500/10 px-4 py-1.5 text-sm text-green-400 shadow-lg shadow-green-500/10 backdrop-blur-sm">
+              <span className="relative flex h-2 w-2">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-green-400" />
+              </span>
+              Apple Business Partner
+            </div>
 
             <h1 className="mb-6 text-4xl font-bold leading-tight text-white drop-shadow-2xl md:text-5xl lg:text-6xl text-balance">
               Apple para empresas,{" "}
