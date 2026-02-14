@@ -549,7 +549,7 @@ export const faqs: FAQ[] = [
   {
     id: "5",
     question: "¿Qué nivel de soporte incluyen sus servicios?",
-    answer: "Ofrecemos diferentes niveles de SLA según sus necesidades: desde soporte en horario laboral hasta 24/7 para operaciones críticas. Todos incluyen soporte remoto y en sitio cuando se requiera.",
+    answer: "Ofrecemos diferentes niveles de SLA según sus necesidades: desde soporte en horario laboral hasta 7/24 para operaciones críticas. Todos incluyen soporte remoto y en sitio cuando se requiera.",
     category: "soporte"
   },
   {
