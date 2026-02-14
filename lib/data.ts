@@ -5,7 +5,7 @@ export interface Product {
   slug: string;
   name: string;
   shortName: string;
-  category: "laptop" | "desktop" | "phone" | "tablet" | "watch" | "speaker";
+  category: "laptop" | "desktop" | "phone" | "tablet" | "watch" | "speaker" | "accessories";
   chip: string;
   ram: number[];
   storage: number[];
@@ -1016,6 +1016,338 @@ export const products: Product[] = [
       "Peso": "2.3 kg"
     },
     recommendedFor: ["Oficina", "Sala de reuniones", "Recepción"]
+  },
+  // Accessories
+  {
+    id: "27",
+    slug: "airpods-pro-3",
+    name: "AirPods Pro (3ª generación)",
+    shortName: "AirPods Pro 3",
+    category: "accessories",
+    chip: "H3",
+    ram: [0],
+    storage: [0],
+    screenSize: 0,
+    price: 1299000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirPods-Pro-3-BX4JsAgB017zbwDw84IMkkP4vWkeES.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirPods-Pro-3-BX4JsAgB017zbwDw84IMkkP4vWkeES.jpg",
+    ],
+    badge: "Nuevo",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "Audífonos con cancelación adaptativa de ruido, audio espacial personalizado y hasta 6 horas de autonomía.",
+    benefits: [
+      "Cancelación de ruido adaptativa",
+      "Audio espacial personalizado",
+      "Resistencia al agua y sudor IP54",
+      "Hasta 6 horas con una carga",
+      "Estuche con USB-C y Find My"
+    ],
+    specs: {
+      "Chip": "Apple H3",
+      "Audio": "Cancelación activa de ruido, Spatial Audio",
+      "Batería": "6h (ANC), 30h (con estuche)",
+      "Conectividad": "Bluetooth 5.3",
+      "Resistencia": "IP54 (audífonos y estuche)",
+      "Carga": "USB-C, MagSafe, Qi",
+      "Peso": "5.3g por audífono"
+    },
+    recommendedFor: ["Ejecutivo", "Oficina", "Movilidad"]
+  },
+  {
+    id: "28",
+    slug: "airpods-pro-max",
+    name: "AirPods Max",
+    shortName: "AirPods Max",
+    category: "accessories",
+    chip: "H2",
+    ram: [0],
+    storage: [0],
+    screenSize: 0,
+    price: 2699000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirPods-Pro-Max-DTg8HchsR1tSMxwYJufLVOQslJbJmY.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirPods-Pro-Max-DTg8HchsR1tSMxwYJufLVOQslJbJmY.jpg",
+    ],
+    badge: "Premium",
+    inStock: true,
+    leadTime: "2-3 días",
+    description: "Audífonos over-ear premium con cancelación de ruido excepcional, audio de alta fidelidad y diseño en aluminio.",
+    benefits: [
+      "Drivers dinámicos de 40mm de alta fidelidad",
+      "Cancelación de ruido líder en la industria",
+      "Audio espacial con seguimiento dinámico",
+      "Hasta 20 horas de batería",
+      "Construcción premium en aluminio y acero"
+    ],
+    specs: {
+      "Chip": "Apple H2",
+      "Audio": "Cancelación activa de ruido, Spatial Audio, Adaptive EQ",
+      "Batería": "Hasta 20 horas con ANC",
+      "Conectividad": "Bluetooth 5.3",
+      "Materiales": "Aluminio, acero inoxidable, malla tejida",
+      "Carga": "Lightning",
+      "Peso": "384.8g"
+    },
+    recommendedFor: ["Ejecutivo", "Creación de contenido", "Estudio"]
+  },
+  {
+    id: "29",
+    slug: "airpods-4-noise-cancellation",
+    name: "AirPods 4 con Cancelación de Ruido",
+    shortName: "AirPods 4 ANC",
+    category: "accessories",
+    chip: "H2",
+    ram: [0],
+    storage: [0],
+    screenSize: 0,
+    price: 899000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirPods-4-Noise-Cancellation-syA2tcGJcgfMQiPYSNwCfjdxRX0C6o.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirPods-4-Noise-Cancellation-syA2tcGJcgfMQiPYSNwCfjdxRX0C6o.jpg",
+    ],
+    badge: "Nuevo",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "AirPods con diseño abierto, cancelación de ruido y audio espacial. Comodidad todo el día.",
+    benefits: [
+      "Cancelación de ruido activa",
+      "Audio espacial personalizado",
+      "Hasta 5 horas con una carga",
+      "Estuche con USB-C y altavoz Find My",
+      "Resistencia al agua y sudor"
+    ],
+    specs: {
+      "Chip": "Apple H2",
+      "Audio": "Cancelación activa de ruido, Spatial Audio",
+      "Batería": "5h (ANC), 30h (con estuche)",
+      "Conectividad": "Bluetooth 5.3",
+      "Carga": "USB-C",
+      "Resistencia": "IP54",
+      "Peso": "4.3g por audífono"
+    },
+    recommendedFor: ["General", "Oficina", "Productividad"]
+  },
+  {
+    id: "30",
+    slug: "airpods-4",
+    name: "AirPods 4",
+    shortName: "AirPods 4",
+    category: "accessories",
+    chip: "H2",
+    ram: [0],
+    storage: [0],
+    screenSize: 0,
+    price: 699000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirPods-4-5ILX1ufExdKc0UWwbH0WMDwGsikOJ7.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirPods-4-5ILX1ufExdKc0UWwbH0WMDwGsikOJ7.jpg",
+    ],
+    badge: "Popular",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "AirPods esenciales con audio espacial personalizado y hasta 5 horas de batería. Excelente opción de entrada.",
+    benefits: [
+      "Audio espacial personalizado",
+      "Hasta 5 horas con una carga",
+      "Estuche con USB-C",
+      "Resistencia al agua y sudor",
+      "Precio accesible"
+    ],
+    specs: {
+      "Chip": "Apple H2",
+      "Audio": "Spatial Audio personalizado",
+      "Batería": "5h, 30h (con estuche)",
+      "Conectividad": "Bluetooth 5.3",
+      "Carga": "USB-C",
+      "Resistencia": "IP54",
+      "Peso": "4.3g por audífono"
+    },
+    recommendedFor: ["General", "Estudiantes", "Primera compra"]
+  },
+  {
+    id: "31",
+    slug: "ipad-11-gen",
+    name: "iPad (11ª generación)",
+    shortName: "iPad 11ª Gen",
+    category: "tablet",
+    chip: "A16",
+    ram: [4],
+    storage: [64, 128, 256],
+    screenSize: 10.9,
+    price: 1799000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-11th-Geb-rH7lVVXrEHcFPhnBuaxfTZE3r5j0lN.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-11th-Geb-rH7lVVXrEHcFPhnBuaxfTZE3r5j0lN.jpg",
+    ],
+    badge: "Popular",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "iPad estándar con chip A16, pantalla de 10.9 pulgadas y versatilidad para trabajo y entretenimiento.",
+    benefits: [
+      "Chip A16 Bionic",
+      "Pantalla Liquid Retina de 10.9\"",
+      "USB-C para conectividad universal",
+      "Compatibilidad con Apple Pencil",
+      "Excelente relación calidad-precio"
+    ],
+    specs: {
+      "Chip": "Apple A16 Bionic",
+      "Pantalla": "Liquid Retina 10.9\" (2360x1640)",
+      "Cámara": "12MP Wide, 12MP Ultra Wide frontal",
+      "Conectividad": "Wi-Fi 6, 5G opcional, USB-C",
+      "Batería": "Hasta 10 horas",
+      "Accesorios": "Apple Pencil (USB-C)",
+      "Peso": "477 g"
+    },
+    recommendedFor: ["General", "Estudiantes", "Punto de venta"]
+  },
+  {
+    id: "32",
+    slug: "ipad-a16-yellow",
+    name: "iPad con A16 (Edición Amarillo)",
+    shortName: "iPad A16",
+    category: "tablet",
+    chip: "A16",
+    ram: [4],
+    storage: [64, 128, 256],
+    screenSize: 10.9,
+    price: 1799000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-A16-TcYMpgXHsr4v1Vr9NLlH2aqXKcnB24.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-A16-TcYMpgXHsr4v1Vr9NLlH2aqXKcnB24.jpg",
+    ],
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "iPad en vibrante color amarillo. Ideal para destacar en tu empresa o como herramienta corporativa personalizada.",
+    benefits: [
+      "Diseño distintivo en amarillo",
+      "Chip A16 Bionic potente",
+      "Pantalla Liquid Retina",
+      "USB-C universal",
+      "Personaliza la imagen de tu empresa"
+    ],
+    specs: {
+      "Chip": "Apple A16 Bionic",
+      "Pantalla": "Liquid Retina 10.9\" (2360x1640)",
+      "Cámara": "12MP Wide, 12MP Ultra Wide frontal",
+      "Conectividad": "Wi-Fi 6, 5G opcional, USB-C",
+      "Batería": "Hasta 10 horas",
+      "Color": "Amarillo",
+      "Peso": "477 g"
+    },
+    recommendedFor: ["Recepción", "Marketing", "Retail"]
+  },
+  {
+    id: "33",
+    slug: "airtag",
+    name: "AirTag",
+    shortName: "AirTag",
+    category: "accessories",
+    chip: "U1",
+    ram: [0],
+    storage: [0],
+    screenSize: 0,
+    price: 149000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirTag-zQWvUSSIrKwlXduRfhyEVCXXZMeTW7.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirTag-zQWvUSSIrKwlXduRfhyEVCXXZMeTW7.jpg",
+    ],
+    badge: "Recomendado",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "Localizador Bluetooth con chip U1 para rastreo preciso. Ideal para equipos, activos corporativos y llaves.",
+    benefits: [
+      "Búsqueda de precisión con U1",
+      "Red Find My global",
+      "Batería reemplazable de 1 año",
+      "Resistente al agua IP67",
+      "Rastreo de activos corporativos"
+    ],
+    specs: {
+      "Chip": "Apple U1 (Ultra Wideband)",
+      "Conectividad": "Bluetooth 5.3, NFC",
+      "Batería": "CR2032 (hasta 1 año)",
+      "Resistencia": "IP67",
+      "Dimensiones": "31.9mm diámetro, 8mm grosor",
+      "Peso": "11g",
+      "Personalización": "Grabado gratis"
+    },
+    recommendedFor: ["Logística", "Activos", "Seguridad"]
+  },
+  {
+    id: "34",
+    slug: "airtag-4-pack",
+    name: "AirTag Pack de 4",
+    shortName: "AirTag 4-Pack",
+    category: "accessories",
+    chip: "U1",
+    ram: [0],
+    storage: [0],
+    screenSize: 0,
+    price: 499000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirTag-4-pack-W5P71fZeeK5pLr2Mpoopt0OUF0FYvF.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirTag-4-pack-W5P71fZeeK5pLr2Mpoopt0OUF0FYvF.jpg",
+    ],
+    badge: "Popular",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "Pack de 4 AirTags con ahorro. Perfecto para flotas empresariales, equipos y gestión de activos.",
+    benefits: [
+      "Ahorro vs compra individual",
+      "Gestión de múltiples activos",
+      "Búsqueda de precisión con U1",
+      "Red Find My global",
+      "Ideal para flotas corporativas"
+    ],
+    specs: {
+      "Chip": "Apple U1 (Ultra Wideband)",
+      "Conectividad": "Bluetooth 5.3, NFC",
+      "Batería": "CR2032 (hasta 1 año c/u)",
+      "Resistencia": "IP67",
+      "Contenido": "4 AirTags",
+      "Peso": "11g c/u",
+      "Personalización": "Grabado gratis"
+    },
+    recommendedFor: ["Logística", "Flotas", "Gestión de activos"]
+  },
+  {
+    id: "35",
+    slug: "apple-tv-4k",
+    name: "Apple TV 4K",
+    shortName: "Apple TV 4K",
+    category: "accessories",
+    chip: "A17 Pro",
+    ram: [4],
+    storage: [64, 128],
+    screenSize: 0,
+    price: 899000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-TV-4K-gPf5ydQSSaz6y62wPWahBzrk8rKzmS.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-TV-4K-gPf5ydQSSaz6y62wPWahBzrk8rKzmS.jpg",
+    ],
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "Dispositivo de streaming 4K con chip A17 Pro, Dolby Vision y Atmos. Ideal para salas de conferencias y áreas comunes.",
+    benefits: [
+      "Calidad 4K HDR con Dolby Vision",
+      "Audio Dolby Atmos",
+      "AirPlay para presentaciones",
+      "HomeKit para automatización",
+      "Siri Remote incluido"
+    ],
+    specs: {
+      "Chip": "Apple A17 Pro",
+      "Video": "4K HDR, Dolby Vision, HDR10+",
+      "Audio": "Dolby Atmos",
+      "Conectividad": "Wi-Fi 6E, Bluetooth 5.3, HDMI 2.1, Ethernet",
+      "Almacenamiento": "64GB o 128GB",
+      "Dimensiones": "93 x 93 x 31 mm",
+      "Peso": "208g"
+    },
+    recommendedFor: ["Sala de reuniones", "Recepción", "Capacitación"]
   }
 ];
 
