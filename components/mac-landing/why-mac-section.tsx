@@ -9,52 +9,56 @@ const pillars = [
     id: "security",
     icon: Shield,
     title: "Seguridad Enterprise",
-    description: "Protección de datos de nivel empresarial integrada en cada capa del sistema.",
+    subtitle: "Protección empresarial en cada capa del sistema.",
+    description: "Arquitectura de seguridad diseñada para minimizar riesgos operativos y fortalecer el cumplimiento corporativo.",
     bullets: [
-      "Secure Enclave para protección de credenciales y datos biométricos",
-      "FileVault con cifrado de disco completo AES-256",
-      "Protección de integridad del sistema (SIP) contra malware",
-      "Touch ID/Face ID para autenticación segura sin contraseñas",
-      "Actualizaciones de seguridad automáticas firmadas por Apple",
+      "Secure Enclave y autenticación biométrica",
+      "Cifrado completo con FileVault (AES-256)",
+      "Integridad del sistema (SIP) y actualizaciones firmadas",
+      "Gestión de políticas de seguridad vía MDM",
     ],
   },
   {
     id: "management",
     icon: Settings,
-    title: "Gestión a Escala",
-    description: "Administración centralizada de miles de dispositivos con Apple Business Manager y MDM.",
+    title: "Gestión centralizada a escala",
+    subtitle: "Control total del ciclo de vida del dispositivo desde una sola consola.",
+    description: "Menos carga para TI. Más control, trazabilidad y eficiencia administrativa.",
     bullets: [
-      "Apple Business Manager (ABM) gratuito para empresas",
-      "Despliegue zero-touch: equipos listos desde el unboxing",
+      "Apple Business Manager (ABM)",
+      "Integración con soluciones MDM",
+      "Despliegue zero-touch: equipos listos desde el primer encendido",
       "Configuración remota de políticas y restricciones",
-      "Distribución silenciosa de apps y actualizaciones",
-      "Inventario en tiempo real y reportes de cumplimiento",
+      "Distribución automática de aplicaciones",
+      "Inventario y reportes en tiempo real",
     ],
   },
   {
     id: "compatibility",
     icon: Layers,
-    title: "Compatibilidad e Integración",
-    description: "Mac se integra perfectamente con tu infraestructura existente, sin fricciones.",
+    title: "Integración sin fricciones",
+    subtitle: "Mac no reemplaza tu infraestructura. La potencia.",
+    description: "Tecnología que mejora la experiencia del equipo y fortalece la retención de talento.",
     bullets: [
-      "Integración nativa con Active Directory y Azure AD",
-      "Soporte completo para Microsoft 365 y Google Workspace",
-      "Compatible con VPNs empresariales y proxies",
-      "Virtualización de Windows con Parallels o UTM",
-      "APIs abiertas para integraciones personalizadas",
+      "Compatible con Microsoft Entra ID y Active Directory",
+      "Soporte nativo para Microsoft 365 y Google Workspace",
+      "VPNs empresariales y entornos proxy",
+      "Virtualización de Windows (Parallels)",
+      "APIs para integraciones personalizadas",
     ],
   },
   {
     id: "productivity",
     icon: Zap,
-    title: "Productividad + Continuidad",
-    description: "Mayor satisfacción del empleado, menor tiempo de inactividad, mejor ROI.",
+    title: "Productividad y continuidad operativa",
+    subtitle: "Mayor satisfacción del empleado, menor tiempo de inactividad y mejor ROI.",
+    description: "Tecnología que mejora la experiencia del equipo y fortalece la retención de talento.",
     bullets: [
-      "Batería de hasta 22 horas para productividad sin interrupciones",
-      "Chip Apple Silicon: rendimiento sostenido sin throttling",
-      "Ecosistema unificado: iPhone, iPad, Mac trabajando juntos",
-      "Menor tasa de fallas que PCs tradicionales (Jamf, 2024)",
-      "Soporte técnico reducido: 40% menos tickets (IDC)",
+      "Hasta 22 horas de batería",
+      "Rendimiento sostenido con Apple Silicon",
+      "Ecosistema unificado entre iPhone, iPad y Mac",
+      "Menor tasa de fallas frente a PCs tradicionales",
+      "Reducción de tickets de soporte (IDC)",
     ],
   },
 ];
@@ -97,19 +101,23 @@ export function WhyMacSection() {
                 </div>
 
                 {/* Icon & Title */}
-                <div className="flex items-start gap-4 mb-6">
+                <div className="flex items-start gap-4 mb-4">
                   <div className="p-3 rounded-xl bg-primary/10 text-primary">
                     <Icon className="h-6 w-6" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-foreground mb-2">
+                    <h3 className="text-xl font-bold text-foreground mb-1">
                       {pillar.title}
                     </h3>
-                    <p className="text-muted-foreground">
-                      {pillar.description}
+                    <p className="text-sm text-muted-foreground mb-2">
+                      {pillar.subtitle}
                     </p>
                   </div>
                 </div>
+                
+                <p className="text-sm italic text-muted-foreground mb-6">
+                  {pillar.description}
+                </p>
 
                 {/* Bullets */}
                 <ul className="space-y-3 mb-6">
