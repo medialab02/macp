@@ -5,7 +5,7 @@ export interface Product {
   slug: string;
   name: string;
   shortName: string;
-  category: "laptop" | "desktop";
+  category: "laptop" | "desktop" | "phone";
   chip: string;
   ram: number[];
   storage: number[];
@@ -349,8 +349,302 @@ export const products: Product[] = [
       "Puertos": "2x Thunderbolt/USB 4, 2x USB 3, Ethernet",
       "Audio": "Sistema de 6 altavoces con Spatial Audio",
       "Peso": "4.43 kg"
+  },
+  recommendedFor: ["Ejecutivo", "Recepción", "Diseño"]
+  },
+  // iPhone Products
+  {
+    id: "9",
+    slug: "iphone-17-pro-max",
+    name: "iPhone 17 Pro Max",
+    shortName: "iPhone 17 Pro Max",
+    category: "phone",
+    chip: "A18 Pro",
+    ram: [8],
+    storage: [256, 512, 1024],
+    screenSize: 6.9,
+    price: 5999000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-17-Pro-Max-ZFDlM4jXSt3ktW3HQdsWhwSYd525Yl.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-17-Pro-Max-ZFDlM4jXSt3ktW3HQdsWhwSYd525Yl.jpg",
+    ],
+    badge: "Nuevo",
+    inStock: true,
+    leadTime: "2-3 días",
+    description: "El iPhone más grande y potente con chip A18 Pro, sistema de cámaras profesional avanzado y pantalla Super Retina XDR de 6.9 pulgadas.",
+    benefits: [
+      "Chip A18 Pro con Neural Engine de 16 núcleos",
+      "Sistema de cámaras Pro con teleobjetivo 5x",
+      "Pantalla ProMotion de 120Hz con Always-On",
+      "Batería de hasta 29 horas de reproducción de video",
+      "Resistencia al agua IP68"
+    ],
+    specs: {
+      "Chip": "A18 Pro con Neural Engine de 16 núcleos",
+      "Pantalla": "Super Retina XDR 6.9\" ProMotion (120Hz)",
+      "Cámara": "Triple 48MP (Principal, Ultra Wide, Teleobjetivo 5x)",
+      "Batería": "Hasta 29 horas de video",
+      "Conectividad": "5G, Wi-Fi 6E, Bluetooth 5.3",
+      "Materiales": "Titanio de grado aeroespacial",
+      "Peso": "221 g"
     },
-    recommendedFor: ["Ejecutivo", "Recepción", "Diseño"]
+    recommendedFor: ["Ejecutivo", "Fotografía", "Productividad"]
+  },
+  {
+    id: "10",
+    slug: "iphone-17-pro",
+    name: "iPhone 17 Pro",
+    shortName: "iPhone 17 Pro",
+    category: "phone",
+    chip: "A18 Pro",
+    ram: [8],
+    storage: [128, 256, 512, 1024],
+    screenSize: 6.3,
+    price: 4999000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-17-Pro-GQkBXFTnuaEX2kojcmK3lW47TL2GwK.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-17-Pro-GQkBXFTnuaEX2kojcmK3lW47TL2GwK.jpg",
+    ],
+    badge: "Nuevo",
+    inStock: true,
+    leadTime: "2-3 días",
+    description: "iPhone Pro con chip A18 Pro, sistema de cámaras profesional y pantalla Super Retina XDR de 6.3 pulgadas.",
+    benefits: [
+      "Chip A18 Pro con Neural Engine de 16 núcleos",
+      "Sistema de cámaras Pro con teleobjetivo 3x",
+      "Pantalla ProMotion de 120Hz con Always-On",
+      "Batería de hasta 23 horas de reproducción de video",
+      "Resistencia al agua IP68"
+    ],
+    specs: {
+      "Chip": "A18 Pro con Neural Engine de 16 núcleos",
+      "Pantalla": "Super Retina XDR 6.3\" ProMotion (120Hz)",
+      "Cámara": "Triple 48MP (Principal, Ultra Wide, Teleobjetivo 3x)",
+      "Batería": "Hasta 23 horas de video",
+      "Conectividad": "5G, Wi-Fi 6E, Bluetooth 5.3",
+      "Materiales": "Titanio de grado aeroespacial",
+      "Peso": "187 g"
+    },
+    recommendedFor: ["Ejecutivo", "Fotografía", "Productividad"]
+  },
+  {
+    id: "11",
+    slug: "iphone-17-air",
+    name: "iPhone 17 Air",
+    shortName: "iPhone 17 Air",
+    category: "phone",
+    chip: "A18",
+    ram: [6],
+    storage: [128, 256, 512],
+    screenSize: 6.6,
+    price: 4299000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-17-Air-hZZC8i7IMJq9CmYnFiPFvmLjLa87BG.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-17-Air-hZZC8i7IMJq9CmYnFiPFvmLjLa87BG.jpg",
+    ],
+    badge: "Nuevo",
+    inStock: true,
+    leadTime: "1-2 semanas",
+    description: "El iPhone más delgado jamás creado con chip A18, diseño ultraligero y pantalla Super Retina XDR de 6.6 pulgadas.",
+    benefits: [
+      "Diseño ultrafino y ligero",
+      "Chip A18 con Neural Engine",
+      "Cámara principal de 48MP",
+      "Batería de día completo",
+      "Resistencia al agua IP68"
+    ],
+    specs: {
+      "Chip": "A18 con Neural Engine",
+      "Pantalla": "Super Retina XDR 6.6\"",
+      "Cámara": "Principal 48MP",
+      "Batería": "Hasta 22 horas de video",
+      "Conectividad": "5G, Wi-Fi 6E, Bluetooth 5.3",
+      "Materiales": "Aluminio aeroespacial",
+      "Peso": "165 g"
+    },
+    recommendedFor: ["Ejecutivo", "Movilidad", "Productividad"]
+  },
+  {
+    id: "12",
+    slug: "iphone-17",
+    name: "iPhone 17",
+    shortName: "iPhone 17",
+    category: "phone",
+    chip: "A18",
+    ram: [6],
+    storage: [128, 256, 512],
+    screenSize: 6.1,
+    price: 3799000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-17-cMvO4GYMUCaNrtif6mc36wFdrxz3S3.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-17-cMvO4GYMUCaNrtif6mc36wFdrxz3S3.jpg",
+    ],
+    badge: "Recomendado",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "iPhone con chip A18, cámara dual avanzada y pantalla Super Retina XDR de 6.1 pulgadas. Balance perfecto entre rendimiento y precio.",
+    benefits: [
+      "Chip A18 con Neural Engine",
+      "Cámara dual de 48MP",
+      "Pantalla Super Retina XDR",
+      "Batería de día completo",
+      "Resistencia al agua IP68"
+    ],
+    specs: {
+      "Chip": "A18 con Neural Engine",
+      "Pantalla": "Super Retina XDR 6.1\"",
+      "Cámara": "Dual 48MP (Principal, Ultra Wide)",
+      "Batería": "Hasta 20 horas de video",
+      "Conectividad": "5G, Wi-Fi 6, Bluetooth 5.3",
+      "Materiales": "Aluminio y vidrio",
+      "Peso": "171 g"
+    },
+    recommendedFor: ["General", "Productividad", "Estudiantes"]
+  },
+  {
+    id: "13",
+    slug: "iphone-16-plus",
+    name: "iPhone 16 Plus",
+    shortName: "iPhone 16 Plus",
+    category: "phone",
+    chip: "A17",
+    ram: [6],
+    storage: [128, 256, 512],
+    screenSize: 6.7,
+    price: 3499000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-16-plus-WvfXlvmyKgtUOLD3dmrHKbgwrWRWgo.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-16-plus-WvfXlvmyKgtUOLD3dmrHKbgwrWRWgo.jpg",
+    ],
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "iPhone con pantalla grande de 6.7 pulgadas, chip A17 y batería de larga duración. Ideal para consumo multimedia.",
+    benefits: [
+      "Pantalla grande de 6.7 pulgadas",
+      "Chip A17 con Neural Engine",
+      "Cámara dual avanzada",
+      "Batería de hasta 26 horas de video",
+      "Resistencia al agua IP68"
+    ],
+    specs: {
+      "Chip": "A17 con Neural Engine",
+      "Pantalla": "Super Retina XDR 6.7\"",
+      "Cámara": "Dual 48MP (Principal, Ultra Wide)",
+      "Batería": "Hasta 26 horas de video",
+      "Conectividad": "5G, Wi-Fi 6, Bluetooth 5.3",
+      "Materiales": "Aluminio y vidrio",
+      "Peso": "201 g"
+    },
+    recommendedFor: ["Multimedia", "Productividad", "General"]
+  },
+  {
+    id: "14",
+    slug: "iphone-16",
+    name: "iPhone 16",
+    shortName: "iPhone 16",
+    category: "phone",
+    chip: "A17",
+    ram: [6],
+    storage: [128, 256, 512],
+    screenSize: 6.1,
+    price: 2999000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-16-BYPXmxLFF1PVkqiZKMNs0CAEOe0bBv.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-16-BYPXmxLFF1PVkqiZKMNs0CAEOe0bBv.jpg",
+    ],
+    badge: "Popular",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "iPhone con chip A17, cámara dual y pantalla Super Retina XDR de 6.1 pulgadas. Excelente opción para uso diario.",
+    benefits: [
+      "Chip A17 con Neural Engine",
+      "Cámara dual de 48MP",
+      "Pantalla Super Retina XDR",
+      "Batería de día completo",
+      "Resistencia al agua IP68"
+    ],
+    specs: {
+      "Chip": "A17 con Neural Engine",
+      "Pantalla": "Super Retina XDR 6.1\"",
+      "Cámara": "Dual 48MP (Principal, Ultra Wide)",
+      "Batería": "Hasta 20 horas de video",
+      "Conectividad": "5G, Wi-Fi 6, Bluetooth 5.3",
+      "Materiales": "Aluminio y vidrio",
+      "Peso": "170 g"
+    },
+    recommendedFor: ["General", "Productividad", "Estudiantes"]
+  },
+  {
+    id: "15",
+    slug: "iphone-16e",
+    name: "iPhone 16e",
+    shortName: "iPhone 16e",
+    category: "phone",
+    chip: "A16",
+    ram: [4],
+    storage: [64, 128, 256],
+    screenSize: 6.1,
+    price: 2299000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-16e-7E7Ahbs1sjIQe0NsAcm2GrOSLSAFq7.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-16e-7E7Ahbs1sjIQe0NsAcm2GrOSLSAFq7.jpg",
+    ],
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "iPhone accesible con chip A16, cámara dual y pantalla Super Retina XDR de 6.1 pulgadas. La mejor opción de entrada al ecosistema iPhone.",
+    benefits: [
+      "Chip A16 Bionic",
+      "Cámara dual avanzada",
+      "Pantalla Super Retina XDR",
+      "Batería de día completo",
+      "Resistencia al agua IP68"
+    ],
+    specs: {
+      "Chip": "A16 Bionic",
+      "Pantalla": "Super Retina XDR 6.1\"",
+      "Cámara": "Dual 12MP (Principal, Ultra Wide)",
+      "Batería": "Hasta 20 horas de video",
+      "Conectividad": "5G, Wi-Fi 6, Bluetooth 5.3",
+      "Materiales": "Aluminio y vidrio",
+      "Peso": "172 g"
+    },
+    recommendedFor: ["Estudiantes", "General", "Primera compra"]
+  },
+  {
+    id: "16",
+    slug: "iphone-15",
+    name: "iPhone 15",
+    shortName: "iPhone 15",
+    category: "phone",
+    chip: "A16",
+    ram: [6],
+    storage: [128, 256, 512],
+    screenSize: 6.1,
+    price: 2599000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-15-cIde403jc7QlQiNftmR0X1WPu6Gmo6.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-15-cIde403jc7QlQiNftmR0X1WPu6Gmo6.jpg",
+    ],
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "iPhone 15 con chip A16 Bionic, cámara dual de 48MP y Dynamic Island. Rendimiento confiable a excelente precio.",
+    benefits: [
+      "Chip A16 Bionic probado",
+      "Cámara principal de 48MP",
+      "Dynamic Island",
+      "Batería de día completo",
+      "Resistencia al agua IP68"
+    ],
+    specs: {
+      "Chip": "A16 Bionic",
+      "Pantalla": "Super Retina XDR 6.1\"",
+      "Cámara": "Dual 48MP (Principal, Ultra Wide)",
+      "Batería": "Hasta 20 horas de video",
+      "Conectividad": "5G, Wi-Fi 6, Bluetooth 5.3",
+      "Materiales": "Aluminio y vidrio",
+      "Peso": "171 g"
+    },
+    recommendedFor: ["General", "Productividad", "Estudiantes"]
   }
 ];
 
