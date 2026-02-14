@@ -69,7 +69,7 @@ export function PartnersSection() {
                   key={`${partner.name}-${index}`}
                   className="flex-shrink-0 flex items-center justify-center"
                 >
-                  <div className="grayscale opacity-90 transition-all duration-300 hover:grayscale-0 hover:opacity-100 hover:scale-105">
+                  <div className="grayscale opacity-100 transition-all duration-300 hover:grayscale-0 hover:opacity-100 hover:scale-105">
                     <Image
                       src={partner.logo}
                       alt={partner.name}
