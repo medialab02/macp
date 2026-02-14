@@ -53,7 +53,7 @@ export function ApplePartnerSection() {
                   className="h-8 w-auto"
                 />
               </div>
-              
+
               <h2 className="mb-4 text-2xl font-bold text-foreground md:text-3xl">
                 Apple Business Partner
               </h2>
@@ -67,25 +67,20 @@ export function ApplePartnerSection() {
                   <button
                     key={cat.id}
                     onClick={() => setActiveCategory(cat.id)}
-                    className={`flex items-center gap-2 rounded-lg border px-4 py-2 text-sm transition-all ${
-                      activeCategory === cat.id
+                    className={`flex items-center gap-2 rounded-lg border px-4 py-2 text-sm transition-all ${activeCategory === cat.id
                         ? "border-primary bg-primary/10 text-primary"
                         : "border-border text-muted-foreground hover:border-primary/50"
-                    }`}
+                      }`}
                   >
                     <cat.icon className="h-4 w-4" />
                     {cat.label}
-                    {cat.featured && (
-                      <Badge variant="secondary" className="ml-1 text-[10px]">
-                        Empresa
-                      </Badge>
-                    )}
+                    {cat.featured}
                   </button>
                 ))}
               </div>
 
               <div className="flex flex-col gap-3 sm:flex-row">
-                <Button 
+                <Button
                   className="bg-gradient-to-r from-[#00ffe3] to-[#00a6d6] hover:from-[#00e6cc] hover:to-[#0090bb] text-black font-bold border-0 transition-all duration-300"
                   asChild
                 >

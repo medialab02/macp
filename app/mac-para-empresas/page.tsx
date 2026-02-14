@@ -1,7 +1,6 @@
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { LandingHero } from "@/components/mac-landing/landing-hero";
-import { AudienceTabs } from "@/components/mac-landing/audience-tabs";
 import { WhyMacSection } from "@/components/mac-landing/why-mac-section";
 import { MacWizard } from "@/components/mac-landing/mac-wizard";
 import { ServicesCards } from "@/components/shared/services-cards";
@@ -23,11 +22,9 @@ export default function MacParaEmpresasPage() {
       <Header />
       <main>
         <LandingHero />
-        <AudienceTabs />
         <WhyMacSection />
-        <OffersSection />
         <MacWizard />
-        
+
         {/* Services section */}
         <section className="py-20">
           <div className="mx-auto max-w-7xl px-4 lg:px-6">
@@ -36,7 +33,7 @@ export default function MacParaEmpresasPage() {
                 Servicios para empresas
               </h2>
               <p className="mx-auto max-w-2xl text-muted-foreground">
-                Acompañamiento completo en todo el ciclo de vida de tus equipos Apple
+                Acompañamos a tu organización en todo el ciclo de vida del ecosistema Apple: desde la implementación hasta el soporte continuo.
               </p>
             </div>
             <ServicesCards />
@@ -46,19 +43,7 @@ export default function MacParaEmpresasPage() {
         <FeaturedCatalog />
 
         {/* Case studies section */}
-        <section className="bg-card py-20">
-          <div className="mx-auto max-w-7xl px-4 lg:px-6">
-            <div className="mb-12 text-center">
-              <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">
-                Casos de éxito
-              </h2>
-              <p className="mx-auto max-w-2xl text-muted-foreground">
-                Descubre cómo hemos ayudado a empresas como la tuya a transformar su infraestructura
-              </p>
-            </div>
-            <CaseStudyCards />
-          </div>
-        </section>
+
 
         <FAQSection />
         <LandingCTA />

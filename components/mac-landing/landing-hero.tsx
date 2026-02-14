@@ -16,42 +16,42 @@ export function LandingHero() {
       {/* Neon Green Energy Pulses - Very subtle, phosphorescent */}
       <div className="pointer-events-none absolute inset-0">
         {/* Pulse 1 - Top left */}
-        <div 
+        <div
           className="absolute left-0 top-0 h-[600px] w-[600px] -translate-x-1/2 -translate-y-1/2 animate-pulse-slow rounded-full blur-3xl"
-          style={{ 
-            background: 'radial-gradient(circle, rgba(34, 197, 94, 0.1) 0%, rgba(34, 197, 94, 0.05) 50%, transparent 100%)' 
+          style={{
+            background: 'radial-gradient(circle, rgba(34, 197, 94, 0.1) 0%, rgba(34, 197, 94, 0.05) 50%, transparent 100%)'
           }}
         />
-        
+
         {/* Pulse 2 - Right side */}
-        <div 
+        <div
           className="absolute right-0 top-1/4 h-[500px] w-[500px] translate-x-1/3 rounded-full blur-3xl"
-          style={{ 
+          style={{
             background: 'radial-gradient(circle, rgba(74, 222, 128, 0.08) 0%, rgba(34, 197, 94, 0.04) 50%, transparent 100%)',
-            animation: 'float 8s ease-in-out infinite' 
+            animation: 'float 8s ease-in-out infinite'
           }}
         />
-        
+
         {/* Pulse 3 - Bottom center */}
-        <div 
+        <div
           className="absolute bottom-0 left-1/2 h-[400px] w-[700px] -translate-x-1/2 translate-y-1/2 rounded-full blur-3xl"
-          style={{ 
+          style={{
             background: 'radial-gradient(circle, rgba(16, 185, 129, 0.06) 0%, rgba(34, 197, 94, 0.03) 50%, transparent 100%)',
-            animation: 'float 10s ease-in-out infinite 2s' 
+            animation: 'float 10s ease-in-out infinite 2s'
           }}
         />
       </div>
 
       {/* Animated gradient overlay - Slow movement */}
       <div className="pointer-events-none absolute inset-0">
-        <div 
+        <div
           className="absolute inset-0 bg-gradient-to-br from-green-950/20 via-transparent to-cyan-950/10"
           style={{ animation: 'gradient-shift 15s ease-in-out infinite alternate' }}
         />
       </div>
 
       {/* Subtle grid pattern for depth */}
-      <div 
+      <div
         className="pointer-events-none absolute inset-0 opacity-[0.03]"
         style={{
           backgroundImage: 'linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px)',
@@ -68,16 +68,16 @@ export function LandingHero() {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75" />
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-green-400" />
               </span>
-              Apple Business Partner Oficial
+              Apple Business Partner
             </div>
-            
+
             <h1 className="mb-6 text-4xl font-bold leading-tight text-white drop-shadow-2xl md:text-5xl lg:text-6xl text-balance">
-              Mac para empresas,{" "}
+              Apple para empresas,{" "}
               <span className="bg-gradient-to-r from-green-400 to-cyan-400 bg-clip-text text-transparent drop-shadow-lg">listo para TI</span>
             </h1>
-            
+
             <p className="mb-8 text-lg text-gray-200 md:text-xl text-pretty">
-              Despliegue zero-touch, gestión centralizada MDM y seguridad de nivel empresarial. 
+              Despliegue zero-touch, gestión centralizada MDM y seguridad de nivel empresarial.
               Todo el ecosistema Apple con soporte local certificado.
             </p>
 
@@ -104,11 +104,11 @@ export function LandingHero() {
           <div className="relative">
             {/* Glow effect behind image */}
             <div className="absolute inset-0 -z-10 translate-y-4 rounded-3xl bg-gradient-to-br from-green-500/20 via-cyan-500/10 to-transparent blur-2xl" />
-            
+
             <div className="relative aspect-square overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-gray-900/80 to-gray-950/80 backdrop-blur-xl">
               <Image
                 src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800&h=800&fit=crop"
-                alt="Mac para empresas - Equipo profesional trabajando"
+                alt="Apple para empresas - Equipo profesional trabajando"
                 fill
                 className="object-cover opacity-90 mix-blend-luminosity"
                 priority
@@ -116,10 +116,10 @@ export function LandingHero() {
               {/* Glassmorphic overlay with subtle green tint */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
               <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 via-transparent to-cyan-500/5" />
-              
+
               {/* Soft light reflection effect */}
               <div className="absolute right-0 top-0 h-1/2 w-1/2 bg-gradient-to-br from-white/5 to-transparent blur-2xl" />
-              
+
               {/* Video play button overlay - with glassmorphism */}
               <button className="group absolute left-1/2 top-1/2 flex h-20 w-20 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border border-white/20 bg-green-500/20 backdrop-blur-md transition-all hover:scale-110 hover:border-green-400/40 hover:bg-green-500/30">
                 <Play className="ml-1 h-8 w-8 text-white drop-shadow-lg" />
@@ -127,7 +127,7 @@ export function LandingHero() {
             </div>
 
             {/* Floating card - Glassmorphic with subtle animation */}
-            <div 
+            <div
               className="absolute -bottom-6 -left-6 rounded-xl border border-white/10 bg-gray-900/40 p-4 shadow-2xl backdrop-blur-xl transition-transform hover:-translate-y-1"
               style={{ animation: 'float-card 6s ease-in-out infinite' }}
             >
@@ -145,7 +145,7 @@ export function LandingHero() {
             </div>
 
             {/* Floating card 2 - Glassmorphic with subtle animation */}
-            <div 
+            <div
               className="absolute -right-4 top-8 rounded-xl border border-white/10 bg-gray-900/40 p-4 shadow-2xl backdrop-blur-xl transition-transform hover:-translate-y-1"
               style={{ animation: 'float-card 6s ease-in-out infinite 1s' }}
             >

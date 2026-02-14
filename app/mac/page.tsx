@@ -38,16 +38,55 @@ import Link from "next/link";
 import { Suspense } from "react";
 import Loading from "./loading";
 
-const filters = {
+const allFilters = {
   type: [
     { value: "laptop", label: "Laptops", icon: Laptop },
     { value: "desktop", label: "Desktop", icon: Monitor },
+    { value: "phone", label: "iPhone", icon: Laptop },
+    { value: "tablet", label: "iPad", icon: Monitor },
+    { value: "watch", label: "Apple Watch", icon: Laptop },
+    { value: "speaker", label: "HomePod", icon: Monitor },
+    { value: "accessories", label: "Accesorios", icon: Laptop },
   ],
-  chip: [
-    { value: "M4", label: "M4" },
-    { value: "M4 Pro", label: "M4 Pro" },
-    { value: "M4 Max", label: "M4 Max" },
-  ],
+  chip: {
+    laptop: [
+      { value: "M5", label: "M5" },
+      { value: "M4", label: "M4" },
+      { value: "M4 Pro", label: "M4 Pro" },
+      { value: "M4 Max", label: "M4 Max" },
+      { value: "M3", label: "M3" },
+    ],
+    desktop: [
+      { value: "M4", label: "M4" },
+      { value: "M4 Max", label: "M4 Max" },
+    ],
+    phone: [
+      { value: "A18 Pro", label: "A18 Pro" },
+      { value: "A18", label: "A18" },
+      { value: "A17", label: "A17" },
+      { value: "A16", label: "A16" },
+    ],
+    tablet: [
+      { value: "M5", label: "M5" },
+      { value: "M4", label: "M4" },
+      { value: "M3", label: "M3" },
+      { value: "A17 Pro", label: "A17 Pro" },
+      { value: "A16", label: "A16" },
+    ],
+    watch: [
+      { value: "S10", label: "S10" },
+      { value: "S9", label: "S9" },
+    ],
+    speaker: [
+      { value: "S8", label: "S8" },
+    ],
+    accessories: [
+      { value: "H3", label: "H3" },
+      { value: "H2", label: "H2" },
+      { value: "U1", label: "U1" },
+      { value: "A17 Pro", label: "A17 Pro" },
+    ],
+  },
   ram: [
     { value: "8", label: "8GB" },
     { value: "16", label: "16GB" },
@@ -190,6 +229,29 @@ export default function MacCatalogPage() {
 
   const activeFilterCount = Object.values(selectedFilters).flat().length;
 
+  // Get available chip options based on selected device types
+  const availableChipFilters = useMemo(() => {
+    if (selectedFilters.type.length === 0) {
+      // If no type is selected, show all chips
+      return Object.values(allFilters.chip).flat().reduce((acc, chip) => {
+        if (!acc.find(c => c.value === chip.value)) {
+          acc.push(chip);
+        }
+        return acc;
+      }, [] as typeof allFilters.chip.laptop);
+    }
+    
+    // Show only chips for selected device types
+    return selectedFilters.type
+      .flatMap(type => allFilters.chip[type as keyof typeof allFilters.chip] || [])
+      .reduce((acc, chip) => {
+        if (!acc.find(c => c.value === chip.value)) {
+          acc.push(chip);
+        }
+        return acc;
+      }, [] as typeof allFilters.chip.laptop);
+  }, [selectedFilters.type]);
+
   // Filter sidebar content (reused in desktop and mobile)
   const FilterContent = () => (
     <div className="space-y-6">
@@ -197,7 +259,7 @@ export default function MacCatalogPage() {
       <div>
         <h3 className="mb-3 text-sm font-semibold text-foreground">Tipo</h3>
         <div className="space-y-2">
-          {filters.type.map((option) => (
+          {allFilters.type.map((option) => (
             <label
               key={option.value}
               className="flex cursor-pointer items-center gap-2"
@@ -213,30 +275,32 @@ export default function MacCatalogPage() {
         </div>
       </div>
 
-      {/* Chip */}
-      <div>
-        <h3 className="mb-3 text-sm font-semibold text-foreground">Chip</h3>
-        <div className="space-y-2">
-          {filters.chip.map((option) => (
-            <label
-              key={option.value}
-              className="flex cursor-pointer items-center gap-2"
-            >
-              <Checkbox
-                checked={selectedFilters.chip.includes(option.value)}
-                onCheckedChange={() => toggleFilter("chip", option.value)}
-              />
-              <span className="text-sm text-foreground">{option.label}</span>
-            </label>
-          ))}
+      {/* Chip - Dynamic based on selected type */}
+      {availableChipFilters.length > 0 && (
+        <div>
+          <h3 className="mb-3 text-sm font-semibold text-foreground">Chip</h3>
+          <div className="space-y-2">
+            {availableChipFilters.map((option) => (
+              <label
+                key={option.value}
+                className="flex cursor-pointer items-center gap-2"
+              >
+                <Checkbox
+                  checked={selectedFilters.chip.includes(option.value)}
+                  onCheckedChange={() => toggleFilter("chip", option.value)}
+                />
+                <span className="text-sm text-foreground">{option.label}</span>
+              </label>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
       {/* RAM */}
       <div>
         <h3 className="mb-3 text-sm font-semibold text-foreground">RAM</h3>
         <div className="space-y-2">
-          {filters.ram.map((option) => (
+          {allFilters.ram.map((option) => (
             <label
               key={option.value}
               className="flex cursor-pointer items-center gap-2"
@@ -257,7 +321,7 @@ export default function MacCatalogPage() {
           Almacenamiento
         </h3>
         <div className="space-y-2">
-          {filters.storage.map((option) => (
+          {allFilters.storage.map((option) => (
             <label
               key={option.value}
               className="flex cursor-pointer items-center gap-2"
@@ -289,11 +353,10 @@ export default function MacCatalogPage() {
           {/* Header */}
           <div className="mb-8">
             <h1 className="mb-2 text-3xl font-bold text-foreground md:text-4xl">
-              Catálogo Mac
+              Catálogo Apple
             </h1>
             <p className="text-muted-foreground">
-              Encuentra el Mac perfecto para tu empresa. Todos los modelos con
-              soporte empresarial.
+              Encuentra el dispositivo Apple perfecto para tu empresa. Mac, iPhone, iPad, Apple Watch y más con soporte empresarial.
             </p>
           </div>
 
@@ -354,8 +417,15 @@ export default function MacCatalogPage() {
             <div className="mb-6 flex flex-wrap gap-2">
               {Object.entries(selectedFilters).map(([category, values]) =>
                 values.map((value) => {
-                  const filterGroup = filters[category as keyof typeof filters];
-                  const option = filterGroup?.find((f) => f.value === value);
+                  let option;
+                  if (category === 'type') {
+                    option = allFilters.type.find((f) => f.value === value);
+                  } else if (category === 'chip') {
+                    option = availableChipFilters.find((f) => f.value === value);
+                  } else {
+                    const filterGroup = allFilters[category as keyof typeof allFilters];
+                    option = Array.isArray(filterGroup) ? filterGroup.find((f: any) => f.value === value) : null;
+                  }
                   return (
                     <Badge
                       key={`${category}-${value}`}

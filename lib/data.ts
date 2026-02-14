@@ -5,7 +5,7 @@ export interface Product {
   slug: string;
   name: string;
   shortName: string;
-  category: "laptop" | "desktop";
+  category: "laptop" | "desktop" | "phone" | "tablet" | "watch" | "speaker" | "accessories";
   chip: string;
   ram: number[];
   storage: number[];
@@ -93,11 +93,9 @@ export const products: Product[] = [
     storage: [256, 512, 1024, 2048],
     screenSize: 13.6,
     price: 4999000,
-    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&h=600&fit=crop",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MacBook-Air-M4-zgucNhW9Q9FboXGj8wQ97WDk8cWyft.jpg",
     images: [
-      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=800&h=600&fit=crop",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MacBook-Air-M4-zgucNhW9Q9FboXGj8wQ97WDk8cWyft.jpg",
     ],
     badge: "Nuevo",
     inStock: true,
@@ -129,10 +127,9 @@ export const products: Product[] = [
     storage: [256, 512, 1024, 2048],
     screenSize: 15.3,
     price: 5999000,
-    image: "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=800&h=600&fit=crop",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MacBook-Air-M4-zgucNhW9Q9FboXGj8wQ97WDk8cWyft.jpg",
     images: [
-      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&h=600&fit=crop",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MacBook-Air-M4-zgucNhW9Q9FboXGj8wQ97WDk8cWyft.jpg",
     ],
     badge: "Recomendado",
     inStock: true,
@@ -164,10 +161,9 @@ export const products: Product[] = [
     storage: [512, 1024, 2048],
     screenSize: 14.2,
     price: 7999000,
-    image: "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=800&h=600&fit=crop",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MacBook-Pro-M4-C8uJTSbOAAZtrYZx708A79G3y5hUzs.jpg",
     images: [
-      "https://images.unsplash.com/photo-1541807084-5c52b6b3adef?w=800&h=600&fit=crop",
-      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&h=600&fit=crop",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MacBook-Pro-M4-C8uJTSbOAAZtrYZx708A79G3y5hUzs.jpg",
     ],
     badge: "Popular",
     inStock: true,
@@ -199,9 +195,9 @@ export const products: Product[] = [
     storage: [512, 1024, 2048, 4096],
     screenSize: 14.2,
     price: 9999000,
-    image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&h=600&fit=crop",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MacBook-Pro-M4-C8uJTSbOAAZtrYZx708A79G3y5hUzs.jpg",
     images: [
-      "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=800&h=600&fit=crop",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MacBook-Pro-M4-C8uJTSbOAAZtrYZx708A79G3y5hUzs.jpg",
     ],
     inStock: true,
     description: "Para profesionales que necesitan máximo rendimiento. Compila, renderiza y crea sin límites.",
@@ -232,9 +228,9 @@ export const products: Product[] = [
     storage: [1024, 2048, 4096, 8192],
     screenSize: 16.2,
     price: 15999000,
-    image: "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=800&h=600&fit=crop",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MacBook-Pro-M4-C8uJTSbOAAZtrYZx708A79G3y5hUzs.jpg",
     images: [
-      "https://images.unsplash.com/photo-1611186871348-b1ce696e52c9?w=800&h=600&fit=crop",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MacBook-Pro-M4-C8uJTSbOAAZtrYZx708A79G3y5hUzs.jpg",
     ],
     inStock: false,
     leadTime: "2-3 semanas",
@@ -266,9 +262,9 @@ export const products: Product[] = [
     storage: [256, 512, 1024, 2048],
     screenSize: 0,
     price: 2999000,
-    image: "https://images.unsplash.com/photo-1624958723474-5a6d6c8e6a6a?w=800&h=600&fit=crop",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mac-Mini-M4-wuf8l3ljVoHcaJzXlQBCVoonQhrsoU.jpg",
     images: [
-      "https://images.unsplash.com/photo-1624958723474-5a6d6c8e6a6a?w=800&h=600&fit=crop",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mac-Mini-M4-wuf8l3ljVoHcaJzXlQBCVoonQhrsoU.jpg",
     ],
     badge: "Nuevo",
     inStock: true,
@@ -300,9 +296,9 @@ export const products: Product[] = [
     storage: [512, 1024, 2048, 4096, 8192],
     screenSize: 0,
     price: 12999000,
-    image: "https://images.unsplash.com/photo-1591370874773-6702e8f12925?w=800&h=600&fit=crop",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mac-Studio-WVtesYkcTSwoSbdmFHkOgT0uyzFW3E.jpg",
     images: [
-      "https://images.unsplash.com/photo-1591370874773-6702e8f12925?w=800&h=600&fit=crop",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mac-Studio-WVtesYkcTSwoSbdmFHkOgT0uyzFW3E.jpg",
     ],
     inStock: true,
     description: "Estación de trabajo profesional de sobremesa. Rendimiento extremo para estudios y equipos creativos.",
@@ -333,9 +329,9 @@ export const products: Product[] = [
     storage: [256, 512, 1024, 2048],
     screenSize: 24,
     price: 6499000,
-    image: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&h=600&fit=crop",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iMac-24-k6PolIqwQTX8qRUzCxRgtkiUwUFDek.jpg",
     images: [
-      "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800&h=600&fit=crop",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iMac-24-k6PolIqwQTX8qRUzCxRgtkiUwUFDek.jpg",
     ],
     badge: "Popular",
     inStock: true,
@@ -353,8 +349,1005 @@ export const products: Product[] = [
       "Puertos": "2x Thunderbolt/USB 4, 2x USB 3, Ethernet",
       "Audio": "Sistema de 6 altavoces con Spatial Audio",
       "Peso": "4.43 kg"
+  },
+  recommendedFor: ["Ejecutivo", "Recepción", "Diseño"]
+  },
+  // iPhone Products
+  {
+    id: "9",
+    slug: "iphone-17-pro-max",
+    name: "iPhone 17 Pro Max",
+    shortName: "iPhone 17 Pro Max",
+    category: "phone",
+    chip: "A18 Pro",
+    ram: [8],
+    storage: [256, 512, 1024],
+    screenSize: 6.9,
+    price: 5999000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-17-Pro-Max-ZFDlM4jXSt3ktW3HQdsWhwSYd525Yl.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-17-Pro-Max-ZFDlM4jXSt3ktW3HQdsWhwSYd525Yl.jpg",
+    ],
+    badge: "Nuevo",
+    inStock: true,
+    leadTime: "2-3 días",
+    description: "El iPhone más grande y potente con chip A18 Pro, sistema de cámaras profesional avanzado y pantalla Super Retina XDR de 6.9 pulgadas.",
+    benefits: [
+      "Chip A18 Pro con Neural Engine de 16 núcleos",
+      "Sistema de cámaras Pro con teleobjetivo 5x",
+      "Pantalla ProMotion de 120Hz con Always-On",
+      "Batería de hasta 29 horas de reproducción de video",
+      "Resistencia al agua IP68"
+    ],
+    specs: {
+      "Chip": "A18 Pro con Neural Engine de 16 núcleos",
+      "Pantalla": "Super Retina XDR 6.9\" ProMotion (120Hz)",
+      "Cámara": "Triple 48MP (Principal, Ultra Wide, Teleobjetivo 5x)",
+      "Batería": "Hasta 29 horas de video",
+      "Conectividad": "5G, Wi-Fi 6E, Bluetooth 5.3",
+      "Materiales": "Titanio de grado aeroespacial",
+      "Peso": "221 g"
     },
-    recommendedFor: ["Ejecutivo", "Recepción", "Diseño"]
+    recommendedFor: ["Ejecutivo", "Fotografía", "Productividad"]
+  },
+  {
+    id: "10",
+    slug: "iphone-17-pro",
+    name: "iPhone 17 Pro",
+    shortName: "iPhone 17 Pro",
+    category: "phone",
+    chip: "A18 Pro",
+    ram: [8],
+    storage: [128, 256, 512, 1024],
+    screenSize: 6.3,
+    price: 4999000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-17-Pro-GQkBXFTnuaEX2kojcmK3lW47TL2GwK.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-17-Pro-GQkBXFTnuaEX2kojcmK3lW47TL2GwK.jpg",
+    ],
+    badge: "Nuevo",
+    inStock: true,
+    leadTime: "2-3 días",
+    description: "iPhone Pro con chip A18 Pro, sistema de cámaras profesional y pantalla Super Retina XDR de 6.3 pulgadas.",
+    benefits: [
+      "Chip A18 Pro con Neural Engine de 16 núcleos",
+      "Sistema de cámaras Pro con teleobjetivo 3x",
+      "Pantalla ProMotion de 120Hz con Always-On",
+      "Batería de hasta 23 horas de reproducción de video",
+      "Resistencia al agua IP68"
+    ],
+    specs: {
+      "Chip": "A18 Pro con Neural Engine de 16 núcleos",
+      "Pantalla": "Super Retina XDR 6.3\" ProMotion (120Hz)",
+      "Cámara": "Triple 48MP (Principal, Ultra Wide, Teleobjetivo 3x)",
+      "Batería": "Hasta 23 horas de video",
+      "Conectividad": "5G, Wi-Fi 6E, Bluetooth 5.3",
+      "Materiales": "Titanio de grado aeroespacial",
+      "Peso": "187 g"
+    },
+    recommendedFor: ["Ejecutivo", "Fotografía", "Productividad"]
+  },
+  {
+    id: "11",
+    slug: "iphone-17-air",
+    name: "iPhone 17 Air",
+    shortName: "iPhone 17 Air",
+    category: "phone",
+    chip: "A18",
+    ram: [6],
+    storage: [128, 256, 512],
+    screenSize: 6.6,
+    price: 4299000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-17-Air-hZZC8i7IMJq9CmYnFiPFvmLjLa87BG.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-17-Air-hZZC8i7IMJq9CmYnFiPFvmLjLa87BG.jpg",
+    ],
+    badge: "Nuevo",
+    inStock: true,
+    leadTime: "1-2 semanas",
+    description: "El iPhone más delgado jamás creado con chip A18, diseño ultraligero y pantalla Super Retina XDR de 6.6 pulgadas.",
+    benefits: [
+      "Diseño ultrafino y ligero",
+      "Chip A18 con Neural Engine",
+      "Cámara principal de 48MP",
+      "Batería de día completo",
+      "Resistencia al agua IP68"
+    ],
+    specs: {
+      "Chip": "A18 con Neural Engine",
+      "Pantalla": "Super Retina XDR 6.6\"",
+      "Cámara": "Principal 48MP",
+      "Batería": "Hasta 22 horas de video",
+      "Conectividad": "5G, Wi-Fi 6E, Bluetooth 5.3",
+      "Materiales": "Aluminio aeroespacial",
+      "Peso": "165 g"
+    },
+    recommendedFor: ["Ejecutivo", "Movilidad", "Productividad"]
+  },
+  {
+    id: "12",
+    slug: "iphone-17",
+    name: "iPhone 17",
+    shortName: "iPhone 17",
+    category: "phone",
+    chip: "A18",
+    ram: [6],
+    storage: [128, 256, 512],
+    screenSize: 6.1,
+    price: 3799000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-17-cMvO4GYMUCaNrtif6mc36wFdrxz3S3.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-17-cMvO4GYMUCaNrtif6mc36wFdrxz3S3.jpg",
+    ],
+    badge: "Recomendado",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "iPhone con chip A18, cámara dual avanzada y pantalla Super Retina XDR de 6.1 pulgadas. Balance perfecto entre rendimiento y precio.",
+    benefits: [
+      "Chip A18 con Neural Engine",
+      "Cámara dual de 48MP",
+      "Pantalla Super Retina XDR",
+      "Batería de día completo",
+      "Resistencia al agua IP68"
+    ],
+    specs: {
+      "Chip": "A18 con Neural Engine",
+      "Pantalla": "Super Retina XDR 6.1\"",
+      "Cámara": "Dual 48MP (Principal, Ultra Wide)",
+      "Batería": "Hasta 20 horas de video",
+      "Conectividad": "5G, Wi-Fi 6, Bluetooth 5.3",
+      "Materiales": "Aluminio y vidrio",
+      "Peso": "171 g"
+    },
+    recommendedFor: ["General", "Productividad", "Estudiantes"]
+  },
+  {
+    id: "13",
+    slug: "iphone-16-plus",
+    name: "iPhone 16 Plus",
+    shortName: "iPhone 16 Plus",
+    category: "phone",
+    chip: "A17",
+    ram: [6],
+    storage: [128, 256, 512],
+    screenSize: 6.7,
+    price: 3499000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-16-plus-WvfXlvmyKgtUOLD3dmrHKbgwrWRWgo.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-16-plus-WvfXlvmyKgtUOLD3dmrHKbgwrWRWgo.jpg",
+    ],
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "iPhone con pantalla grande de 6.7 pulgadas, chip A17 y batería de larga duración. Ideal para consumo multimedia.",
+    benefits: [
+      "Pantalla grande de 6.7 pulgadas",
+      "Chip A17 con Neural Engine",
+      "Cámara dual avanzada",
+      "Batería de hasta 26 horas de video",
+      "Resistencia al agua IP68"
+    ],
+    specs: {
+      "Chip": "A17 con Neural Engine",
+      "Pantalla": "Super Retina XDR 6.7\"",
+      "Cámara": "Dual 48MP (Principal, Ultra Wide)",
+      "Batería": "Hasta 26 horas de video",
+      "Conectividad": "5G, Wi-Fi 6, Bluetooth 5.3",
+      "Materiales": "Aluminio y vidrio",
+      "Peso": "201 g"
+    },
+    recommendedFor: ["Multimedia", "Productividad", "General"]
+  },
+  {
+    id: "14",
+    slug: "iphone-16",
+    name: "iPhone 16",
+    shortName: "iPhone 16",
+    category: "phone",
+    chip: "A17",
+    ram: [6],
+    storage: [128, 256, 512],
+    screenSize: 6.1,
+    price: 2999000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-16-BYPXmxLFF1PVkqiZKMNs0CAEOe0bBv.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-16-BYPXmxLFF1PVkqiZKMNs0CAEOe0bBv.jpg",
+    ],
+    badge: "Popular",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "iPhone con chip A17, cámara dual y pantalla Super Retina XDR de 6.1 pulgadas. Excelente opción para uso diario.",
+    benefits: [
+      "Chip A17 con Neural Engine",
+      "Cámara dual de 48MP",
+      "Pantalla Super Retina XDR",
+      "Batería de día completo",
+      "Resistencia al agua IP68"
+    ],
+    specs: {
+      "Chip": "A17 con Neural Engine",
+      "Pantalla": "Super Retina XDR 6.1\"",
+      "Cámara": "Dual 48MP (Principal, Ultra Wide)",
+      "Batería": "Hasta 20 horas de video",
+      "Conectividad": "5G, Wi-Fi 6, Bluetooth 5.3",
+      "Materiales": "Aluminio y vidrio",
+      "Peso": "170 g"
+    },
+    recommendedFor: ["General", "Productividad", "Estudiantes"]
+  },
+  {
+    id: "15",
+    slug: "iphone-16e",
+    name: "iPhone 16e",
+    shortName: "iPhone 16e",
+    category: "phone",
+    chip: "A16",
+    ram: [4],
+    storage: [64, 128, 256],
+    screenSize: 6.1,
+    price: 2299000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-16e-7E7Ahbs1sjIQe0NsAcm2GrOSLSAFq7.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-16e-7E7Ahbs1sjIQe0NsAcm2GrOSLSAFq7.jpg",
+    ],
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "iPhone accesible con chip A16, cámara dual y pantalla Super Retina XDR de 6.1 pulgadas. La mejor opción de entrada al ecosistema iPhone.",
+    benefits: [
+      "Chip A16 Bionic",
+      "Cámara dual avanzada",
+      "Pantalla Super Retina XDR",
+      "Batería de día completo",
+      "Resistencia al agua IP68"
+    ],
+    specs: {
+      "Chip": "A16 Bionic",
+      "Pantalla": "Super Retina XDR 6.1\"",
+      "Cámara": "Dual 12MP (Principal, Ultra Wide)",
+      "Batería": "Hasta 20 horas de video",
+      "Conectividad": "5G, Wi-Fi 6, Bluetooth 5.3",
+      "Materiales": "Aluminio y vidrio",
+      "Peso": "172 g"
+    },
+    recommendedFor: ["Estudiantes", "General", "Primera compra"]
+  },
+  {
+    id: "16",
+    slug: "iphone-15",
+    name: "iPhone 15",
+    shortName: "iPhone 15",
+    category: "phone",
+    chip: "A16",
+    ram: [6],
+    storage: [128, 256, 512],
+    screenSize: 6.1,
+    price: 2599000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-15-cIde403jc7QlQiNftmR0X1WPu6Gmo6.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPhone-15-cIde403jc7QlQiNftmR0X1WPu6Gmo6.jpg",
+    ],
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "iPhone 15 con chip A16 Bionic, cámara dual de 48MP y Dynamic Island. Rendimiento confiable a excelente precio.",
+    benefits: [
+      "Chip A16 Bionic probado",
+      "Cámara principal de 48MP",
+      "Dynamic Island",
+      "Batería de día completo",
+      "Resistencia al agua IP68"
+    ],
+    specs: {
+      "Chip": "A16 Bionic",
+      "Pantalla": "Super Retina XDR 6.1\"",
+      "Cámara": "Dual 48MP (Principal, Ultra Wide)",
+      "Batería": "Hasta 20 horas de video",
+      "Conectividad": "5G, Wi-Fi 6, Bluetooth 5.3",
+      "Materiales": "Aluminio y vidrio",
+      "Peso": "171 g"
+    },
+    recommendedFor: ["General", "Productividad", "Estudiantes"]
+  },
+  // Apple Watch Products
+  {
+    id: "17",
+    slug: "apple-watch-ultra-3",
+    name: "Apple Watch Ultra 3",
+    shortName: "Watch Ultra 3",
+    category: "watch",
+    chip: "S10",
+    ram: [2],
+    storage: [64],
+    screenSize: 2.1,
+    price: 3699000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-watch-Ultra-3-2mYr9iIN27CsD5UpxMd5JX0wfKc2VX.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-watch-Ultra-3-2mYr9iIN27CsD5UpxMd5JX0wfKc2VX.jpg",
+    ],
+    badge: "Nuevo",
+    inStock: true,
+    leadTime: "2-3 días",
+    description: "El reloj más robusto de Apple con caja de titanio, pantalla ultra brillante y batería de hasta 36 horas. Diseñado para aventuras extremas.",
+    benefits: [
+      "Caja de titanio de 49mm ultra resistente",
+      "Pantalla de hasta 3000 nits",
+      "Batería de hasta 36 horas",
+      "Resistencia al agua hasta 100m",
+      "GPS de precisión dual"
+    ],
+    specs: {
+      "Chip": "Apple S10 SiP",
+      "Pantalla": "Always-On Retina 2.1\" (3000 nits)",
+      "Conectividad": "LTE, GPS dual, Wi-Fi, Bluetooth",
+      "Sensores": "ECG, oxígeno en sangre, temperatura",
+      "Resistencia": "WR100, IP6X, MIL-STD 810H",
+      "Batería": "Hasta 36 horas",
+      "Caja": "Titanio 49mm"
+    },
+    recommendedFor: ["Deportes", "Aventura", "Ejecutivo"]
+  },
+  {
+    id: "18",
+    slug: "apple-watch-hermes-ultra-3",
+    name: "Apple Watch Hermès Ultra 3",
+    shortName: "Watch Hermès Ultra 3",
+    category: "watch",
+    chip: "S10",
+    ram: [2],
+    storage: [64],
+    screenSize: 2.1,
+    price: 5999000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-watch-Hermes-ultra-3-Ujm5OG188pMC4PgzNqA1Y1TzrNEFXq.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-watch-Hermes-ultra-3-Ujm5OG188pMC4PgzNqA1Y1TzrNEFXq.jpg",
+    ],
+    badge: "Nuevo",
+    inStock: true,
+    leadTime: "1-2 semanas",
+    description: "Edición Hermès del Apple Watch Ultra con correas exclusivas de cuero y esferas personalizadas de lujo.",
+    benefits: [
+      "Correa Hermès de cuero premium",
+      "Esferas exclusivas Hermès",
+      "Caja de titanio de 49mm",
+      "Batería de hasta 36 horas",
+      "Embalaje Hermès exclusivo"
+    ],
+    specs: {
+      "Chip": "Apple S10 SiP",
+      "Pantalla": "Always-On Retina 2.1\" (3000 nits)",
+      "Conectividad": "LTE, GPS dual, Wi-Fi, Bluetooth",
+      "Sensores": "ECG, oxígeno en sangre, temperatura",
+      "Resistencia": "WR100, IP6X, MIL-STD 810H",
+      "Batería": "Hasta 36 horas",
+      "Correa": "Hermès cuero genuino"
+    },
+    recommendedFor: ["Lujo", "Ejecutivo", "Regalo corporativo"]
+  },
+  {
+    id: "19",
+    slug: "apple-watch-series-11",
+    name: "Apple Watch Series 11",
+    shortName: "Watch Series 11",
+    category: "watch",
+    chip: "S10",
+    ram: [1],
+    storage: [32],
+    screenSize: 1.9,
+    price: 1899000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-watch-series-11-TjvWkNs1ZYDG2vNvuRiUyMQxoHAFy7.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-watch-series-11-TjvWkNs1ZYDG2vNvuRiUyMQxoHAFy7.jpg",
+    ],
+    badge: "Recomendado",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "Apple Watch con pantalla Always-On, monitoreo avanzado de salud y batería de día completo. Perfecto para uso diario.",
+    benefits: [
+      "Pantalla Always-On Retina",
+      "ECG y monitoreo de oxígeno",
+      "Detección de caídas y choques",
+      "Resistencia al agua hasta 50m",
+      "Batería de hasta 18 horas"
+    ],
+    specs: {
+      "Chip": "Apple S10 SiP",
+      "Pantalla": "Always-On Retina 1.9\"",
+      "Conectividad": "LTE, GPS, Wi-Fi, Bluetooth",
+      "Sensores": "ECG, oxígeno en sangre, temperatura",
+      "Resistencia": "WR50, IP6X",
+      "Batería": "Hasta 18 horas",
+      "Caja": "Aluminio 45mm"
+    },
+    recommendedFor: ["Salud", "Productividad", "General"]
+  },
+  {
+    id: "20",
+    slug: "apple-watch-hermes-3",
+    name: "Apple Watch Hermès Series 11",
+    shortName: "Watch Hermès 11",
+    category: "watch",
+    chip: "S10",
+    ram: [1],
+    storage: [32],
+    screenSize: 1.9,
+    price: 3299000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-watch-Hermes-3-fsGPj7mKDEbGQbislFbacPKaDhuA8M.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-watch-Hermes-3-fsGPj7mKDEbGQbislFbacPKaDhuA8M.jpg",
+    ],
+    badge: "Nuevo",
+    inStock: true,
+    leadTime: "1-2 semanas",
+    description: "Apple Watch Series 11 edición Hermès con correas de cuero exclusivas y esferas personalizadas de lujo.",
+    benefits: [
+      "Correa Hermès de cuero tejido",
+      "Esferas exclusivas Hermès",
+      "Caja de acero inoxidable",
+      "Monitoreo avanzado de salud",
+      "Embalaje Hermès exclusivo"
+    ],
+    specs: {
+      "Chip": "Apple S10 SiP",
+      "Pantalla": "Always-On Retina 1.9\"",
+      "Conectividad": "LTE, GPS, Wi-Fi, Bluetooth",
+      "Sensores": "ECG, oxígeno en sangre, temperatura",
+      "Resistencia": "WR50, IP6X",
+      "Batería": "Hasta 18 horas",
+      "Correa": "Hermès cuero tejido"
+    },
+    recommendedFor: ["Lujo", "Ejecutivo", "Regalo corporativo"]
+  },
+  {
+    id: "21",
+    slug: "apple-watch-se-3",
+    name: "Apple Watch SE 3",
+    shortName: "Watch SE 3",
+    category: "watch",
+    chip: "S9",
+    ram: [1],
+    storage: [32],
+    screenSize: 1.7,
+    price: 1199000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-watchSE-3-tzA8n2VQa4ToJgfiG2tyclkC6DfATn.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-watchSE-3-tzA8n2VQa4ToJgfiG2tyclkC6DfATn.jpg",
+    ],
+    badge: "Popular",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "Apple Watch accesible con funciones esenciales de salud, fitness y conectividad. La mejor opción de entrada.",
+    benefits: [
+      "Monitoreo de frecuencia cardíaca",
+      "Detección de caídas",
+      "Resistencia al agua hasta 50m",
+      "Notificaciones inteligentes",
+      "Batería de hasta 18 horas"
+    ],
+    specs: {
+      "Chip": "Apple S9 SiP",
+      "Pantalla": "Retina 1.7\"",
+      "Conectividad": "GPS, Wi-Fi, Bluetooth",
+      "Sensores": "Frecuencia cardíaca, acelerómetro",
+      "Resistencia": "WR50",
+      "Batería": "Hasta 18 horas",
+      "Caja": "Aluminio 44mm"
+    },
+    recommendedFor: ["Estudiantes", "Primera compra", "Fitness"]
+  },
+  // iPad Products
+  {
+    id: "22",
+    slug: "ipad-pro-m5-13",
+    name: 'iPad Pro 13" con chip M5',
+    shortName: "iPad Pro 13\" M5",
+    category: "tablet",
+    chip: "M5",
+    ram: [16, 24],
+    storage: [256, 512, 1024, 2048],
+    screenSize: 13,
+    price: 5999000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-Pro-M5-k6lMfgTb0uZjV4mSwbY1uPsHl27JNR.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-Pro-M5-k6lMfgTb0uZjV4mSwbY1uPsHl27JNR.jpg",
+    ],
+    badge: "Nuevo",
+    inStock: true,
+    leadTime: "2-3 días",
+    description: "iPad Pro con chip M5, pantalla OLED XDR de 13 pulgadas y rendimiento de nivel profesional. Compatible con Apple Pencil Pro y Magic Keyboard.",
+    benefits: [
+      "Chip M5 con Neural Engine",
+      "Pantalla Tandem OLED XDR",
+      "Cámara Pro con LiDAR",
+      "Thunderbolt 4",
+      "Compatibilidad con Apple Pencil Pro"
+    ],
+    specs: {
+      "Chip": "Apple M5 con Neural Engine",
+      "Pantalla": "Tandem OLED 13\" XDR (1600 nits)",
+      "Cámara": "12MP Wide + 10MP Ultra Wide + LiDAR",
+      "Conectividad": "Wi-Fi 6E, 5G opcional, Thunderbolt 4",
+      "Batería": "Hasta 10 horas",
+      "Accesorios": "Apple Pencil Pro, Magic Keyboard",
+      "Peso": "682 g"
+    },
+    recommendedFor: ["Diseño", "Productividad", "Creación de contenido"]
+  },
+  {
+    id: "23",
+    slug: "ipad-pro-m4-11",
+    name: 'iPad Pro 11" con chip M4',
+    shortName: "iPad Pro 11\" M4",
+    category: "tablet",
+    chip: "M4",
+    ram: [8, 16],
+    storage: [128, 256, 512, 1024],
+    screenSize: 11,
+    price: 3999000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-Pro-M4-Dl7S7BufPYsp3YRJlD720KWfD6myxI.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-Pro-M4-Dl7S7BufPYsp3YRJlD720KWfD6myxI.jpg",
+    ],
+    badge: "Recomendado",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "iPad Pro compacto con chip M4, pantalla OLED XDR y portabilidad profesional. Ideal para trabajo móvil.",
+    benefits: [
+      "Chip M4 con Neural Engine",
+      "Pantalla Tandem OLED XDR",
+      "Cámara Pro con LiDAR",
+      "USB-C con Thunderbolt",
+      "Diseño ultraligero"
+    ],
+    specs: {
+      "Chip": "Apple M4 con Neural Engine",
+      "Pantalla": "Tandem OLED 11\" XDR (1600 nits)",
+      "Cámara": "12MP Wide + 10MP Ultra Wide + LiDAR",
+      "Conectividad": "Wi-Fi 6E, 5G opcional, Thunderbolt",
+      "Batería": "Hasta 10 horas",
+      "Accesorios": "Apple Pencil Pro, Magic Keyboard",
+      "Peso": "466 g"
+    },
+    recommendedFor: ["Movilidad", "Productividad", "Diseño"]
+  },
+  {
+    id: "24",
+    slug: "ipad-air-m3-11",
+    name: 'iPad Air 11" con chip M3',
+    shortName: "iPad Air 11\" M3",
+    category: "tablet",
+    chip: "M3",
+    ram: [8],
+    storage: [128, 256, 512],
+    screenSize: 11,
+    price: 2799000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-Air-M3-aHXebnMpVNRrHjtMFGOsuc9KGXK4nX.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-Air-M3-aHXebnMpVNRrHjtMFGOsuc9KGXK4nX.jpg",
+    ],
+    badge: "Popular",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "iPad Air con chip M3, pantalla Liquid Retina de 11 pulgadas y rendimiento profesional a excelente precio.",
+    benefits: [
+      "Chip M3 con Neural Engine",
+      "Pantalla Liquid Retina",
+      "Cámara frontal horizontal",
+      "USB-C",
+      "Compatibilidad con Apple Pencil"
+    ],
+    specs: {
+      "Chip": "Apple M3 con Neural Engine",
+      "Pantalla": "Liquid Retina 11\" (500 nits)",
+      "Cámara": "12MP Wide, 12MP Ultra Wide frontal",
+      "Conectividad": "Wi-Fi 6, 5G opcional, USB-C",
+      "Batería": "Hasta 10 horas",
+      "Accesorios": "Apple Pencil (USB-C), Magic Keyboard Folio",
+      "Peso": "462 g"
+    },
+    recommendedFor: ["Productividad", "Estudiantes", "General"]
+  },
+  {
+    id: "25",
+    slug: "ipad-mini-a17",
+    name: "iPad mini con chip A17 Pro",
+    shortName: "iPad mini A17",
+    category: "tablet",
+    chip: "A17 Pro",
+    ram: [8],
+    storage: [128, 256, 512],
+    screenSize: 8.3,
+    price: 2399000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-mini-A17-k75T0OMeYHk3J7no0y6937dCb34qvK.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-mini-A17-k75T0OMeYHk3J7no0y6937dCb34qvK.jpg",
+    ],
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "iPad mini ultraportátil con chip A17 Pro y pantalla de 8.3 pulgadas. Máxima movilidad con rendimiento completo.",
+    benefits: [
+      "Diseño ultraportátil",
+      "Chip A17 Pro potente",
+      "Pantalla Liquid Retina",
+      "USB-C",
+      "Compatibilidad con Apple Pencil"
+    ],
+    specs: {
+      "Chip": "Apple A17 Pro",
+      "Pantalla": "Liquid Retina 8.3\" (500 nits)",
+      "Cámara": "12MP Wide, 12MP Ultra Wide frontal",
+      "Conectividad": "Wi-Fi 6, 5G opcional, USB-C",
+      "Batería": "Hasta 10 horas",
+      "Accesorios": "Apple Pencil (USB-C)",
+      "Peso": "293 g"
+    },
+    recommendedFor: ["Movilidad", "Lectura", "Punto de venta"]
+  },
+  // HomePod
+  {
+    id: "26",
+    slug: "homepod-2024",
+    name: "HomePod (2024)",
+    shortName: "HomePod",
+    category: "speaker",
+    chip: "S8",
+    ram: [1],
+    storage: [0],
+    screenSize: 0,
+    price: 1499000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HomePod-cD285qzipIBInmEB6kndlsB4fEygVq.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HomePod-cD285qzipIBInmEB6kndlsB4fEygVq.jpg",
+    ],
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "Altavoz inteligente con audio espacial, HomeKit y Siri. Perfecto para oficinas, salas de reuniones y espacios corporativos.",
+    benefits: [
+      "Audio espacial de alta fidelidad",
+      "Control por voz con Siri",
+      "HomeKit para automatización",
+      "Multiroom con AirPlay 2",
+      "Diseño premium en malla"
+    ],
+    specs: {
+      "Chip": "Apple S8",
+      "Audio": "Woofer de alta excursión + 5 tweeters",
+      "Micrófonos": "4 micrófonos para Siri",
+      "Conectividad": "Wi-Fi 6, Thread, Bluetooth 5.3",
+      "Integración": "HomeKit, Matter, AirPlay 2",
+      "Dimensiones": "172 x 142 mm",
+      "Peso": "2.3 kg"
+    },
+    recommendedFor: ["Oficina", "Sala de reuniones", "Recepción"]
+  },
+  // Accessories
+  {
+    id: "27",
+    slug: "airpods-pro-3",
+    name: "AirPods Pro (3ª generación)",
+    shortName: "AirPods Pro 3",
+    category: "accessories",
+    chip: "H3",
+    ram: [0],
+    storage: [0],
+    screenSize: 0,
+    price: 1299000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirPods-Pro-3-BX4JsAgB017zbwDw84IMkkP4vWkeES.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirPods-Pro-3-BX4JsAgB017zbwDw84IMkkP4vWkeES.jpg",
+    ],
+    badge: "Nuevo",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "Audífonos con cancelación adaptativa de ruido, audio espacial personalizado y hasta 6 horas de autonomía.",
+    benefits: [
+      "Cancelación de ruido adaptativa",
+      "Audio espacial personalizado",
+      "Resistencia al agua y sudor IP54",
+      "Hasta 6 horas con una carga",
+      "Estuche con USB-C y Find My"
+    ],
+    specs: {
+      "Chip": "Apple H3",
+      "Audio": "Cancelación activa de ruido, Spatial Audio",
+      "Batería": "6h (ANC), 30h (con estuche)",
+      "Conectividad": "Bluetooth 5.3",
+      "Resistencia": "IP54 (audífonos y estuche)",
+      "Carga": "USB-C, MagSafe, Qi",
+      "Peso": "5.3g por audífono"
+    },
+    recommendedFor: ["Ejecutivo", "Oficina", "Movilidad"]
+  },
+  {
+    id: "28",
+    slug: "airpods-pro-max",
+    name: "AirPods Max",
+    shortName: "AirPods Max",
+    category: "accessories",
+    chip: "H2",
+    ram: [0],
+    storage: [0],
+    screenSize: 0,
+    price: 2699000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirPods-Pro-Max-DTg8HchsR1tSMxwYJufLVOQslJbJmY.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirPods-Pro-Max-DTg8HchsR1tSMxwYJufLVOQslJbJmY.jpg",
+    ],
+    badge: "Premium",
+    inStock: true,
+    leadTime: "2-3 días",
+    description: "Audífonos over-ear premium con cancelación de ruido excepcional, audio de alta fidelidad y diseño en aluminio.",
+    benefits: [
+      "Drivers dinámicos de 40mm de alta fidelidad",
+      "Cancelación de ruido líder en la industria",
+      "Audio espacial con seguimiento dinámico",
+      "Hasta 20 horas de batería",
+      "Construcción premium en aluminio y acero"
+    ],
+    specs: {
+      "Chip": "Apple H2",
+      "Audio": "Cancelación activa de ruido, Spatial Audio, Adaptive EQ",
+      "Batería": "Hasta 20 horas con ANC",
+      "Conectividad": "Bluetooth 5.3",
+      "Materiales": "Aluminio, acero inoxidable, malla tejida",
+      "Carga": "Lightning",
+      "Peso": "384.8g"
+    },
+    recommendedFor: ["Ejecutivo", "Creación de contenido", "Estudio"]
+  },
+  {
+    id: "29",
+    slug: "airpods-4-noise-cancellation",
+    name: "AirPods 4 con Cancelación de Ruido",
+    shortName: "AirPods 4 ANC",
+    category: "accessories",
+    chip: "H2",
+    ram: [0],
+    storage: [0],
+    screenSize: 0,
+    price: 899000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirPods-4-Noise-Cancellation-syA2tcGJcgfMQiPYSNwCfjdxRX0C6o.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirPods-4-Noise-Cancellation-syA2tcGJcgfMQiPYSNwCfjdxRX0C6o.jpg",
+    ],
+    badge: "Nuevo",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "AirPods con diseño abierto, cancelación de ruido y audio espacial. Comodidad todo el día.",
+    benefits: [
+      "Cancelación de ruido activa",
+      "Audio espacial personalizado",
+      "Hasta 5 horas con una carga",
+      "Estuche con USB-C y altavoz Find My",
+      "Resistencia al agua y sudor"
+    ],
+    specs: {
+      "Chip": "Apple H2",
+      "Audio": "Cancelación activa de ruido, Spatial Audio",
+      "Batería": "5h (ANC), 30h (con estuche)",
+      "Conectividad": "Bluetooth 5.3",
+      "Carga": "USB-C",
+      "Resistencia": "IP54",
+      "Peso": "4.3g por audífono"
+    },
+    recommendedFor: ["General", "Oficina", "Productividad"]
+  },
+  {
+    id: "30",
+    slug: "airpods-4",
+    name: "AirPods 4",
+    shortName: "AirPods 4",
+    category: "accessories",
+    chip: "H2",
+    ram: [0],
+    storage: [0],
+    screenSize: 0,
+    price: 699000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirPods-4-5ILX1ufExdKc0UWwbH0WMDwGsikOJ7.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirPods-4-5ILX1ufExdKc0UWwbH0WMDwGsikOJ7.jpg",
+    ],
+    badge: "Popular",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "AirPods esenciales con audio espacial personalizado y hasta 5 horas de batería. Excelente opción de entrada.",
+    benefits: [
+      "Audio espacial personalizado",
+      "Hasta 5 horas con una carga",
+      "Estuche con USB-C",
+      "Resistencia al agua y sudor",
+      "Precio accesible"
+    ],
+    specs: {
+      "Chip": "Apple H2",
+      "Audio": "Spatial Audio personalizado",
+      "Batería": "5h, 30h (con estuche)",
+      "Conectividad": "Bluetooth 5.3",
+      "Carga": "USB-C",
+      "Resistencia": "IP54",
+      "Peso": "4.3g por audífono"
+    },
+    recommendedFor: ["General", "Estudiantes", "Primera compra"]
+  },
+  {
+    id: "31",
+    slug: "ipad-11-gen",
+    name: "iPad (11ª generación)",
+    shortName: "iPad 11ª Gen",
+    category: "tablet",
+    chip: "A16",
+    ram: [4],
+    storage: [64, 128, 256],
+    screenSize: 10.9,
+    price: 1799000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-11th-Geb-rH7lVVXrEHcFPhnBuaxfTZE3r5j0lN.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-11th-Geb-rH7lVVXrEHcFPhnBuaxfTZE3r5j0lN.jpg",
+    ],
+    badge: "Popular",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "iPad estándar con chip A16, pantalla de 10.9 pulgadas y versatilidad para trabajo y entretenimiento.",
+    benefits: [
+      "Chip A16 Bionic",
+      "Pantalla Liquid Retina de 10.9\"",
+      "USB-C para conectividad universal",
+      "Compatibilidad con Apple Pencil",
+      "Excelente relación calidad-precio"
+    ],
+    specs: {
+      "Chip": "Apple A16 Bionic",
+      "Pantalla": "Liquid Retina 10.9\" (2360x1640)",
+      "Cámara": "12MP Wide, 12MP Ultra Wide frontal",
+      "Conectividad": "Wi-Fi 6, 5G opcional, USB-C",
+      "Batería": "Hasta 10 horas",
+      "Accesorios": "Apple Pencil (USB-C)",
+      "Peso": "477 g"
+    },
+    recommendedFor: ["General", "Estudiantes", "Punto de venta"]
+  },
+  {
+    id: "32",
+    slug: "ipad-a16-yellow",
+    name: "iPad con A16 (Edición Amarillo)",
+    shortName: "iPad A16",
+    category: "tablet",
+    chip: "A16",
+    ram: [4],
+    storage: [64, 128, 256],
+    screenSize: 10.9,
+    price: 1799000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-A16-TcYMpgXHsr4v1Vr9NLlH2aqXKcnB24.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-A16-TcYMpgXHsr4v1Vr9NLlH2aqXKcnB24.jpg",
+    ],
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "iPad en vibrante color amarillo. Ideal para destacar en tu empresa o como herramienta corporativa personalizada.",
+    benefits: [
+      "Diseño distintivo en amarillo",
+      "Chip A16 Bionic potente",
+      "Pantalla Liquid Retina",
+      "USB-C universal",
+      "Personaliza la imagen de tu empresa"
+    ],
+    specs: {
+      "Chip": "Apple A16 Bionic",
+      "Pantalla": "Liquid Retina 10.9\" (2360x1640)",
+      "Cámara": "12MP Wide, 12MP Ultra Wide frontal",
+      "Conectividad": "Wi-Fi 6, 5G opcional, USB-C",
+      "Batería": "Hasta 10 horas",
+      "Color": "Amarillo",
+      "Peso": "477 g"
+    },
+    recommendedFor: ["Recepción", "Marketing", "Retail"]
+  },
+  {
+    id: "33",
+    slug: "airtag",
+    name: "AirTag",
+    shortName: "AirTag",
+    category: "accessories",
+    chip: "U1",
+    ram: [0],
+    storage: [0],
+    screenSize: 0,
+    price: 149000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirTag-zQWvUSSIrKwlXduRfhyEVCXXZMeTW7.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirTag-zQWvUSSIrKwlXduRfhyEVCXXZMeTW7.jpg",
+    ],
+    badge: "Recomendado",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "Localizador Bluetooth con chip U1 para rastreo preciso. Ideal para equipos, activos corporativos y llaves.",
+    benefits: [
+      "Búsqueda de precisión con U1",
+      "Red Find My global",
+      "Batería reemplazable de 1 año",
+      "Resistente al agua IP67",
+      "Rastreo de activos corporativos"
+    ],
+    specs: {
+      "Chip": "Apple U1 (Ultra Wideband)",
+      "Conectividad": "Bluetooth 5.3, NFC",
+      "Batería": "CR2032 (hasta 1 año)",
+      "Resistencia": "IP67",
+      "Dimensiones": "31.9mm diámetro, 8mm grosor",
+      "Peso": "11g",
+      "Personalización": "Grabado gratis"
+    },
+    recommendedFor: ["Logística", "Activos", "Seguridad"]
+  },
+  {
+    id: "34",
+    slug: "airtag-4-pack",
+    name: "AirTag Pack de 4",
+    shortName: "AirTag 4-Pack",
+    category: "accessories",
+    chip: "U1",
+    ram: [0],
+    storage: [0],
+    screenSize: 0,
+    price: 499000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirTag-4-pack-W5P71fZeeK5pLr2Mpoopt0OUF0FYvF.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AirTag-4-pack-W5P71fZeeK5pLr2Mpoopt0OUF0FYvF.jpg",
+    ],
+    badge: "Popular",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "Pack de 4 AirTags con ahorro. Perfecto para flotas empresariales, equipos y gestión de activos.",
+    benefits: [
+      "Ahorro vs compra individual",
+      "Gestión de múltiples activos",
+      "Búsqueda de precisión con U1",
+      "Red Find My global",
+      "Ideal para flotas corporativas"
+    ],
+    specs: {
+      "Chip": "Apple U1 (Ultra Wideband)",
+      "Conectividad": "Bluetooth 5.3, NFC",
+      "Batería": "CR2032 (hasta 1 año c/u)",
+      "Resistencia": "IP67",
+      "Contenido": "4 AirTags",
+      "Peso": "11g c/u",
+      "Personalización": "Grabado gratis"
+    },
+    recommendedFor: ["Logística", "Flotas", "Gestión de activos"]
+  },
+  {
+    id: "35",
+    slug: "apple-tv-4k",
+    name: "Apple TV 4K",
+    shortName: "Apple TV 4K",
+    category: "accessories",
+    chip: "A17 Pro",
+    ram: [4],
+    storage: [64, 128],
+    screenSize: 0,
+    price: 899000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-TV-4K-gPf5ydQSSaz6y62wPWahBzrk8rKzmS.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-TV-4K-gPf5ydQSSaz6y62wPWahBzrk8rKzmS.jpg",
+    ],
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "Dispositivo de streaming 4K con chip A17 Pro, Dolby Vision y Atmos. Ideal para salas de conferencias y áreas comunes.",
+    benefits: [
+      "Calidad 4K HDR con Dolby Vision",
+      "Audio Dolby Atmos",
+      "AirPlay para presentaciones",
+      "HomeKit para automatización",
+      "Siri Remote incluido"
+    ],
+    specs: {
+      "Chip": "Apple A17 Pro",
+      "Video": "4K HDR, Dolby Vision, HDR10+",
+      "Audio": "Dolby Atmos",
+      "Conectividad": "Wi-Fi 6E, Bluetooth 5.3, HDMI 2.1, Ethernet",
+      "Almacenamiento": "64GB o 128GB",
+      "Dimensiones": "93 x 93 x 31 mm",
+      "Peso": "208g"
+    },
+    recommendedFor: ["Sala de reuniones", "Recepción", "Capacitación"]
   }
 ];
 
@@ -362,73 +1355,80 @@ export const services: Service[] = [
   {
     id: "1",
     title: "Implementación y Despliegue",
-    description: "Configuración, migración de datos y puesta en marcha de equipos Apple en su organización.",
+    description: "Ponemos en marcha tu entorno Apple de forma ordenada y alineada a tu infraestructura actual.",
     icon: "rocket",
     features: [
       "Configuración inicial personalizada",
-      "Migración de datos desde equipos anteriores",
-      "Integración con infraestructura existente",
-      "Despliegue zero-touch con Apple Business Manager"
+      "Migración segura de datos",
+      "Integración con infraestructura existentes",
+      "Entrega lista para trabajar (zero-touch si aplica)",
+      "Resultado: equipos productivos desde el primer día."
     ]
   },
   {
     id: "2",
     title: "Gestión y Administración (MDM)",
-    description: "Control centralizado de todos sus dispositivos Apple con soluciones MDM empresariales.",
+    description: "Control centralizado y seguro de todos tus dispositivos Apple.",
     icon: "settings",
     features: [
-      "Apple Business Manager (ABM)",
-      "Configuración remota de políticas",
-      "Distribución de apps corporativas",
-      "Inventario y reportes en tiempo real"
+      "Implementación de Apple Business Manager (ABM)",
+      "Configuración remota de políticas y restricciones",
+      "Gestión de usuarios y Apple ID administrados",
+      "Distribución automática de aplicaciones y actualizaciones",
+      "Inventario y monitoreo en tiempo real",
+      "Resultado: menos carga operativa para TI y mayor control corporativo."
     ]
   },
   {
     id: "3",
     title: "Seguridad y Continuidad",
-    description: "Proteja sus datos y garantice la continuidad operativa de su negocio.",
+    description: "Protegemos la información de tu empresa y garantizamos estabilidad operativa.",
     icon: "shield",
     features: [
-      "Cifrado FileVault gestionado",
+      "Cifrado de disco con FileVault gestionado",
       "Políticas de seguridad centralizadas",
-      "Backup empresarial automatizado",
-      "Plan de recuperación ante desastres"
+      "Gestión de parches y actualizaciones",
+      "Estrategias de respaldo empresarial",
+      "Cumplimiento de buenas prácticas de seguridad",
+      "Resultado: reducción de riesgos y continuidad del negocio."
     ]
   },
   {
     id: "4",
     title: "Soporte Técnico Empresarial",
-    description: "Mesa de ayuda especializada en ecosistema Apple para su equipo.",
+    description: "Servicio Técnico Autorizado por Apple.",
     icon: "headphones",
     features: [
-      "Soporte telefónico y remoto",
       "Atención en sitio cuando se requiera",
+      "Gestión de garantías",
       "SLA empresariales personalizados",
-      "Equipo certificado Apple"
+      "Acompañamiento continuo postimplementación",
+      "Resultado: menor tiempo de inactividad y mayor eficiencia operativa."
     ]
   },
   {
     id: "5",
     title: "Formación y Onboarding",
-    description: "Capacitación para maximizar la productividad de su equipo con Apple.",
+    description: "Maximizamos la adopción y el uso estratégico de la tecnología.",
     icon: "graduation",
     features: [
-      "Sesiones de onboarding para nuevos usuarios",
-      "Capacitación en apps de productividad",
+      "Capacitación en herramientas de productividad",
       "Workshops para equipos de TI",
-      "Material de referencia personalizado"
+      "Buenas prácticas de uso y seguridad",
+      "Resultado: mayor productividad y mejor experiencia del usuario."
     ]
   },
   {
     id: "6",
-    title: "AppleCare para Empresas",
-    description: "Cobertura extendida y soporte prioritario directo de Apple.",
+    title: "Garantías para Empresas",
+    description: "Cobertura extendida y soporte oficial Apple.",
     icon: "heart",
     features: [
       "Garantía extendida hasta 3 años",
       "Soporte técnico prioritario",
-      "Reparación con piezas originales",
-      "Cobertura por daño accidental"
+      "Reparaciones con piezas originales",
+      "Gestión centralizada de incidencias",
+      "Resultado: protección de la inversión tecnológica."
     ]
   }
 ];
@@ -542,7 +1542,7 @@ export const faqs: FAQ[] = [
   {
     id: "5",
     question: "¿Qué nivel de soporte incluyen sus servicios?",
-    answer: "Ofrecemos diferentes niveles de SLA según sus necesidades: desde soporte en horario laboral hasta 24/7 para operaciones críticas. Todos incluyen soporte remoto y en sitio cuando se requiera.",
+    answer: "Ofrecemos diferentes niveles de SLA según sus necesidades: desde soporte en horario laboral hasta 7/24 para operaciones críticas. Todos incluyen soporte remoto y en sitio cuando se requiera.",
     category: "soporte"
   },
   {

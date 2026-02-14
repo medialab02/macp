@@ -24,7 +24,7 @@ export function FAQSection() {
             Preguntas frecuentes
           </h2>
           <p className="text-muted-foreground">
-            Respuestas a las dudas más comunes sobre Mac para empresas
+            Respuestas a las dudas más comunes sobre Apple para empresas
           </p>
         </div>
 
