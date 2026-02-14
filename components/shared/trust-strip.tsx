@@ -7,14 +7,9 @@ interface TrustStripProps {
 }
 
 const trustItems = [
-
-  {
-    icon: Shield,
-    text: "ISO 27001",
-  },
   {
     icon: Award,
-    text: "15+ años experiencia",
+    text: "25+ años experiencia",
   },
   {
     icon: Headphones,
