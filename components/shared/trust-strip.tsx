@@ -7,11 +7,7 @@ interface TrustStripProps {
 }
 
 const trustItems = [
-  {
-    icon: Apple,
-    text: "Apple Business Partner",
-    highlight: true,
-  },
+
   {
     icon: Shield,
     text: "ISO 27001",
