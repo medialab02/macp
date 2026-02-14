@@ -16,7 +16,10 @@ const categories = [
   { id: "watch", label: "Apple Watch", icon: Watch },
 ];
 
-const featuredMacs = products.slice(0, 4);
+const featuredMacs = products.filter(p => p.category === 'laptop' || p.category === 'desktop').slice(0, 4);
+const featurediPads = products.filter(p => p.category === 'tablet').slice(0, 4);
+const featurediPhones = products.filter(p => p.category === 'phone').slice(0, 4);
+const featuredWatches = products.filter(p => p.category === 'watch').slice(0, 4);
 
 export function ApplePartnerSection() {
   const [activeCategory, setActiveCategory] = useState("mac");
@@ -50,7 +53,7 @@ export function ApplePartnerSection() {
                   alt="Apple Business Partner & Authorized Service Provider"
                   width={240}
                   height={40}
-                  className="h-8 w-auto"
+                  className="h-8 w-auto invert dark:invert-0"
                 />
               </div>
 
@@ -90,17 +93,17 @@ export function ApplePartnerSection() {
                   </Link>
                 </Button>
                 <Button variant="outline" asChild>
-                  <Link href="/mac#accesorios">
+                  <Link href="/mac?type=accessories">
                     Accesorios
                   </Link>
-                </Button>
+                
               </div>
             </div>
           </div>
 
           {/* Right column - Products grid */}
           <div className="lg:col-span-3">
-            {activeCategory === "mac" ? (
+            {activeCategory === "mac" && (
               <div className="grid gap-4 sm:grid-cols-2">
                 {featuredMacs.map((product) => (
                   <Link
@@ -130,11 +133,101 @@ export function ApplePartnerSection() {
                   </Link>
                 ))}
               </div>
-            ) : (
-              <div className="flex h-64 items-center justify-center rounded-xl border border-dashed border-border bg-secondary/20">
-                <p className="text-muted-foreground">
-                  Próximamente: Catálogo de {categories.find(c => c.id === activeCategory)?.label}
-                </p>
+            )}
+            
+            {activeCategory === "ipad" && (
+              <div className="grid gap-4 sm:grid-cols-2">
+                {featurediPads.map((product) => (
+                  <Link
+                    key={product.id}
+                    href={`/mac/${product.slug}`}
+                    className="group relative overflow-hidden rounded-xl border border-border bg-secondary/30 p-4 transition-all hover:border-primary/50 hover:bg-secondary/50"
+                  >
+                    <div className="relative mb-3 aspect-[4/3] overflow-hidden rounded-lg bg-background/50">
+                      <Image
+                        src={product.image || "/placeholder.svg"}
+                        alt={product.name}
+                        fill
+                        className="object-contain p-4 transition-transform group-hover:scale-105"
+                      />
+                      {product.badge && (
+                        <Badge className="absolute left-2 top-2 bg-primary text-primary-foreground">
+                          {product.badge}
+                        </Badge>
+                      )}
+                    </div>
+                    <h3 className="font-medium text-foreground">
+                      {product.shortName}
+                    </h3>
+                    <p className="mt-1 text-xs text-muted-foreground">
+                      Chip {product.chip} | Pantalla {product.screenSize}"
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            )}
+
+            {activeCategory === "iphone" && (
+              <div className="grid gap-4 sm:grid-cols-2">
+                {featurediPhones.map((product) => (
+                  <Link
+                    key={product.id}
+                    href={`/mac/${product.slug}`}
+                    className="group relative overflow-hidden rounded-xl border border-border bg-secondary/30 p-4 transition-all hover:border-primary/50 hover:bg-secondary/50"
+                  >
+                    <div className="relative mb-3 aspect-[4/3] overflow-hidden rounded-lg bg-background/50">
+                      <Image
+                        src={product.image || "/placeholder.svg"}
+                        alt={product.name}
+                        fill
+                        className="object-contain p-4 transition-transform group-hover:scale-105"
+                      />
+                      {product.badge && (
+                        <Badge className="absolute left-2 top-2 bg-primary text-primary-foreground">
+                          {product.badge}
+                        </Badge>
+                      )}
+                    </div>
+                    <h3 className="font-medium text-foreground">
+                      {product.shortName}
+                    </h3>
+                    <p className="mt-1 text-xs text-muted-foreground">
+                      Chip {product.chip} | Pantalla {product.screenSize}"
+                    </p>
+                  </Link>
+                ))}
+              </div>
+            )}
+
+            {activeCategory === "watch" && (
+              <div className="grid gap-4 sm:grid-cols-2">
+                {featuredWatches.map((product) => (
+                  <Link
+                    key={product.id}
+                    href={`/mac/${product.slug}`}
+                    className="group relative overflow-hidden rounded-xl border border-border bg-secondary/30 p-4 transition-all hover:border-primary/50 hover:bg-secondary/50"
+                  >
+                    <div className="relative mb-3 aspect-[4/3] overflow-hidden rounded-lg bg-background/50">
+                      <Image
+                        src={product.image || "/placeholder.svg"}
+                        alt={product.name}
+                        fill
+                        className="object-contain p-4 transition-transform group-hover:scale-105"
+                      />
+                      {product.badge && (
+                        <Badge className="absolute left-2 top-2 bg-primary text-primary-foreground">
+                          {product.badge}
+                        </Badge>
+                      )}
+                    </div>
+                    <h3 className="font-medium text-foreground">
+                      {product.shortName}
+                    </h3>
+                    <p className="mt-1 text-xs text-muted-foreground">
+                      Chip {product.chip} | Pantalla {product.screenSize}"
+                    </p>
+                  </Link>
+                ))}
               </div>
             )}
           </div>

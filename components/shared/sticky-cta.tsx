@@ -65,7 +65,10 @@ export function StickyCTA({
       )}
     >
       <div className="flex gap-2">
-        <Button className="flex-1" asChild>
+        <Button 
+          className="flex-1 bg-gradient-to-r from-[#00ffe3] to-[#00a6d6] hover:from-[#00e6cc] hover:to-[#0090bb] text-black font-bold border-0 shadow-lg transition-all duration-300" 
+          asChild
+        >
           <a
             href="https://wa.me/573001234567"
             target="_blank"
@@ -87,7 +90,11 @@ export function StickyCTA({
         isVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0 pointer-events-none"
       )}
     >
-      <Button size="lg" className="shadow-lg" asChild>
+      <Button 
+        size="lg" 
+        className="bg-gradient-to-r from-[#00ffe3] to-[#00a6d6] hover:from-[#00e6cc] hover:to-[#0090bb] text-black font-bold border-0 shadow-lg transition-all duration-300" 
+        asChild
+      >
         <a
           href="https://wa.me/573001234567"
           target="_blank"
