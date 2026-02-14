@@ -96,7 +96,7 @@ export function ApplePartnerSection() {
                   <Link href="/mac?type=accessories">
                     Accesorios
                   </Link>
-                
+                </Button>
               </div>
             </div>
           </div>
