@@ -24,7 +24,7 @@ export function AccordionSection({ title, items, id, imageSrc }: AccordionSectio
     <section id={id} className="py-16 md:py-20 lg:py-24">
       <div className={cn("container mx-auto px-4 sm:px-6 lg:px-8", imageSrc ? "max-w-7xl" : "max-w-4xl")}>
         {title && (
-          <h2 className="mb-12 lg:mb-16 text-center text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-balance text-foreground">
+          <h2 className="mb-12 lg:mb-16 text-center text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-balance text-foreground dark:text-foreground">
             {title}
           </h2>
         )}
