@@ -23,7 +23,6 @@ export default function MacParaEmpresasPage() {
       <main>
         <LandingHero />
         <WhyMacSection />
-        <OffersSection />
         <MacWizard />
 
         {/* Services section */}
