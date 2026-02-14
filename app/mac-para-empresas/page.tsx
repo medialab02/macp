@@ -25,7 +25,7 @@ export default function MacParaEmpresasPage() {
         <WhyMacSection />
         <OffersSection />
         <MacWizard />
-        
+
         {/* Services section */}
         <section className="py-20">
           <div className="mx-auto max-w-7xl px-4 lg:px-6">
@@ -34,7 +34,7 @@ export default function MacParaEmpresasPage() {
                 Servicios para empresas
               </h2>
               <p className="mx-auto max-w-2xl text-muted-foreground">
-                Acompañamiento completo en todo el ciclo de vida de tus equipos Apple
+                Acompañamos a tu organización en todo el ciclo de vida del ecosistema Apple: desde la implementación hasta el soporte continuo.
               </p>
             </div>
             <ServicesCards />
