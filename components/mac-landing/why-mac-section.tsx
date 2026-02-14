@@ -65,7 +65,7 @@ const pillars = [
 
 export function WhyMacSection() {
   const handleContactClick = (pillarId: string) => {
-    trackEvent("cta_clicked", { 
+    trackEvent("cta_clicked", {
       cta_text: "Hablar con un asesor",
       cta_location: "why_mac_section",
       pillar_id: pillarId,
@@ -78,10 +78,10 @@ export function WhyMacSection() {
         {/* Section Header */}
         <div className="mb-16 text-center">
           <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl lg:text-5xl">
-            ¿Por qué Mac en tu empresa?
+            ¿Por qué Apple en tu empresa?
           </h2>
           <p className="mx-auto max-w-3xl text-lg text-muted-foreground">
-            Descubre cómo Apple transforma la productividad empresarial con seguridad 
+            Descubre cómo Apple transforma la productividad empresarial con seguridad
             de clase mundial, gestión simplificada y una experiencia que tus empleados amarán.
           </p>
         </div>
@@ -91,7 +91,7 @@ export function WhyMacSection() {
           {pillars.map((pillar, index) => {
             const Icon = pillar.icon;
             return (
-              <div 
+              <div
                 key={pillar.id}
                 className="group relative bg-card rounded-2xl border border-border p-8 hover:border-primary/50 transition-all"
               >
@@ -114,7 +114,7 @@ export function WhyMacSection() {
                     </p>
                   </div>
                 </div>
-                
+
                 <p className="text-sm italic text-muted-foreground mb-6">
                   {pillar.description}
                 </p>
@@ -122,7 +122,7 @@ export function WhyMacSection() {
                 {/* Bullets */}
                 <ul className="space-y-3 mb-6">
                   {pillar.bullets.map((bullet, idx) => (
-                    <li 
+                    <li
                       key={idx}
                       className="flex items-start gap-3 text-sm text-muted-foreground"
                     >
@@ -133,8 +133,8 @@ export function WhyMacSection() {
                 </ul>
 
                 {/* CTA */}
-                <Button 
-                  variant="ghost" 
+                <Button
+                  variant="ghost"
                   size="sm"
                   className="p-0 h-auto text-primary hover:text-primary/80 hover:bg-transparent"
                   onClick={() => handleContactClick(pillar.id)}
