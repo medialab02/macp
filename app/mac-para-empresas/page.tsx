@@ -53,7 +53,6 @@ export default function MacParaEmpresasPage() {
                 Descubre cómo hemos ayudado a empresas como la tuya a transformar su infraestructura
               </p>
             </div>
-            <CaseStudyCards />
           </div>
         </section>
 
