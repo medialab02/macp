@@ -5,7 +5,7 @@ export interface Product {
   slug: string;
   name: string;
   shortName: string;
-  category: "laptop" | "desktop" | "phone";
+  category: "laptop" | "desktop" | "phone" | "tablet" | "watch" | "speaker";
   chip: string;
   ram: number[];
   storage: number[];
@@ -645,6 +645,377 @@ export const products: Product[] = [
       "Peso": "171 g"
     },
     recommendedFor: ["General", "Productividad", "Estudiantes"]
+  },
+  // Apple Watch Products
+  {
+    id: "17",
+    slug: "apple-watch-ultra-3",
+    name: "Apple Watch Ultra 3",
+    shortName: "Watch Ultra 3",
+    category: "watch",
+    chip: "S10",
+    ram: [2],
+    storage: [64],
+    screenSize: 2.1,
+    price: 3699000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-watch-Ultra-3-2mYr9iIN27CsD5UpxMd5JX0wfKc2VX.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-watch-Ultra-3-2mYr9iIN27CsD5UpxMd5JX0wfKc2VX.jpg",
+    ],
+    badge: "Nuevo",
+    inStock: true,
+    leadTime: "2-3 días",
+    description: "El reloj más robusto de Apple con caja de titanio, pantalla ultra brillante y batería de hasta 36 horas. Diseñado para aventuras extremas.",
+    benefits: [
+      "Caja de titanio de 49mm ultra resistente",
+      "Pantalla de hasta 3000 nits",
+      "Batería de hasta 36 horas",
+      "Resistencia al agua hasta 100m",
+      "GPS de precisión dual"
+    ],
+    specs: {
+      "Chip": "Apple S10 SiP",
+      "Pantalla": "Always-On Retina 2.1\" (3000 nits)",
+      "Conectividad": "LTE, GPS dual, Wi-Fi, Bluetooth",
+      "Sensores": "ECG, oxígeno en sangre, temperatura",
+      "Resistencia": "WR100, IP6X, MIL-STD 810H",
+      "Batería": "Hasta 36 horas",
+      "Caja": "Titanio 49mm"
+    },
+    recommendedFor: ["Deportes", "Aventura", "Ejecutivo"]
+  },
+  {
+    id: "18",
+    slug: "apple-watch-hermes-ultra-3",
+    name: "Apple Watch Hermès Ultra 3",
+    shortName: "Watch Hermès Ultra 3",
+    category: "watch",
+    chip: "S10",
+    ram: [2],
+    storage: [64],
+    screenSize: 2.1,
+    price: 5999000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-watch-Hermes-ultra-3-Ujm5OG188pMC4PgzNqA1Y1TzrNEFXq.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-watch-Hermes-ultra-3-Ujm5OG188pMC4PgzNqA1Y1TzrNEFXq.jpg",
+    ],
+    badge: "Nuevo",
+    inStock: true,
+    leadTime: "1-2 semanas",
+    description: "Edición Hermès del Apple Watch Ultra con correas exclusivas de cuero y esferas personalizadas de lujo.",
+    benefits: [
+      "Correa Hermès de cuero premium",
+      "Esferas exclusivas Hermès",
+      "Caja de titanio de 49mm",
+      "Batería de hasta 36 horas",
+      "Embalaje Hermès exclusivo"
+    ],
+    specs: {
+      "Chip": "Apple S10 SiP",
+      "Pantalla": "Always-On Retina 2.1\" (3000 nits)",
+      "Conectividad": "LTE, GPS dual, Wi-Fi, Bluetooth",
+      "Sensores": "ECG, oxígeno en sangre, temperatura",
+      "Resistencia": "WR100, IP6X, MIL-STD 810H",
+      "Batería": "Hasta 36 horas",
+      "Correa": "Hermès cuero genuino"
+    },
+    recommendedFor: ["Lujo", "Ejecutivo", "Regalo corporativo"]
+  },
+  {
+    id: "19",
+    slug: "apple-watch-series-11",
+    name: "Apple Watch Series 11",
+    shortName: "Watch Series 11",
+    category: "watch",
+    chip: "S10",
+    ram: [1],
+    storage: [32],
+    screenSize: 1.9,
+    price: 1899000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-watch-series-11-TjvWkNs1ZYDG2vNvuRiUyMQxoHAFy7.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-watch-series-11-TjvWkNs1ZYDG2vNvuRiUyMQxoHAFy7.jpg",
+    ],
+    badge: "Recomendado",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "Apple Watch con pantalla Always-On, monitoreo avanzado de salud y batería de día completo. Perfecto para uso diario.",
+    benefits: [
+      "Pantalla Always-On Retina",
+      "ECG y monitoreo de oxígeno",
+      "Detección de caídas y choques",
+      "Resistencia al agua hasta 50m",
+      "Batería de hasta 18 horas"
+    ],
+    specs: {
+      "Chip": "Apple S10 SiP",
+      "Pantalla": "Always-On Retina 1.9\"",
+      "Conectividad": "LTE, GPS, Wi-Fi, Bluetooth",
+      "Sensores": "ECG, oxígeno en sangre, temperatura",
+      "Resistencia": "WR50, IP6X",
+      "Batería": "Hasta 18 horas",
+      "Caja": "Aluminio 45mm"
+    },
+    recommendedFor: ["Salud", "Productividad", "General"]
+  },
+  {
+    id: "20",
+    slug: "apple-watch-hermes-3",
+    name: "Apple Watch Hermès Series 11",
+    shortName: "Watch Hermès 11",
+    category: "watch",
+    chip: "S10",
+    ram: [1],
+    storage: [32],
+    screenSize: 1.9,
+    price: 3299000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-watch-Hermes-3-fsGPj7mKDEbGQbislFbacPKaDhuA8M.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-watch-Hermes-3-fsGPj7mKDEbGQbislFbacPKaDhuA8M.jpg",
+    ],
+    badge: "Nuevo",
+    inStock: true,
+    leadTime: "1-2 semanas",
+    description: "Apple Watch Series 11 edición Hermès con correas de cuero exclusivas y esferas personalizadas de lujo.",
+    benefits: [
+      "Correa Hermès de cuero tejido",
+      "Esferas exclusivas Hermès",
+      "Caja de acero inoxidable",
+      "Monitoreo avanzado de salud",
+      "Embalaje Hermès exclusivo"
+    ],
+    specs: {
+      "Chip": "Apple S10 SiP",
+      "Pantalla": "Always-On Retina 1.9\"",
+      "Conectividad": "LTE, GPS, Wi-Fi, Bluetooth",
+      "Sensores": "ECG, oxígeno en sangre, temperatura",
+      "Resistencia": "WR50, IP6X",
+      "Batería": "Hasta 18 horas",
+      "Correa": "Hermès cuero tejido"
+    },
+    recommendedFor: ["Lujo", "Ejecutivo", "Regalo corporativo"]
+  },
+  {
+    id: "21",
+    slug: "apple-watch-se-3",
+    name: "Apple Watch SE 3",
+    shortName: "Watch SE 3",
+    category: "watch",
+    chip: "S9",
+    ram: [1],
+    storage: [32],
+    screenSize: 1.7,
+    price: 1199000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-watchSE-3-tzA8n2VQa4ToJgfiG2tyclkC6DfATn.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Apple-watchSE-3-tzA8n2VQa4ToJgfiG2tyclkC6DfATn.jpg",
+    ],
+    badge: "Popular",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "Apple Watch accesible con funciones esenciales de salud, fitness y conectividad. La mejor opción de entrada.",
+    benefits: [
+      "Monitoreo de frecuencia cardíaca",
+      "Detección de caídas",
+      "Resistencia al agua hasta 50m",
+      "Notificaciones inteligentes",
+      "Batería de hasta 18 horas"
+    ],
+    specs: {
+      "Chip": "Apple S9 SiP",
+      "Pantalla": "Retina 1.7\"",
+      "Conectividad": "GPS, Wi-Fi, Bluetooth",
+      "Sensores": "Frecuencia cardíaca, acelerómetro",
+      "Resistencia": "WR50",
+      "Batería": "Hasta 18 horas",
+      "Caja": "Aluminio 44mm"
+    },
+    recommendedFor: ["Estudiantes", "Primera compra", "Fitness"]
+  },
+  // iPad Products
+  {
+    id: "22",
+    slug: "ipad-pro-m5-13",
+    name: 'iPad Pro 13" con chip M5',
+    shortName: "iPad Pro 13\" M5",
+    category: "tablet",
+    chip: "M5",
+    ram: [16, 24],
+    storage: [256, 512, 1024, 2048],
+    screenSize: 13,
+    price: 5999000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-Pro-M5-k6lMfgTb0uZjV4mSwbY1uPsHl27JNR.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-Pro-M5-k6lMfgTb0uZjV4mSwbY1uPsHl27JNR.jpg",
+    ],
+    badge: "Nuevo",
+    inStock: true,
+    leadTime: "2-3 días",
+    description: "iPad Pro con chip M5, pantalla OLED XDR de 13 pulgadas y rendimiento de nivel profesional. Compatible con Apple Pencil Pro y Magic Keyboard.",
+    benefits: [
+      "Chip M5 con Neural Engine",
+      "Pantalla Tandem OLED XDR",
+      "Cámara Pro con LiDAR",
+      "Thunderbolt 4",
+      "Compatibilidad con Apple Pencil Pro"
+    ],
+    specs: {
+      "Chip": "Apple M5 con Neural Engine",
+      "Pantalla": "Tandem OLED 13\" XDR (1600 nits)",
+      "Cámara": "12MP Wide + 10MP Ultra Wide + LiDAR",
+      "Conectividad": "Wi-Fi 6E, 5G opcional, Thunderbolt 4",
+      "Batería": "Hasta 10 horas",
+      "Accesorios": "Apple Pencil Pro, Magic Keyboard",
+      "Peso": "682 g"
+    },
+    recommendedFor: ["Diseño", "Productividad", "Creación de contenido"]
+  },
+  {
+    id: "23",
+    slug: "ipad-pro-m4-11",
+    name: 'iPad Pro 11" con chip M4',
+    shortName: "iPad Pro 11\" M4",
+    category: "tablet",
+    chip: "M4",
+    ram: [8, 16],
+    storage: [128, 256, 512, 1024],
+    screenSize: 11,
+    price: 3999000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-Pro-M4-Dl7S7BufPYsp3YRJlD720KWfD6myxI.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-Pro-M4-Dl7S7BufPYsp3YRJlD720KWfD6myxI.jpg",
+    ],
+    badge: "Recomendado",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "iPad Pro compacto con chip M4, pantalla OLED XDR y portabilidad profesional. Ideal para trabajo móvil.",
+    benefits: [
+      "Chip M4 con Neural Engine",
+      "Pantalla Tandem OLED XDR",
+      "Cámara Pro con LiDAR",
+      "USB-C con Thunderbolt",
+      "Diseño ultraligero"
+    ],
+    specs: {
+      "Chip": "Apple M4 con Neural Engine",
+      "Pantalla": "Tandem OLED 11\" XDR (1600 nits)",
+      "Cámara": "12MP Wide + 10MP Ultra Wide + LiDAR",
+      "Conectividad": "Wi-Fi 6E, 5G opcional, Thunderbolt",
+      "Batería": "Hasta 10 horas",
+      "Accesorios": "Apple Pencil Pro, Magic Keyboard",
+      "Peso": "466 g"
+    },
+    recommendedFor: ["Movilidad", "Productividad", "Diseño"]
+  },
+  {
+    id: "24",
+    slug: "ipad-air-m3-11",
+    name: 'iPad Air 11" con chip M3',
+    shortName: "iPad Air 11\" M3",
+    category: "tablet",
+    chip: "M3",
+    ram: [8],
+    storage: [128, 256, 512],
+    screenSize: 11,
+    price: 2799000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-Air-M3-aHXebnMpVNRrHjtMFGOsuc9KGXK4nX.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-Air-M3-aHXebnMpVNRrHjtMFGOsuc9KGXK4nX.jpg",
+    ],
+    badge: "Popular",
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "iPad Air con chip M3, pantalla Liquid Retina de 11 pulgadas y rendimiento profesional a excelente precio.",
+    benefits: [
+      "Chip M3 con Neural Engine",
+      "Pantalla Liquid Retina",
+      "Cámara frontal horizontal",
+      "USB-C",
+      "Compatibilidad con Apple Pencil"
+    ],
+    specs: {
+      "Chip": "Apple M3 con Neural Engine",
+      "Pantalla": "Liquid Retina 11\" (500 nits)",
+      "Cámara": "12MP Wide, 12MP Ultra Wide frontal",
+      "Conectividad": "Wi-Fi 6, 5G opcional, USB-C",
+      "Batería": "Hasta 10 horas",
+      "Accesorios": "Apple Pencil (USB-C), Magic Keyboard Folio",
+      "Peso": "462 g"
+    },
+    recommendedFor: ["Productividad", "Estudiantes", "General"]
+  },
+  {
+    id: "25",
+    slug: "ipad-mini-a17",
+    name: "iPad mini con chip A17 Pro",
+    shortName: "iPad mini A17",
+    category: "tablet",
+    chip: "A17 Pro",
+    ram: [8],
+    storage: [128, 256, 512],
+    screenSize: 8.3,
+    price: 2399000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-mini-A17-k75T0OMeYHk3J7no0y6937dCb34qvK.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/iPad-mini-A17-k75T0OMeYHk3J7no0y6937dCb34qvK.jpg",
+    ],
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "iPad mini ultraportátil con chip A17 Pro y pantalla de 8.3 pulgadas. Máxima movilidad con rendimiento completo.",
+    benefits: [
+      "Diseño ultraportátil",
+      "Chip A17 Pro potente",
+      "Pantalla Liquid Retina",
+      "USB-C",
+      "Compatibilidad con Apple Pencil"
+    ],
+    specs: {
+      "Chip": "Apple A17 Pro",
+      "Pantalla": "Liquid Retina 8.3\" (500 nits)",
+      "Cámara": "12MP Wide, 12MP Ultra Wide frontal",
+      "Conectividad": "Wi-Fi 6, 5G opcional, USB-C",
+      "Batería": "Hasta 10 horas",
+      "Accesorios": "Apple Pencil (USB-C)",
+      "Peso": "293 g"
+    },
+    recommendedFor: ["Movilidad", "Lectura", "Punto de venta"]
+  },
+  // HomePod
+  {
+    id: "26",
+    slug: "homepod-2024",
+    name: "HomePod (2024)",
+    shortName: "HomePod",
+    category: "speaker",
+    chip: "S8",
+    ram: [1],
+    storage: [0],
+    screenSize: 0,
+    price: 1499000,
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HomePod-cD285qzipIBInmEB6kndlsB4fEygVq.jpg",
+    images: [
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HomePod-cD285qzipIBInmEB6kndlsB4fEygVq.jpg",
+    ],
+    inStock: true,
+    leadTime: "Entrega inmediata",
+    description: "Altavoz inteligente con audio espacial, HomeKit y Siri. Perfecto para oficinas, salas de reuniones y espacios corporativos.",
+    benefits: [
+      "Audio espacial de alta fidelidad",
+      "Control por voz con Siri",
+      "HomeKit para automatización",
+      "Multiroom con AirPlay 2",
+      "Diseño premium en malla"
+    ],
+    specs: {
+      "Chip": "Apple S8",
+      "Audio": "Woofer de alta excursión + 5 tweeters",
+      "Micrófonos": "4 micrófonos para Siri",
+      "Conectividad": "Wi-Fi 6, Thread, Bluetooth 5.3",
+      "Integración": "HomeKit, Matter, AirPlay 2",
+      "Dimensiones": "172 x 142 mm",
+      "Peso": "2.3 kg"
+    },
+    recommendedFor: ["Oficina", "Sala de reuniones", "Recepción"]
   }
 ];
 

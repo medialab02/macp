@@ -42,11 +42,25 @@ const filters = {
   type: [
     { value: "laptop", label: "Laptops", icon: Laptop },
     { value: "desktop", label: "Desktop", icon: Monitor },
+    { value: "phone", label: "iPhone", icon: Laptop },
+    { value: "tablet", label: "iPad", icon: Monitor },
+    { value: "watch", label: "Apple Watch", icon: Laptop },
+    { value: "speaker", label: "HomePod", icon: Monitor },
   ],
   chip: [
+    { value: "M5", label: "M5" },
     { value: "M4", label: "M4" },
     { value: "M4 Pro", label: "M4 Pro" },
     { value: "M4 Max", label: "M4 Max" },
+    { value: "M3", label: "M3" },
+    { value: "A18 Pro", label: "A18 Pro" },
+    { value: "A18", label: "A18" },
+    { value: "A17", label: "A17" },
+    { value: "A17 Pro", label: "A17 Pro" },
+    { value: "A16", label: "A16" },
+    { value: "S10", label: "S10" },
+    { value: "S9", label: "S9" },
+    { value: "S8", label: "S8" },
   ],
   ram: [
     { value: "8", label: "8GB" },
@@ -289,11 +303,10 @@ export default function MacCatalogPage() {
           {/* Header */}
           <div className="mb-8">
             <h1 className="mb-2 text-3xl font-bold text-foreground md:text-4xl">
-              Catálogo Mac
+              Catálogo Apple
             </h1>
             <p className="text-muted-foreground">
-              Encuentra el Mac perfecto para tu empresa. Todos los modelos con
-              soporte empresarial.
+              Encuentra el dispositivo Apple perfecto para tu empresa. Mac, iPhone, iPad, Apple Watch y más con soporte empresarial.
             </p>
           </div>
 
