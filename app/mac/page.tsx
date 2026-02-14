@@ -123,6 +123,17 @@ export default function MacCatalogPage() {
   // Get search query from URL
   const searchQuery = searchParams.get("q") || "";
 
+  // Initialize filters from URL parameters
+  useEffect(() => {
+    const typeParam = searchParams.get("type");
+    if (typeParam) {
+      setSelectedFilters((prev) => ({
+        ...prev,
+        type: [typeParam],
+      }));
+    }
+  }, [searchParams]);
+
   // Track page view
   useEffect(() => {
     track("view_catalog", { searchQuery });

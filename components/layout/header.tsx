@@ -102,7 +102,7 @@ export function Header() {
               alt="Apple Business Partner & Authorized Service Provider"
               width={240}
               height={40}
-              className="h-8 w-auto"
+              className="h-8 w-auto invert dark:invert-0"
               priority
             />
           </div>
@@ -174,9 +174,9 @@ export function Header() {
           <Button
             asChild
             size="sm"
-            className="hidden lg:flex bg-gradient-to-r from-green-600 to-cyan-600 hover:from-green-700 hover:to-cyan-700 text-white border-0"
+            className="hidden lg:flex bg-gradient-to-r from-[#00ffe3] to-[#00a6d6] hover:from-[#00e6cc] hover:to-[#0090bb] text-black font-bold border-0 shadow-lg transition-all duration-300"
           >
-            <Link href="#contacto">Contáctanos</Link>
+            <Link href="/contacto-empresas">Contáctanos</Link>
           </Button>
 
           {/* Mobile menu */}
