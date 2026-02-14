@@ -43,18 +43,7 @@ export default function MacParaEmpresasPage() {
         <FeaturedCatalog />
 
         {/* Case studies section */}
-        <section className="bg-card py-20">
-          <div className="mx-auto max-w-7xl px-4 lg:px-6">
-            <div className="mb-12 text-center">
-              <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">
-                Casos de éxito
-              </h2>
-              <p className="mx-auto max-w-2xl text-muted-foreground">
-                Descubre cómo hemos ayudado a empresas como la tuya a transformar su infraestructura
-              </p>
-            </div>
-          </div>
-        </section>
+
 
         <FAQSection />
         <LandingCTA />
