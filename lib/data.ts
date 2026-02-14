@@ -362,73 +362,80 @@ export const services: Service[] = [
   {
     id: "1",
     title: "Implementación y Despliegue",
-    description: "Configuración, migración de datos y puesta en marcha de equipos Apple en su organización.",
+    description: "Ponemos en marcha tu entorno Apple de forma ordenada y alineada a tu infraestructura actual.",
     icon: "rocket",
     features: [
       "Configuración inicial personalizada",
-      "Migración de datos desde equipos anteriores",
-      "Integración con infraestructura existente",
-      "Despliegue zero-touch con Apple Business Manager"
+      "Migración segura de datos",
+      "Integración con infraestructura existentes",
+      "Entrega lista para trabajar (zero-touch si aplica)",
+      "Resultado: equipos productivos desde el primer día."
     ]
   },
   {
     id: "2",
     title: "Gestión y Administración (MDM)",
-    description: "Control centralizado de todos sus dispositivos Apple con soluciones MDM empresariales.",
+    description: "Control centralizado y seguro de todos tus dispositivos Apple.",
     icon: "settings",
     features: [
-      "Apple Business Manager (ABM)",
-      "Configuración remota de políticas",
-      "Distribución de apps corporativas",
-      "Inventario y reportes en tiempo real"
+      "Implementación de Apple Business Manager (ABM)",
+      "Configuración remota de políticas y restricciones",
+      "Gestión de usuarios y Apple ID administrados",
+      "Distribución automática de aplicaciones y actualizaciones",
+      "Inventario y monitoreo en tiempo real",
+      "Resultado: menos carga operativa para TI y mayor control corporativo."
     ]
   },
   {
     id: "3",
     title: "Seguridad y Continuidad",
-    description: "Proteja sus datos y garantice la continuidad operativa de su negocio.",
+    description: "Protegemos la información de tu empresa y garantizamos estabilidad operativa.",
     icon: "shield",
     features: [
-      "Cifrado FileVault gestionado",
+      "Cifrado de disco con FileVault gestionado",
       "Políticas de seguridad centralizadas",
-      "Backup empresarial automatizado",
-      "Plan de recuperación ante desastres"
+      "Gestión de parches y actualizaciones",
+      "Estrategias de respaldo empresarial",
+      "Cumplimiento de buenas prácticas de seguridad",
+      "Resultado: reducción de riesgos y continuidad del negocio."
     ]
   },
   {
     id: "4",
     title: "Soporte Técnico Empresarial",
-    description: "Mesa de ayuda especializada en ecosistema Apple para su equipo.",
+    description: "Servicio Técnico Autorizado por Apple.",
     icon: "headphones",
     features: [
-      "Soporte telefónico y remoto",
       "Atención en sitio cuando se requiera",
+      "Gestión de garantías",
       "SLA empresariales personalizados",
-      "Equipo certificado Apple"
+      "Acompañamiento continuo postimplementación",
+      "Resultado: menor tiempo de inactividad y mayor eficiencia operativa."
     ]
   },
   {
     id: "5",
     title: "Formación y Onboarding",
-    description: "Capacitación para maximizar la productividad de su equipo con Apple.",
+    description: "Maximizamos la adopción y el uso estratégico de la tecnología.",
     icon: "graduation",
     features: [
-      "Sesiones de onboarding para nuevos usuarios",
-      "Capacitación en apps de productividad",
+      "Capacitación en herramientas de productividad",
       "Workshops para equipos de TI",
-      "Material de referencia personalizado"
+      "Buenas prácticas de uso y seguridad",
+      "Resultado: mayor productividad y mejor experiencia del usuario."
     ]
   },
   {
     id: "6",
-    title: "AppleCare para Empresas",
-    description: "Cobertura extendida y soporte prioritario directo de Apple.",
+    title: "Garantías para Empresas",
+    description: "Cobertura extendida y soporte oficial Apple.",
     icon: "heart",
     features: [
       "Garantía extendida hasta 3 años",
       "Soporte técnico prioritario",
-      "Reparación con piezas originales",
-      "Cobertura por daño accidental"
+      "Reparaciones con piezas originales",
+      "Gestión centralizada de incidencias",
+      "Resultado: protección de la inversión tecnológica."
     ]
   }
 ];
